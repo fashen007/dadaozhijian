@@ -45,6 +45,12 @@ class CollectorTests(unittest.TestCase):
         self.assertEqual(items[0].verification, "原始披露")
         self.assertIn("2026-03-31", items[0].summary)
 
+    def test_sec_is_not_requested_without_contact_user_agent(self):
+        with patch.dict(os.environ, {}, clear=True):
+            items, status = collect.fetch_sec(lambda *_args: b"", "2026-05-23T00:00:00Z")
+        self.assertEqual(items, [])
+        self.assertEqual(status["status"], "setup")
+
     def test_xueqiu_is_not_requested_without_cookie(self):
         with patch.dict(os.environ, {}, clear=True):
             items, status = collect.fetch_xueqiu(lambda *_args: b"", "2026-05-23T00:00:00Z")
@@ -69,7 +75,9 @@ class CollectorTests(unittest.TestCase):
                 return json.dumps(sec_payload).encode()
             return NEWS_XML
 
-        with tempfile.TemporaryDirectory() as directory, patch.dict(os.environ, {}, clear=True):
+        with tempfile.TemporaryDirectory() as directory, patch.dict(
+            os.environ, {"TRACKER_USER_AGENT": "DadaoTracker test@example.com"}, clear=True
+        ):
             path = Path(directory) / "feed.json"
             path.write_text('{"items":[{"id":"old","published_at":"2025-01-01T00:00:00Z"}]}')
             feed = collect.build_feed(path, fake_fetch)

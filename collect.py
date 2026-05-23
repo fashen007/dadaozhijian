@@ -159,9 +159,20 @@ def parse_sec(payload: dict[str, Any], collected_at: str) -> list[FeedItem]:
 
 
 def fetch_sec(fetch: Callable[..., bytes], collected_at: str) -> tuple[list[FeedItem], dict[str, str]]:
+    contact_user_agent = os.environ.get("TRACKER_USER_AGENT", "").strip()
+    if not contact_user_agent:
+        return [], source_state(
+            "sec",
+            "SEC 13F",
+            "setup",
+            "设置 TRACKER_USER_AGENT 后每日检查 SEC 13F；既有披露归档仍会保留",
+            collected_at,
+        )
     url = f"https://data.sec.gov/submissions/CIK{SEC_CIK}.json"
     try:
-        payload = json.loads(fetch(url, {"Accept": "application/json"}))
+        payload = json.loads(
+            fetch(url, {"Accept": "application/json", "User-Agent": contact_user_agent})
+        )
         items = parse_sec(payload, collected_at)
         return items, source_state("sec", "SEC 13F", "ok", f"获取 {len(items)} 份持仓披露", collected_at)
     except Exception as exc:
