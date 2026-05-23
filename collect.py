@@ -26,7 +26,10 @@ DEFAULT_OUTPUT = ROOT / "data" / "feed.json"
 SEC_CIK = "0001759760"
 XUEQIU_USER_ID = "1247347556"
 XUEQIU_PROFILE = f"https://xueqiu.com/u/{XUEQIU_USER_ID}"
-USER_AGENT = os.environ.get("TRACKER_USER_AGENT", "").strip() or "DadaoTracker/1.0 contact@example.com"
+USER_AGENT = (
+    os.environ.get("TRACKER_USER_AGENT", "").strip()
+    or "DadaoTracker/1.0 https://github.com/fashen007/dadaozhijian"
+)
 
 
 @dataclass

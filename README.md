@@ -29,7 +29,7 @@ XUEQIU_COOKIE='your-cookie-value' python3 collect.py
 
 Cookie 只作为请求环境变量使用，不应写入仓库。Cookie 失效时，页面的来源状态会显示读取异常，SEC 与媒体采集仍能继续。
 
-对 SEC 的定时请求建议提供包含联系方式的 User-Agent：
+默认 SEC 请求标识包含本项目公开仓库地址。如需改成你的联系信息，可以设置：
 
 ```bash
 TRACKER_USER_AGENT='DadaoTracker/1.0 your-email@example.com' python3 collect.py
@@ -44,7 +44,7 @@ TRACKER_USER_AGENT='DadaoTracker/1.0 your-email@example.com' python3 collect.py
 3. 部署静态页面到 GitHub Pages。
 
 推送仓库后，在 GitHub 仓库的 `Settings > Pages` 将来源设为 **GitHub Actions**。如需雪球动态，再添加名为 `XUEQIU_COOKIE` 的 Actions Secret。
-用于定时任务时，也应添加 `TRACKER_USER_AGENT` 环境配置或将脚本默认值改成你的联系邮箱。
+如需用自己的联系标识请求 SEC，再添加 `TRACKER_USER_AGENT` Secret。
 
 ## 验证
 
