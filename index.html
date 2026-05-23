@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>慢即是快 | 段永平公开动态追踪</title>
+    <meta name="description" content="聚合段永平本人公开发言、公开投资披露与采访报道的每日更新站点。">
+    <link rel="stylesheet" href="./assets/style.css">
+    <script src="./assets/app.js" defer></script>
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav">
+        <div class="brand">慢即是快</div>
+        <a class="source-link" data-profile-link target="_blank" rel="noopener">雪球本人主页 ↗</a>
+      </nav>
+      <div class="hero-grid">
+        <div>
+          <p class="eyebrow">DUAN YONGPING WATCH</p>
+          <h1>段永平公开动态<br><span>每日归档</span></h1>
+          <p class="intro">只跟踪公开可验证的信息：本人发布、监管披露、采访与媒体线索。报道不等于交易事实，投资披露以原始文件为准。</p>
+        </div>
+        <aside class="snapshot">
+          <p>最近更新</p>
+          <strong id="updated-at">读取中...</strong>
+          <div class="stat-grid">
+            <div><b id="item-total">-</b><span>条归档</span></div>
+            <div><b id="investment-total">-</b><span>投资相关</span></div>
+            <div><b id="source-total">-</b><span>活跃来源</span></div>
+          </div>
+        </aside>
+      </div>
+    </header>
+
+    <main>
+      <section class="sources" aria-label="来源状态">
+        <div class="section-heading">
+          <h2>来源状态</h2>
+          <p>本人发言、正式披露、媒体报道分开展示</p>
+        </div>
+        <div id="source-cards" class="source-cards"></div>
+      </section>
+
+      <section class="timeline">
+        <div class="section-heading">
+          <h2>动态时间线</h2>
+          <label class="search">
+            <span class="sr-only">搜索</span>
+            <input id="search" type="search" placeholder="搜索公司、访谈或关键词">
+          </label>
+        </div>
+        <div class="filters" id="filters">
+          <button class="active" data-category="all">全部</button>
+          <button data-category="investment">投资动态</button>
+          <button data-category="statement">本人发言</button>
+          <button data-category="interview">采访 / 观点</button>
+          <button data-category="personal">其他动态</button>
+        </div>
+        <div id="timeline-list" class="timeline-list" aria-live="polite"></div>
+      </section>
+    </main>
+    <footer>
+      本站仅聚合公开信息，不构成投资建议。13F 反映季度末披露持仓，不代表实时交易。
+    </footer>
+  </body>
+</html>
