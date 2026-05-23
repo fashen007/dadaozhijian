@@ -43,6 +43,7 @@ class CollectorTests(unittest.TestCase):
         self.assertEqual(items[0].category, "investment")
         self.assertEqual(items[0].verification, "需核验")
         self.assertEqual(items[0].source_type, "媒体报道")
+        self.assertEqual(items[0].summary_status, "pending")
         self.assertEqual(collect.classify_news("段永平重仓某公司并继续押注赛道"), "investment")
         self.assertEqual(collect.classify_news("段永平重估英伟达"), "investment")
         self.assertEqual(collect.classify_news("段永平回复网友：买的是生意"), "interview")
@@ -69,6 +70,70 @@ class CollectorTests(unittest.TestCase):
             items, status = collect.fetch_sec(lambda *_args: b"", "2026-05-23T00:00:00Z")
         self.assertEqual(items, [])
         self.assertEqual(status["status"], "setup")
+
+    def test_ai_summary_uses_extracted_page_description(self):
+        items = [
+            {
+                "id": "news-1",
+                "title": "段永平加仓英伟达",
+                "source": "示例财经",
+                "source_type": "媒体报道",
+                "url": "https://example.test/news/1",
+                "summary_status": "pending",
+                "summary": "等待自动摘要",
+            }
+        ]
+        captured = {}
+
+        def fake_fetch(_url, _headers=None):
+            return '<meta name="description" content="文章讨论一项已经披露的季度末持仓变化以及公开数据来源。">'.encode()
+
+        def fake_post(_url, payload, _headers=None):
+            captured["input"] = payload["input"]
+            return {"output": [{"content": [{"type": "output_text", "text": "据报道，文章讨论公开披露中的持仓变化。"}]}]}
+
+        with patch.dict(os.environ, {"OPENAI_API_KEY": "test-key"}, clear=True):
+            status = collect.summarize_media_items(items, fake_fetch, fake_post)
+        self.assertEqual(status["status"], "ok")
+        self.assertEqual(items[0]["summary_status"], "ai")
+        self.assertIn("页面描述", items[0]["summary_basis"])
+        self.assertIn("已经披露", captured["input"])
+
+    def test_ai_summary_searches_and_stores_citations_without_description(self):
+        items = [
+            {
+                "id": "news-2",
+                "title": "段永平最新公开观点",
+                "source": "示例财经",
+                "source_type": "媒体报道",
+                "url": "https://example.test/news/2",
+                "summary_status": "pending",
+                "summary": "等待自动摘要",
+            }
+        ]
+        captured = {}
+
+        def fake_post(_url, payload, _headers=None):
+            captured.update(payload)
+            return {
+                "output": [{
+                    "content": [{
+                        "type": "output_text",
+                        "text": "据报道，文章梳理了公开观点。",
+                        "annotations": [{
+                            "type": "url_citation",
+                            "title": "示例财经原文",
+                            "url": "https://example.test/source",
+                        }],
+                    }]
+                }]
+            }
+
+        with patch.dict(os.environ, {"OPENAI_API_KEY": "test-key"}, clear=True):
+            collect.summarize_media_items(items, lambda *_args: b"<html></html>", fake_post)
+        self.assertEqual(captured["tools"], [{"type": "web_search"}])
+        self.assertIn("联网核验", items[0]["summary_basis"])
+        self.assertEqual(items[0]["summary_citations"][0]["url"], "https://example.test/source")
 
     def test_xueqiu_is_not_requested_without_cookie(self):
         with patch.dict(os.environ, {}, clear=True):

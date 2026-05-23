@@ -5,7 +5,8 @@ const categoryNames = {
   personal: "其他动态",
 };
 
-const state = { items: [], category: "all", search: "" };
+const pageSize = 10;
+const state = { items: [], category: "all", search: "", page: 1 };
 
 function formatDate(value, withTime = false) {
   const date = new Date(value);
@@ -45,12 +46,17 @@ function itemMatches(item) {
 function renderTimeline() {
   const host = document.querySelector("#timeline-list");
   const items = state.items.filter(itemMatches);
+  const totalPages = Math.max(1, Math.ceil(items.length / pageSize));
+  state.page = Math.min(state.page, totalPages);
+  const start = (state.page - 1) * pageSize;
+  const visibleItems = items.slice(start, start + pageSize);
   host.replaceChildren();
   if (!items.length) {
     host.append(node("p", "empty", "暂无匹配的公开动态。"));
+    renderPagination(0, 1);
     return;
   }
-  items.forEach((item) => {
+  visibleItems.forEach((item) => {
     const article = node("article", "timeline-card");
     const meta = node("div", "meta");
     meta.append(node("span", `pill ${item.category}`, categoryNames[item.category] || "动态"));
@@ -62,9 +68,55 @@ function renderTimeline() {
     link.target = "_blank";
     link.rel = "noopener";
     title.append(link);
-    article.append(meta, title, node("p", "summary", item.summary), node("p", "origin", item.source_type + " · " + item.source));
+    const summaryLabel = node("span", `summary-label ${item.summary_status || "source"}`, item.summary_basis || "来源摘要");
+    const summary = node("p", "summary", item.summary);
+    summary.prepend(summaryLabel);
+    article.append(meta, title, summary);
+    if (item.summary_citations && item.summary_citations.length) {
+      const citations = node("p", "citations", "摘要依据：");
+      item.summary_citations.forEach((citation, index) => {
+        if (index) citations.append(document.createTextNode(" · "));
+        const citationLink = node("a", "", citation.title || "来源");
+        citationLink.href = citation.url;
+        citationLink.target = "_blank";
+        citationLink.rel = "noopener";
+        citations.append(citationLink);
+      });
+      article.append(citations);
+    }
+    article.append(node("p", "origin", item.source_type + " · " + item.source));
     host.append(article);
   });
+  renderPagination(items.length, totalPages);
+}
+
+function renderPagination(totalItems, totalPages) {
+  const host = document.querySelector("#pagination");
+  host.replaceChildren();
+  if (!totalItems) return;
+  host.append(node("p", "page-count", `共 ${totalItems} 条 · 第 ${state.page} / ${totalPages} 页`));
+  if (totalPages === 1) return;
+  const controls = node("div", "page-buttons");
+  controls.append(pageButton("上一页", state.page - 1, state.page === 1, "previous"));
+  const first = Math.max(1, Math.min(state.page - 2, totalPages - 4));
+  const last = Math.min(totalPages, first + 4);
+  for (let page = first; page <= last; page += 1) {
+    const button = pageButton(String(page), page, false, "");
+    if (page === state.page) {
+      button.classList.add("active");
+      button.setAttribute("aria-current", "page");
+    }
+    controls.append(button);
+  }
+  controls.append(pageButton("下一页", state.page + 1, state.page === totalPages, "next"));
+  host.append(controls);
+}
+
+function pageButton(text, page, disabled, className) {
+  const button = node("button", className, text);
+  button.dataset.page = String(page);
+  button.disabled = disabled;
+  return button;
 }
 
 async function start() {
@@ -76,7 +128,7 @@ async function start() {
     document.querySelector("#updated-at").textContent = formatDate(feed.updated_at, true);
     document.querySelector("#item-total").textContent = state.items.length;
     document.querySelector("#investment-total").textContent = state.items.filter((item) => item.category === "investment").length;
-    document.querySelector("#source-total").textContent = feed.sources.filter((source) => source.status === "ok").length;
+    document.querySelector("#source-total").textContent = feed.sources.filter((source) => source.key !== "summary" && source.status === "ok").length;
     document.querySelectorAll("[data-profile-link]").forEach((link) => { link.href = feed.profile.xueqiu_url; });
     renderSources(feed.sources);
     renderTimeline();
@@ -92,12 +144,22 @@ document.querySelector("#filters").addEventListener("click", (event) => {
   document.querySelectorAll("#filters button").forEach((entry) => entry.classList.remove("active"));
   button.classList.add("active");
   state.category = button.dataset.category;
+  state.page = 1;
   renderTimeline();
 });
 
 document.querySelector("#search").addEventListener("input", (event) => {
   state.search = event.target.value.trim();
+  state.page = 1;
   renderTimeline();
+});
+
+document.querySelector("#pagination").addEventListener("click", (event) => {
+  const button = event.target.closest("button[data-page]");
+  if (!button || button.disabled) return;
+  state.page = Number(button.dataset.page);
+  renderTimeline();
+  document.querySelector(".timeline").scrollIntoView({ behavior: "smooth", block: "start" });
 });
 
 start();

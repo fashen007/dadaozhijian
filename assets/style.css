@@ -91,7 +91,7 @@ main {
 .section-heading { align-items: center; display: flex; justify-content: space-between; margin-bottom: 22px; }
 .section-heading h2 { font-size: 25px; font-weight: 500; letter-spacing: .08em; margin: 0; }
 .section-heading p { color: var(--muted); font-size: 14px; margin: 0; }
-.source-cards { display: grid; gap: 14px; grid-template-columns: repeat(3, 1fr); margin-bottom: 55px; }
+.source-cards { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(245px, 1fr)); margin-bottom: 55px; }
 
 .source-card {
   background: var(--panel);
@@ -149,8 +149,34 @@ main {
 .timeline-card a { color: var(--ink); text-decoration: none; }
 .timeline-card a:hover { color: var(--green); }
 .summary { color: var(--muted); font-size: 14px; line-height: 1.7; margin: 0 0 10px; }
+.summary-label {
+  background: #edf1e9;
+  color: var(--green);
+  display: inline-block;
+  font: 12px Arial, sans-serif;
+  margin-right: 10px;
+  padding: 3px 7px;
+}
+.summary-label.pending { background: #f1e3ca; color: #765117; }
+.summary-label.ai { background: #e2eade; color: var(--green); }
+.citations { color: #8c8d84; font-size: 13px; margin: 0 0 10px; }
+.citations a { color: var(--green); text-decoration: underline; text-underline-offset: 2px; }
 .origin { color: #8c8d84; font-size: 13px; margin: 0; }
 .empty { background: var(--panel); border: 1px dashed var(--border); color: var(--muted); padding: 34px; text-align: center; }
+.pagination { align-items: center; display: flex; justify-content: space-between; margin-top: 27px; }
+.page-count { color: var(--muted); font-size: 14px; margin: 0; }
+.page-buttons { display: flex; gap: 8px; }
+.page-buttons button {
+  background: var(--panel);
+  border: 1px solid var(--border);
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 14px;
+  min-width: 42px;
+  padding: 10px 13px;
+}
+.page-buttons button.active { background: var(--green); border-color: var(--green); color: #fff; }
+.page-buttons button:disabled { cursor: default; opacity: .42; }
 
 footer {
   border-top: 1px solid var(--border);
@@ -171,5 +197,7 @@ footer {
   .section-heading { align-items: flex-start; flex-direction: column; gap: 14px; }
   .search, .search input { width: 100%; }
   .filters { flex-wrap: wrap; }
+  .pagination { align-items: flex-start; flex-direction: column; gap: 16px; }
+  .page-buttons { flex-wrap: wrap; }
   footer { margin: 0 20px; }
 }

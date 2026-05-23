@@ -28,6 +28,8 @@ DEFAULT_OUTPUT = ROOT / "data" / "feed.json"
 SEC_CIK = "0001759760"
 XUEQIU_USER_ID = "1247347556"
 XUEQIU_PROFILE = f"https://xueqiu.com/u/{XUEQIU_USER_ID}"
+SUMMARY_MODEL = os.environ.get("OPENAI_SUMMARY_MODEL", "").strip() or "gpt-5.4-nano"
+SUMMARY_LIMIT = int(os.environ.get("AI_SUMMARY_LIMIT", "10"))
 USER_AGENT = (
     os.environ.get("TRACKER_USER_AGENT", "").strip()
     or "DadaoTracker/1.0 https://github.com/fashen007/dadaozhijian"
@@ -46,6 +48,8 @@ class FeedItem:
     url: str
     collected_at: str
     verification: str
+    summary_status: str
+    summary_basis: str
 
 
 def now_iso() -> str:
@@ -87,6 +91,30 @@ def request_bytes(url: str, headers: dict[str, str] | None = None) -> bytes:
     raise RuntimeError("请求重试意外结束")
 
 
+def post_json(url: str, payload: dict[str, Any], headers: dict[str, str] | None = None) -> dict[str, Any]:
+    request_headers = {"User-Agent": USER_AGENT, "Content-Type": "application/json"}
+    request_headers.update(headers or {})
+    request = Request(url, data=json.dumps(payload).encode("utf-8"), headers=request_headers, method="POST")
+    with urlopen(request, timeout=45, context=secure_context()) as response:
+        return json.loads(response.read())
+
+
+def meta_description(html_data: bytes) -> str:
+    page = html_data.decode("utf-8", errors="ignore")
+    patterns = (
+        r'<meta[^>]+(?:name|property)=["\'](?:description|og:description)["\'][^>]+content=["\']([^"\']+)',
+        r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+(?:name|property)=["\'](?:description|og:description)["\']',
+    )
+    for pattern in patterns:
+        match = re.search(pattern, page, re.I)
+        if match:
+            value = text_only(match.group(1))
+            boilerplate = ("Google 新闻", "Google News", "aggregated from sources all over the world")
+            if len(value) >= 20 and not any(marker in value for marker in boilerplate):
+                return value[:1200]
+    return ""
+
+
 def classify_news(title: str) -> str:
     if re.search(
         r"持仓|持有|持股|买入|买股|加仓|增持|减持|减仓|清仓|建仓|重仓|调仓|换仓|换了|"
@@ -123,6 +151,8 @@ def parse_google_news(xml_data: bytes, collected_at: str) -> list[FeedItem]:
                 url=url,
                 collected_at=collected_at,
                 verification="需核验",
+                summary_status="pending",
+                summary_basis="等待 AI 摘要",
             )
         )
     return results
@@ -162,6 +192,8 @@ def parse_sec(payload: dict[str, Any], collected_at: str) -> list[FeedItem]:
                 url=url,
                 collected_at=collected_at,
                 verification="原始披露",
+                summary_status="source",
+                summary_basis="监管披露说明",
             )
         )
     return results
@@ -214,6 +246,8 @@ def parse_xueqiu(payload: dict[str, Any], collected_at: str) -> list[FeedItem]:
                 url=f"https://xueqiu.com/{XUEQIU_USER_ID}/{item_id}",
                 collected_at=collected_at,
                 verification="本人发布",
+                summary_status="source",
+                summary_basis="本人原文摘录",
             )
         )
     return results
@@ -261,6 +295,109 @@ def load_existing(path: Path) -> list[dict[str, Any]]:
         return []
 
 
+def response_text(payload: dict[str, Any]) -> str:
+    if payload.get("output_text"):
+        return str(payload["output_text"]).strip()
+    for output in payload.get("output", []):
+        for content in output.get("content", []):
+            if content.get("type") == "output_text" and content.get("text"):
+                return str(content["text"]).strip()
+    return ""
+
+
+def response_citations(payload: dict[str, Any]) -> list[dict[str, str]]:
+    citations: list[dict[str, str]] = []
+    known_urls: set[str] = set()
+    for output in payload.get("output", []):
+        for content in output.get("content", []):
+            for annotation in content.get("annotations", []):
+                if annotation.get("type") != "url_citation" or not annotation.get("url"):
+                    continue
+                if annotation["url"] in known_urls:
+                    continue
+                known_urls.add(annotation["url"])
+                citations.append({
+                    "url": annotation["url"],
+                    "title": annotation.get("title", "摘要引用来源"),
+                })
+    return citations[:3]
+
+
+def summarize_media_items(
+    items: list[dict[str, Any]],
+    fetch: Callable[..., bytes] = request_bytes,
+    post: Callable[..., dict[str, Any]] = post_json,
+) -> dict[str, str] | None:
+    api_key = os.environ.get("OPENAI_API_KEY", "").strip()
+    pending = [
+        item for item in items
+        if item.get("source_type") == "媒体报道" and item.get("summary_status") != "ai"
+    ][:SUMMARY_LIMIT]
+    if not api_key:
+        return None
+    succeeded = 0
+    failed = 0
+    for item in pending:
+        description = ""
+        try:
+            description = meta_description(fetch(item["url"], {"Accept": "text/html"}))
+        except Exception:
+            pass
+        material = (
+            f"标题：{item['title']}\n来源：{item['source']}\n页面描述：{description}"
+            if description
+            else f"标题：{item['title']}\n来源：{item['source']}\n未能读取文章正文或页面描述。"
+        )
+        prompt = (
+            "你在为公开投资动态看板生成摘要。只使用输入材料，不推断交易事实，不提供投资建议。"
+            "若需要搜索，请检索并核对与标题对应的报道；没有足够证据时明确说无法核实。"
+            "若仅能依赖标题，必须以“标题显示”开头；若找到页面材料，必须以“据报道”开头。"
+            "使用简体中文，最多两句、90字以内。\n\n" + material
+        )
+        try:
+            request_payload: dict[str, Any] = {
+                "model": SUMMARY_MODEL,
+                "input": prompt,
+                "max_output_tokens": 160,
+            }
+            if not description:
+                request_payload.update({
+                    "tools": [{"type": "web_search"}],
+                    "tool_choice": "auto",
+                    "include": ["web_search_call.action.sources"],
+                })
+            result = post(
+                "https://api.openai.com/v1/responses",
+                request_payload,
+                {"Authorization": f"Bearer {api_key}"},
+            )
+            summary = response_text(result)
+            if not summary:
+                raise ValueError("空摘要响应")
+            citations = response_citations(result)
+            item["summary"] = summary
+            item["summary_status"] = "ai"
+            item["summary_basis"] = f"AI 摘要 · {'页面描述' if description else '联网核验' if citations else '仅标题'}"
+            item["summary_model"] = SUMMARY_MODEL
+            item["summary_citations"] = citations
+            succeeded += 1
+        except Exception:
+            failed += 1
+    if not pending:
+        return {"status": "ok", "detail": "没有待总结的新增媒体条目"}
+    return {"status": "ok" if succeeded else "error", "detail": f"AI 总结 {succeeded} 条，失败 {failed} 条"}
+
+
+def normalized_existing(item: dict[str, Any]) -> dict[str, Any]:
+    if item.get("source_type") == "媒体报道":
+        item.setdefault("summary_status", "pending")
+        item.setdefault("summary_basis", "等待 AI 摘要")
+    else:
+        item.setdefault("summary_status", "source")
+        item.setdefault("summary_basis", "来源摘要")
+    return item
+
+
 def build_feed(output: Path, fetch: Callable[..., bytes] = request_bytes) -> dict[str, Any]:
     collected_at = now_iso()
     current_items: list[FeedItem] = []
@@ -270,10 +407,27 @@ def build_feed(output: Path, fetch: Callable[..., bytes] = request_bytes) -> dic
         current_items.extend(items)
         states.append(state)
 
-    merged: dict[str, dict[str, Any]] = {item["id"]: item for item in load_existing(output)}
+    merged: dict[str, dict[str, Any]] = {item["id"]: normalized_existing(item) for item in load_existing(output)}
     for item in current_items:
-        merged[item.id] = asdict(item)
+        current = asdict(item)
+        previous = merged.get(item.id)
+        if previous and previous.get("summary_status") == "ai":
+            current.update({
+                key: previous[key]
+                for key in ("summary", "summary_status", "summary_basis", "summary_model", "summary_citations")
+                if key in previous
+            })
+        merged[item.id] = current
     items = sorted(merged.values(), key=lambda item: item["published_at"], reverse=True)[:500]
+    summary_state = summarize_media_items(items, fetch)
+    if summary_state:
+        states.append(
+            source_state("summary", "AI 自动摘要", summary_state["status"], summary_state["detail"], collected_at)
+        )
+    else:
+        states.append(
+            source_state("summary", "AI 自动摘要", "setup", "设置 OPENAI_API_KEY 后逐批生成媒体摘要", collected_at)
+        )
     return {
         "updated_at": collected_at,
         "profile": {

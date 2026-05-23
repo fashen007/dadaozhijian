@@ -26,6 +26,9 @@ jobs:
         env:
           XUEQIU_COOKIE: ${{ secrets.XUEQIU_COOKIE }}
           TRACKER_USER_AGENT: ${{ secrets.TRACKER_USER_AGENT }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_SUMMARY_MODEL: gpt-5.4-nano
+          AI_SUMMARY_LIMIT: "10"
         run: python3 collect.py
       - name: Keep the daily archive in git
         run: |
