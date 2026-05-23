@@ -11,12 +11,14 @@ import os
 import re
 import ssl
 import sys
+import time
 from dataclasses import asdict, dataclass
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
 from typing import Any, Callable
 from urllib.parse import quote
+from urllib.error import HTTPError
 from urllib.request import Request, urlopen
 from xml.etree import ElementTree
 
@@ -74,8 +76,15 @@ def request_bytes(url: str, headers: dict[str, str] | None = None) -> bytes:
     request_headers = {"User-Agent": USER_AGENT, "Accept": "*/*"}
     request_headers.update(headers or {})
     request = Request(url, headers=request_headers)
-    with urlopen(request, timeout=25, context=secure_context()) as response:
-        return response.read()
+    for attempt in range(3):
+        try:
+            with urlopen(request, timeout=25, context=secure_context()) as response:
+                return response.read()
+        except HTTPError as exc:
+            if exc.code not in {429, 500, 502, 503, 504} or attempt == 2:
+                raise
+            time.sleep(1.5 * (attempt + 1))
+    raise RuntimeError("请求重试意外结束")
 
 
 def classify_news(title: str) -> str:

@@ -4,6 +4,7 @@ import tempfile
 import unittest
 from pathlib import Path
 from unittest.mock import patch
+from urllib.error import HTTPError
 
 import collect
 
@@ -18,6 +19,24 @@ NEWS_XML = b"""<?xml version="1.0" encoding="UTF-8"?>
 
 
 class CollectorTests(unittest.TestCase):
+    def test_transient_http_failure_is_retried(self):
+        class Response:
+            def __enter__(self):
+                return self
+
+            def __exit__(self, *_args):
+                return False
+
+            def read(self):
+                return b"ok"
+
+        failure = HTTPError("https://example.test", 503, "busy", {}, None)
+        with patch.object(collect, "urlopen", side_effect=[failure, Response()]) as mocked, patch.object(
+            collect.time, "sleep"
+        ):
+            self.assertEqual(collect.request_bytes("https://example.test"), b"ok")
+        self.assertEqual(mocked.call_count, 2)
+
     def test_google_news_is_classified_as_reported_investment(self):
         items = collect.parse_google_news(NEWS_XML, "2026-05-23T00:00:00Z")
         self.assertEqual(len(items), 1)
