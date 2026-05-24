@@ -19,6 +19,11 @@ NEWS_XML = b"""<?xml version="1.0" encoding="UTF-8"?>
 
 
 class CollectorTests(unittest.TestCase):
+    def test_summary_limit_is_hard_capped_at_ten(self):
+        self.assertEqual(collect.bounded_summary_limit("100"), 10)
+        self.assertEqual(collect.bounded_summary_limit("1"), 1)
+        self.assertEqual(collect.bounded_summary_limit("invalid"), 10)
+
     def test_transient_http_failure_is_retried(self):
         class Response:
             def __enter__(self):

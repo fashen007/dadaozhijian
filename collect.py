@@ -23,6 +23,14 @@ from urllib.request import Request, urlopen
 from xml.etree import ElementTree
 
 
+def bounded_summary_limit(raw_value: str | None) -> int:
+    try:
+        requested = int(raw_value or "10")
+    except ValueError:
+        requested = 10
+    return min(10, max(0, requested))
+
+
 ROOT = Path(__file__).resolve().parent
 DEFAULT_OUTPUT = ROOT / "data" / "feed.json"
 SEC_CIK = "0001759760"
@@ -33,7 +41,7 @@ SUMMARY_MODEL = (
     or os.environ.get("OPENAI_SUMMARY_MODEL", "").strip()
     or "gpt-5.4-nano"
 )
-SUMMARY_LIMIT = int(os.environ.get("AI_SUMMARY_LIMIT", "10"))
+SUMMARY_LIMIT = bounded_summary_limit(os.environ.get("AI_SUMMARY_LIMIT"))
 SUMMARY_API_BASE_URL = (
     os.environ.get("SUMMARY_API_BASE_URL", "").strip().rstrip("/")
     or "https://api.openai.com/v1"
