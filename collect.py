@@ -344,6 +344,18 @@ def response_citations(payload: dict[str, Any]) -> list[dict[str, str]]:
     return citations[:3]
 
 
+def response_error_detail(payload: dict[str, Any]) -> str:
+    error = payload.get("error")
+    if isinstance(error, dict):
+        message = error.get("message") or error.get("type") or error.get("code")
+        if message:
+            return text_only(str(message))[:120]
+    elif error:
+        return text_only(str(error))[:120]
+    fields = ", ".join(sorted(str(key) for key in payload.keys()))
+    return f"响应无文本字段；字段：{fields or '无'}"
+
+
 def summarize_media_items(
     items: list[dict[str, Any]],
     fetch: Callable[..., bytes] = request_bytes,
@@ -432,7 +444,7 @@ def summarize_media_items(
             )
             summary = response_text(result)
             if not summary:
-                raise ValueError("空摘要响应")
+                raise ValueError(response_error_detail(result))
             citations = response_citations(result)
             item["summary"] = summary
             item["summary_status"] = "ai"
@@ -447,6 +459,8 @@ def summarize_media_items(
                 failure_reason = f"{type(exc).__name__}"
                 if isinstance(exc, HTTPError):
                     failure_reason += f" HTTP {exc.code}"
+                elif str(exc):
+                    failure_reason += f": {text_only(str(exc))[:120]}"
     if not pending:
         return {"status": "ok", "detail": "没有待总结的新增媒体条目"}
     suffix = f"（首次失败：{failure_reason}）" if failure_reason else ""

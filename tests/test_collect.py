@@ -254,6 +254,28 @@ class CollectorTests(unittest.TestCase):
         self.assertEqual(captured["headers"]["Authorization"], "Bearer glm-key")
         self.assertNotIn("x-api-key", captured["headers"])
 
+    def test_summary_error_reports_safe_gateway_message(self):
+        items = [
+            {
+                "id": "news-error",
+                "title": "段永平新闻",
+                "source": "示例财经",
+                "source_type": "媒体报道",
+                "url": "https://example.test/news/error",
+                "summary_status": "pending",
+                "summary": "等待自动摘要",
+            }
+        ]
+
+        def fake_post(_url, _payload, headers=None):
+            return {"error": {"message": "model not found", "type": "invalid_request"}}
+
+        with patch.dict(os.environ, {"ANTHROPIC_AUTH_TOKEN": "glm-key"}, clear=True), patch.object(
+            collect, "ANTHROPIC_BASE_URL", "https://bobdong.cn"
+        ), patch.object(collect, "ANTHROPIC_MODEL", "GLM-5.1"):
+            result = collect.summarize_media_items(items, lambda *_args: b"<html></html>", fake_post)
+        self.assertIn("ValueError: model not found", result["detail"])
+
     def test_anthropic_provider_requires_a_model(self):
         with patch.dict(os.environ, {"ANTHROPIC_AUTH_TOKEN": "glm-key"}, clear=True), patch.object(
             collect, "ANTHROPIC_BASE_URL", "https://bobdong.cn"
