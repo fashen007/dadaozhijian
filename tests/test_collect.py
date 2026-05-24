@@ -198,6 +198,41 @@ class CollectorTests(unittest.TestCase):
         self.assertIn("messages", captured["payload"])
         self.assertEqual(items[0]["summary_status"], "ai")
 
+    def test_anthropic_compatible_provider_is_supported(self):
+        items = [
+            {
+                "id": "news-5",
+                "title": "段永平新闻",
+                "source": "示例财经",
+                "source_type": "媒体报道",
+                "url": "https://example.test/news/5",
+                "summary_status": "pending",
+                "summary": "等待自动摘要",
+            }
+        ]
+        captured = {}
+
+        def fake_post(url, payload, headers=None):
+            captured.update({"url": url, "payload": payload, "headers": headers})
+            return {"content": [{"type": "text", "text": "标题显示，该报道涉及公开动态。"}]}
+
+        with patch.dict(os.environ, {"ANTHROPIC_AUTH_TOKEN": "glm-key"}, clear=True), patch.object(
+            collect, "ANTHROPIC_BASE_URL", "https://bobdong.cn"
+        ), patch.object(collect, "ANTHROPIC_MODEL", "glm-model"):
+            collect.summarize_media_items(items, lambda *_args: b"<html></html>", fake_post)
+        self.assertEqual(captured["url"], "https://bobdong.cn/v1/messages")
+        self.assertEqual(captured["headers"]["x-api-key"], "glm-key")
+        self.assertEqual(captured["headers"]["anthropic-version"], "2023-06-01")
+        self.assertEqual(items[0]["summary_provider_style"], "anthropic_messages")
+
+    def test_anthropic_provider_requires_a_model(self):
+        with patch.dict(os.environ, {"ANTHROPIC_AUTH_TOKEN": "glm-key"}, clear=True), patch.object(
+            collect, "ANTHROPIC_BASE_URL", "https://bobdong.cn"
+        ), patch.object(collect, "ANTHROPIC_MODEL", ""):
+            result = collect.summarize_media_items([], lambda *_args: b"", lambda *_args: {})
+        self.assertEqual(result["status"], "setup")
+        self.assertIn("ANTHROPIC_MODEL", result["detail"])
+
     def test_xueqiu_is_not_requested_without_cookie(self):
         with patch.dict(os.environ, {}, clear=True):
             items, status = collect.fetch_xueqiu(lambda *_args: b"", "2026-05-23T00:00:00Z")

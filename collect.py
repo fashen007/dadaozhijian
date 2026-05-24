@@ -42,6 +42,8 @@ SUMMARY_API_STYLE = os.environ.get("SUMMARY_API_STYLE", "").strip().lower() or "
 SUMMARY_SUPPORTS_WEB_SEARCH = (os.environ.get("SUMMARY_SUPPORTS_WEB_SEARCH", "").strip() or "true").lower() in {
     "1", "true", "yes", "on"
 }
+ANTHROPIC_BASE_URL = os.environ.get("ANTHROPIC_BASE_URL", "").strip().rstrip("/")
+ANTHROPIC_MODEL = os.environ.get("ANTHROPIC_MODEL", "").strip()
 USER_AGENT = (
     os.environ.get("TRACKER_USER_AGENT", "").strip()
     or "DadaoTracker/1.0 https://github.com/fashen007/dadaozhijian"
@@ -317,6 +319,9 @@ def response_text(payload: dict[str, Any]) -> str:
     choices = payload.get("choices", [])
     if choices and choices[0].get("message", {}).get("content"):
         return str(choices[0]["message"]["content"]).strip()
+    content = payload.get("content", [])
+    if content:
+        return "\n".join(str(block["text"]).strip() for block in content if block.get("type") == "text" and block.get("text")).strip()
     return ""
 
 
@@ -343,10 +348,16 @@ def summarize_media_items(
     fetch: Callable[..., bytes] = request_bytes,
     post: Callable[..., dict[str, Any]] = post_json,
 ) -> dict[str, str] | None:
-    api_key = (
-        os.environ.get("SUMMARY_API_KEY", "").strip()
-        or os.environ.get("OPENAI_API_KEY", "").strip()
+    anthropic_key = (
+        os.environ.get("ANTHROPIC_AUTH_TOKEN", "").strip()
+        or os.environ.get("ANTHROPIC_API_KEY", "").strip()
     )
+    api_key = os.environ.get("SUMMARY_API_KEY", "").strip() or os.environ.get("OPENAI_API_KEY", "").strip()
+    use_anthropic = bool(anthropic_key and ANTHROPIC_BASE_URL)
+    if use_anthropic and not ANTHROPIC_MODEL:
+        return {"status": "setup", "detail": "已配置 Anthropic 兼容接口；请设置 ANTHROPIC_MODEL 后生成摘要"}
+    if use_anthropic:
+        api_key = anthropic_key
     pending = [
         item for item in items
         if item.get("source_type") == "媒体报道" and item.get("summary_status") != "ai"
@@ -373,13 +384,27 @@ def summarize_media_items(
             "使用简体中文，最多两句、90字以内。\n\n" + material
         )
         try:
-            if SUMMARY_API_STYLE == "chat_completions":
+            if use_anthropic:
+                endpoint = f"{ANTHROPIC_BASE_URL}/v1/messages"
+                request_payload = {
+                    "model": ANTHROPIC_MODEL,
+                    "messages": [{"role": "user", "content": prompt}],
+                    "max_tokens": 160,
+                }
+                auth_headers = {
+                    "x-api-key": api_key,
+                    "anthropic-version": "2023-06-01",
+                }
+                provider_style = "anthropic_messages"
+            elif SUMMARY_API_STYLE == "chat_completions":
                 endpoint = f"{SUMMARY_API_BASE_URL}/chat/completions"
                 request_payload: dict[str, Any] = {
                     "model": SUMMARY_MODEL,
                     "messages": [{"role": "user", "content": prompt}],
                     "max_tokens": 160,
                 }
+                auth_headers = {"Authorization": f"Bearer {api_key}"}
+                provider_style = SUMMARY_API_STYLE
             else:
                 endpoint = f"{SUMMARY_API_BASE_URL}/responses"
                 request_payload = {
@@ -393,10 +418,12 @@ def summarize_media_items(
                         "tool_choice": "auto",
                         "include": ["web_search_call.action.sources"],
                     })
+                auth_headers = {"Authorization": f"Bearer {api_key}"}
+                provider_style = SUMMARY_API_STYLE
             result = post(
                 endpoint,
                 request_payload,
-                {"Authorization": f"Bearer {api_key}"},
+                auth_headers,
             )
             summary = response_text(result)
             if not summary:
@@ -405,8 +432,8 @@ def summarize_media_items(
             item["summary"] = summary
             item["summary_status"] = "ai"
             item["summary_basis"] = f"AI 摘要 · {'页面描述' if description else '联网核验' if citations else '仅标题'}"
-            item["summary_model"] = SUMMARY_MODEL
-            item["summary_provider_style"] = SUMMARY_API_STYLE
+            item["summary_model"] = ANTHROPIC_MODEL if use_anthropic else SUMMARY_MODEL
+            item["summary_provider_style"] = provider_style
             item["summary_citations"] = citations
             succeeded += 1
         except Exception:
@@ -454,7 +481,7 @@ def build_feed(output: Path, fetch: Callable[..., bytes] = request_bytes) -> dic
         )
     else:
         states.append(
-            source_state("summary", "AI 自动摘要", "setup", "设置 SUMMARY_API_KEY 或 OPENAI_API_KEY 后逐批生成媒体摘要", collected_at)
+            source_state("summary", "AI 自动摘要", "setup", "设置 Anthropic / SUMMARY_API_KEY / OPENAI_API_KEY 后逐批生成媒体摘要", collected_at)
         )
     return {
         "updated_at": collected_at,

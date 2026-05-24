@@ -69,6 +69,15 @@ SUMMARY_SUPPORTS_WEB_SEARCH='false' \
 python3 collect.py
 ```
 
+若中转站按 Claude Code 方式提供 Anthropic Messages 协议：
+
+```bash
+ANTHROPIC_AUTH_TOKEN='your-provider-key' \
+ANTHROPIC_BASE_URL='https://bobdong.cn' \
+ANTHROPIC_MODEL='your-model-id' \
+python3 collect.py
+```
+
 脚本默认使用 `gpt-5.4-nano`，每次最多总结 10 条尚未处理的媒体记录。若能取得页面描述，页面标注“AI 摘要 · 页面描述”；若接口支持 Responses `web_search` 且新闻链接不暴露正文，模型会尝试联网检索对应报道并显示可点击引用，标注“AI 摘要 · 联网核验”；无法找到材料时才标注“AI 摘要 · 仅标题”。所有摘要都属于报道线索，仍应打开原文核验。
 
 可调整的环境变量：
@@ -78,6 +87,9 @@ python3 collect.py
 - `SUMMARY_API_STYLE`：`responses`（默认）或 `chat_completions`；后者不启用联网搜索引用。
 - `SUMMARY_MODEL`：摘要模型；未设置时回退到 `OPENAI_SUMMARY_MODEL`，再回退到 `gpt-5.4-nano`。
 - `SUMMARY_SUPPORTS_WEB_SEARCH`：接口是否支持 Responses 的 `web_search` 工具，默认 `true`；不确定时对中转站设为 `false`。
+- `ANTHROPIC_AUTH_TOKEN` / `ANTHROPIC_API_KEY`：Anthropic Messages 兼容接口的密钥。
+- `ANTHROPIC_BASE_URL`：Anthropic 兼容服务根路径，例如 `https://bobdong.cn`。
+- `ANTHROPIC_MODEL`：该兼容服务开放的模型 id；Anthropic 协议摘要不启用 OpenAI `web_search` 引用。
 - `AI_SUMMARY_LIMIT`：每次最多生成的摘要数量，默认 `10`。
 
 ## 每日发布
@@ -88,7 +100,7 @@ python3 collect.py
 2. 将新增归档提交回仓库，以便持续保留历史。
 3. 部署静态页面到 GitHub Pages。
 
-推送仓库后，在 GitHub 仓库的 `Settings > Pages` 将来源设为 **GitHub Actions**。如需雪球动态，再添加名为 `XUEQIU_COOKIE` 的 Actions Secret；如需媒体自动摘要，可添加 `OPENAI_API_KEY` Secret，或添加 `SUMMARY_API_KEY` Secret 并在 Actions Variables 中设置 `SUMMARY_API_BASE_URL`、`SUMMARY_API_STYLE`、`SUMMARY_MODEL`、`SUMMARY_SUPPORTS_WEB_SEARCH`。
+推送仓库后，在 GitHub 仓库的 `Settings > Pages` 将来源设为 **GitHub Actions**。如需雪球动态，再添加名为 `XUEQIU_COOKIE` 的 Actions Secret；如需媒体自动摘要，可添加 `OPENAI_API_KEY` Secret，添加 OpenAI-compatible 的 `SUMMARY_API_KEY` 配置，或将 Anthropic-compatible Key 作为 Secret 并设置 `ANTHROPIC_BASE_URL`、`ANTHROPIC_MODEL` Variables。本项目可将 Secret `DONGBOBGLM` 直接作为 Anthropic token 使用。
 部署时需要添加 `TRACKER_USER_AGENT` Secret 才能每日检查 SEC；未设置时，页面会保留既有归档并将该来源显示为待配置。
 
 ## 验证

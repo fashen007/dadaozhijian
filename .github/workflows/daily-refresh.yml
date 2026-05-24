@@ -32,6 +32,9 @@ jobs:
           SUMMARY_API_STYLE: ${{ vars.SUMMARY_API_STYLE }}
           SUMMARY_MODEL: ${{ vars.SUMMARY_MODEL }}
           SUMMARY_SUPPORTS_WEB_SEARCH: ${{ vars.SUMMARY_SUPPORTS_WEB_SEARCH }}
+          ANTHROPIC_AUTH_TOKEN: ${{ secrets.DONGBOBGLM }}
+          ANTHROPIC_BASE_URL: ${{ vars.ANTHROPIC_BASE_URL }}
+          ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL }}
           OPENAI_SUMMARY_MODEL: gpt-5.4-nano
           AI_SUMMARY_LIMIT: "10"
         run: python3 collect.py
