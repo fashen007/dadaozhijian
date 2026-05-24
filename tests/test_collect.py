@@ -241,18 +241,22 @@ class CollectorTests(unittest.TestCase):
         ]
         captured = {}
 
-        def fake_post(_url, _payload, headers=None):
+        def fake_post(_url, payload, headers=None):
             captured["headers"] = headers
+            captured["payload"] = payload
             return {"content": [{"type": "text", "text": "标题显示，该报道涉及公开动态。"}]}
 
         with patch.dict(os.environ, {"ANTHROPIC_AUTH_TOKEN": "glm-key"}, clear=True), patch.object(
             collect, "ANTHROPIC_BASE_URL", "https://bobdong.cn"
         ), patch.object(collect, "ANTHROPIC_MODEL", "GLM-5.1"), patch.object(
             collect, "ANTHROPIC_AUTH_STYLE", "bearer"
+        ), patch.object(
+            collect, "ANTHROPIC_THINKING", "disabled"
         ):
             collect.summarize_media_items(items, lambda *_args: b"<html></html>", fake_post)
         self.assertEqual(captured["headers"]["Authorization"], "Bearer glm-key")
         self.assertNotIn("x-api-key", captured["headers"])
+        self.assertEqual(captured["payload"]["thinking"], {"type": "disabled"})
 
     def test_summary_error_reports_safe_gateway_message(self):
         items = [

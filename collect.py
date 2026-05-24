@@ -45,6 +45,7 @@ SUMMARY_SUPPORTS_WEB_SEARCH = (os.environ.get("SUMMARY_SUPPORTS_WEB_SEARCH", "")
 ANTHROPIC_BASE_URL = os.environ.get("ANTHROPIC_BASE_URL", "").strip().rstrip("/")
 ANTHROPIC_MODEL = os.environ.get("ANTHROPIC_MODEL", "").strip()
 ANTHROPIC_AUTH_STYLE = os.environ.get("ANTHROPIC_AUTH_STYLE", "").strip().lower() or "x-api-key"
+ANTHROPIC_THINKING = os.environ.get("ANTHROPIC_THINKING", "").strip().lower()
 USER_AGENT = (
     os.environ.get("TRACKER_USER_AGENT", "").strip()
     or "DadaoTracker/1.0 https://github.com/fashen007/dadaozhijian"
@@ -352,6 +353,16 @@ def response_error_detail(payload: dict[str, Any]) -> str:
             return text_only(str(message))[:120]
     elif error:
         return text_only(str(error))[:120]
+    content = payload.get("content")
+    if isinstance(content, list):
+        content_types = [
+            str(block.get("type", "unknown"))
+            for block in content
+            if isinstance(block, dict)
+        ]
+        if content_types:
+            stop_reason = payload.get("stop_reason", "unknown")
+            return f"响应无文本内容；content 类型：{', '.join(content_types)}；停止原因：{stop_reason}"
     fields = ", ".join(sorted(str(key) for key in payload.keys()))
     return f"响应无文本字段；字段：{fields or '无'}"
 
@@ -405,6 +416,8 @@ def summarize_media_items(
                     "messages": [{"role": "user", "content": prompt}],
                     "max_tokens": 160,
                 }
+                if ANTHROPIC_THINKING in {"enabled", "disabled"}:
+                    request_payload["thinking"] = {"type": ANTHROPIC_THINKING}
                 auth_headers = {
                     "anthropic-version": "2023-06-01",
                 }

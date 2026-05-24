@@ -36,6 +36,7 @@ jobs:
           ANTHROPIC_BASE_URL: ${{ vars.ANTHROPIC_BASE_URL }}
           ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL }}
           ANTHROPIC_AUTH_STYLE: ${{ vars.ANTHROPIC_AUTH_STYLE }}
+          ANTHROPIC_THINKING: ${{ vars.ANTHROPIC_THINKING }}
           OPENAI_SUMMARY_MODEL: gpt-5.4-nano
           AI_SUMMARY_LIMIT: "10"
         run: python3 collect.py
