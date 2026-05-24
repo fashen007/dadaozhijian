@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-23T13:54:35Z",
+  "updated_at": "2026-05-24T01:50:38Z",
   "profile": {
     "name": "段永平",
     "xueqiu_name": "大道无形我有型",
@@ -12,28 +12,28 @@
       "name": "雪球本人账号",
       "status": "setup",
       "detail": "设置 XUEQIU_COOKIE 后采集动态；公开主页：https://xueqiu.com/u/1247347556",
-      "checked_at": "2026-05-23T13:54:35Z"
+      "checked_at": "2026-05-24T01:50:38Z"
     },
     {
       "key": "sec",
       "name": "SEC 13F",
       "status": "ok",
       "detail": "获取 31 份持仓披露",
-      "checked_at": "2026-05-23T13:54:35Z"
+      "checked_at": "2026-05-24T01:50:38Z"
     },
     {
       "key": "news",
       "name": "媒体报道",
       "status": "ok",
       "detail": "获取 100 条 Google News RSS 结果",
-      "checked_at": "2026-05-23T13:54:35Z"
+      "checked_at": "2026-05-24T01:50:38Z"
     },
     {
       "key": "summary",
       "name": "AI 自动摘要",
       "status": "setup",
       "detail": "设置 OPENAI_API_KEY 后逐批生成媒体摘要",
-      "checked_at": "2026-05-23T13:54:35Z"
+      "checked_at": "2026-05-24T01:50:38Z"
     }
   ],
   "items": [
@@ -74,7 +74,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-22T09:20:17Z",
       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE85ZkhyeVRRQnlTcnoxLXl1TjU0NUZkYi1oeVduekpfaE1CaU10U092aW1UWGdBVGVQZUNBbEZ0WkcxdUlnckxibWFwYTEtNTFOS2FZZVZZM0N4WnVpczZHYkJUZWlTQV91ck1zaFNR?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -116,7 +116,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-22T00:59:04Z",
       "url": "https://news.google.com/rss/articles/CBMimwNBVV95cUxNeG9zbHk4WUdwclB0Wll3XzZuUGNmY3pvYlhfeFIzSDAtZVNmVEJlTUd1c2pDdmwyWDZzTGJsY3dGaWZGTlcwTWNSWEw4Z3h0NkI5S0xEWGswNE11Q3pNR0RtWDIzam5JdTVSaEZ2VThoYWNBX1gzcGlPNzgxZG1oU3R0Ym5hY00xZHU3RDNGN25KSXpBWTk2bVR4WThNSkRmZUVZT2ZPa1hmNkhqT2pKYUJ6dFBoWkw1NXVrU0wwMVdFZEFjNkFBUVVKcm5OQm5CZVRuZ0k2b1pkSWQzRkxTc19hWDhMWWJhbW01bkpLYV9XMlV2OFV3MnZqeXp6ZnNpZWJ2blpCc1l0cTNUNGppYXhvTDY2V0kxdjBzT0ExaElza21BdFdxR3U1U0d4Y3luaE8tNnlBYm9SUS12XzVQUVNKTVdLak4tcUVsdHNxZzJOLXhQSm04ZlZHODFJVlBmLUhxX3BIcEZPcWE2R3lUbjVpNjJKRGVlRi10TDJCU3VzTGdSUTN1em8yV2Z1NDgxUmFFakVhc2hTdVU?oc=5",
-      "collected_at": "2026-05-23T13:20:33Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -130,7 +130,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-21T09:17:10Z",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPS055OTFtRUZxUXdwblZhUk1leDNsZlNYWDlMMzMzaGR3bUVsekh6TnNsU3FOR3lFc1ZMbEV1MkVSOEVDYzdHTmx1NDdNQVJZSElaNHlUYVZxV2ZZVzk3RmViamtjdGVwV1VhaVBXTkNhNWVROWVHWDBVQVZyOTl3N0xCWHJxS3NQNVZiSw?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -144,7 +144,21 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-21T09:13:48Z",
       "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9NOVhVV2g0MFFqZ1FGekItNmFNZkVRSm9zLTlwNUhSMWRKNEo0WVBQdFBqbXdkSlMtalpXY2pFWDdvX2cxODNCblVYM0JsN2JqYkw1OUxNMGtPU0loTGJ6b0VJYmNlZ1FWOTZv?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
+      "verification": "需核验",
+      "summary_status": "pending",
+      "summary_basis": "等待 AI 摘要"
+    },
+    {
+      "id": "news-d31f0c57c0e0c1b672",
+      "category": "investment",
+      "title": "单季爆赚816亿美元！段永平真金白银下注，英伟达凭什么？",
+      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
+      "source": "风闻",
+      "source_type": "媒体报道",
+      "published_at": "2026-05-21T08:12:35Z",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1BejNvenBHSGc3Xy1WVUhER3NxdUttWDVueEY5cFJUOXhYRmgzVmdmMUlrNGtsaDVlY3BGVW1CNkc1cXNEUWF4Q2RvbHdKUHA4Ri1lVmNwTmRwRHNKdG8zU2pHNEJqekFucUZSdUJkWkpvVkVt?oc=5",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -158,7 +172,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-21T07:38:37Z",
       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPZ0hUaV8wUERYSE5yU0tIdEI1V0NPNWFRN3JjUThXcGVtUnQ0M3I4UlJ5OThDbFJyc1B5Y0ctT3dwckU4UGFmTmFCVkx6RE9xN3Byc1dUakQ5TkJlX3lRUnB1ZHVvcmgwek9Zek5jemtZZ2UweVhPWHNtRWQzeFhOY3Q0OE9VM3ByQ2F5WlVKQ0NJTm9JS1d4dTVzcmJvcEs3R1pYWmN6RzhEZGx6eDFSTEVpM2ZKMGM?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -172,7 +186,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-21T05:25:16Z",
       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1sTW5uUDNseHJqdXhDektRRThuOEx5a2ZLUlNxSjJEXzlycmpoUEZkbks5U1NoWEE2STV2Y1J3YUlKZmRDODl4M3RMNGpnQXM2dFo4SDJKM3VjdmhaR1ljdkVEUUt5cS15OFdVTml3?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -186,7 +200,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-21T01:26:21Z",
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5qZ1lqWFZIQmNkaUVpZ2lQZzd6cVdiX050aVFOSGRKUWRlWi1CYkNVa0pidUhQVVoyQ05iNFUzT1Itc0tFN19YYkZaY3dITXV3TlIzeV9NOEFZTE5UdE4xZWpaVmViX3R0Wjl0LWl6OA?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -200,7 +214,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-21T01:19:31Z",
       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9HVVR4aU5MU3JjSGluaDJKclFDTjY0TVlzN2V0T2hYZmZhakNnVnZTalkwV1V6Rk0xejlKODhEblAyblY1U0Z6dUE5SkxUaGN6cWVmVGZpOUVMMktxQVE1MGFPTkFZY3JON1hPWWdB?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -228,7 +242,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-21T00:23:00Z",
       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxONVd1aXBXcVZhOFpjYVBfTXRacHJ4N05NSTRGLVp1QnBnVnBMSlp5TnBlODBONGliSkYyOWZvS0ItbWR2ZkNjNzdYbkgtMk9sd2F4SGk0aXlnUFgwRUQxNkk0bnFLRXF1TENCUkpZTllucFgwd3VmZW5FckY0aUpFeHU4WTk?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -242,7 +256,35 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-21T00:12:43Z",
       "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9LdzNJSHZ0ZjNPOUFsU29GcVJvNTA5NlVBZl80TjlVRUhadi1vemlLWnUxRklSc3FSVlZjeklWSDEtalgyZTk5OHctNlNsa3JpTU43MldCRk4?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
+      "verification": "需核验",
+      "summary_status": "pending",
+      "summary_basis": "等待 AI 摘要"
+    },
+    {
+      "id": "news-eac1278ab9c786b017",
+      "category": "investment",
+      "title": "美股讯号 | 英特尔股价一度涨近10%，段永平持仓总市值达200.04亿美元",
+      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
+      "source": "搜狐网",
+      "source_type": "媒体报道",
+      "published_at": "2026-05-20T15:00:56Z",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNSlFzNXNDM2dIODR5aWxJYTl4QmhLc2VBNTNUT2pfbE9aREJkYlZfdmdrVDlpaUp0cGk1eFoyZVlOdEZkdWJ3ZlFsSVI3dVA5Y3lHcGdTb2Q5WUJXQzFuM1l1VlA4TkVxTC1TeF80R21zWDgteDk4d2NoUHRwT2dTZkNzRVY2OWZOdGtILQ?oc=5",
+      "collected_at": "2026-05-24T01:50:38Z",
+      "verification": "需核验",
+      "summary_status": "pending",
+      "summary_basis": "等待 AI 摘要"
+    },
+    {
+      "id": "news-c62880ddbf5d9da29e",
+      "category": "investment",
+      "title": "美股半导体板块大涨，英特尔一度涨近10%，AMD涨超5%；段永平最新美股持仓披露：折合人民币1362亿元丨美股开盘",
+      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
+      "source": "搜狐网",
+      "source_type": "媒体报道",
+      "published_at": "2026-05-20T14:50:43Z",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOcFJ0Vk5rWTZzMWIwTHFmOFE2eGJpNXFMNFZ3VXVLbllsNThlZ1liNU1oZU9DeTlJSGpMcXFzY213SXRIclN6a0ljNzB5T0pReGo0QUd2QzdQWWlMOFQ3YXcxRTBZMk9XS3dtT1JjWlVwbXpNS0hGWlVJWnh6OEk4LUVTb3hsX2N6?oc=5",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -256,7 +298,35 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-20T14:50:00Z",
       "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE92LWV3ZWE2WjFUWHNieEx2WGlvU3dBanYzdXNoSEFhNjJYMXdRTE9fZ3lJS3g1eEdLMlNMSk9PY0JrSUZRQTdYY0NXTk1DSzAtZkdSeGI3RmMwV0owU3k5UC0zNjcyZw?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
+      "verification": "需核验",
+      "summary_status": "pending",
+      "summary_basis": "等待 AI 摘要"
+    },
+    {
+      "id": "news-a3f23f8ba618b339ea",
+      "category": "investment",
+      "title": "美股讯号 | 段永平大举建仓特斯拉，持仓市值达12.67亿美元",
+      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
+      "source": "搜狐网",
+      "source_type": "媒体报道",
+      "published_at": "2026-05-20T14:18:46Z",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQeFJQYnA4eV9nZlBkcGdvZWdsVE5pWndDdlAxNm5BR29MQUtLaTgyeHdXc0duMmRjekVWRmotYk9UdVRieXIzWGtaRDFuckJMQ1J0ZXFyNUhGbnlKaVRiUnMyODZjVGw3QlRuc0NZcEhuMVRlQVJhQ2RSYzBVV1d5NzJDY0tJOG5FQVpUeg?oc=5",
+      "collected_at": "2026-05-24T01:50:38Z",
+      "verification": "需核验",
+      "summary_status": "pending",
+      "summary_basis": "等待 AI 摘要"
+    },
+    {
+      "id": "news-07488c824d657cb76b",
+      "category": "investment",
+      "title": "美股讯号 | 段永平增持特斯拉，持仓市值达12.67亿美元",
+      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
+      "source": "搜狐网",
+      "source_type": "媒体报道",
+      "published_at": "2026-05-20T14:12:00Z",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPMERRMHpuck5CWlYwSzkxckxUc0ZReXozNEg3RzlEaXhkUnhaVTZMOFg0djJXRDhGbDVYVU1ucm9LYmNZdXN4cWx5eHNKV1RLOXZKekw3Xzd5VGhQcm1Hcjh4WHg2YTNzMndIQjEtOEZpbGJ5UUpxUkt5YVNTcWhIYkVZZzA2XzcxYUpocw?oc=5",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -270,7 +340,21 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-20T13:59:00Z",
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9JZ0ZmMElBNTNZYXVoZmVONXk0R1N0Zk1JcWV5UjQ1QURoRXBvVlhLTmRNQ0ZkcmhYVmtZUlZ1VjZJZHVPTFR4ZlF3czBWVFVKS3MzSEotWHZubVR5dU1qcA?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
+      "verification": "需核验",
+      "summary_status": "pending",
+      "summary_basis": "等待 AI 摘要"
+    },
+    {
+      "id": "news-c1d1877d1c78c27bdf",
+      "category": "investment",
+      "title": "美股讯号 | 段永平大举建仓特斯拉，持仓市值达12.67亿美元",
+      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
+      "source": "搜狐网",
+      "source_type": "媒体报道",
+      "published_at": "2026-05-20T13:59:00Z",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPQWtDUHh3VFN6ajhiRVN3UjUtV0ZQUEVnYXprNy1JdkUtODBNc3FkOHhBenZPLVlBR0Y5b3dfYUhDNElzMjZDN3gzRFNQYjFocjBldTFiRmJGNFlGMHo4dk1mVV9iYzFNTVpueEMxZ3V1dEFSZmdyYkxnVEJoWmZmLTJvN213SjFyQlBtdA?oc=5",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -284,7 +368,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-20T13:55:13Z",
       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOdmNLTmNSS2pfSHNBdkJsd1hISkZBRzU0WGJBbVJfR29yMWMtcWhIZUNwXzk0em9uUFZTNFF0N3BzT0JmY3FPWDhHRGd3ZVpQZXNYbzFaSGdkajhERHZ0cHF3eGd6Wks3c1RucFlFSHJfTTV5d191V2oyM3BIRmdJelpPZjJxeS13MzdjdFlxcFJFQW91?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -326,7 +410,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-20T12:10:00Z",
       "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1ZTDBUTGM4emZTbXdLV0ZCR2RQeVFHVjVqUmg4UFBNSEdPNHRpZUFNV1IzZE5waDdEWWl2SzllQ01OcENjT3lQVFllUVp5dFpieDhFY1JIUl9rd19PY3ZxWmdB?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -382,7 +466,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-20T10:57:52Z",
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOZ1JIWks0MFhZMGJxWDhwLUdkTy1NUDJ0S3lwN3BtVjRObWQwTWQ1ZFROSXFTeGpUNV85TmNXMmNsLVg2UmtrcDUtcjV1UkhnbnhNYWtvQmk0VHBWdUkyd1R4UFh5X0xObENLOGlaVWRUeFItRmNZb3YxTFNWVmxXdGx4TG1IQmFlS0VzX2dudEZpZFNYWWtmeUpaR19uUDlqYVhj?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -396,7 +480,21 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-20T10:40:00Z",
       "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5lOF9XQnJZMjVjZE5fTC1xeEl2VnBkNldncUJPdm5nenlqanFfdnk1ZTJ5YzY2ZF9qRFdZeFZGdnRvVlM5SGQ2dnVMN0JET0tPVTRMY3NHNXc?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
+      "verification": "需核验",
+      "summary_status": "pending",
+      "summary_basis": "等待 AI 摘要"
+    },
+    {
+      "id": "news-ea3912b37c43dab55e",
+      "category": "investment",
+      "title": "段永平，罕见大手笔加仓！",
+      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
+      "source": "搜狐网",
+      "source_type": "媒体报道",
+      "published_at": "2026-05-20T08:51:20Z",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPOVQzSk90X3FQQkRkaF9pUnlvNlpjMVlEb2dhMnd6NUFVXzVQejZ0SEdmZ3gtQmp5dzBnOWtZNXFIQWxrVWgwMXhCMlctZlE2cVk1OUdvOWNEQWU4SzVycWJjQl90LXVoZkRLOGtwMGxaeHk5NHBHTnVpbmtOMVJfcmtBWERhalBf?oc=5",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -410,7 +508,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-20T08:22:00Z",
       "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE0tbXhUa3JnSmEzOTdKdE1aS3hOWklEdEdEQ0FiYjk0MWJjSHBJWmNFV3dyb3BjTnRkVFVqYmZtZmUtLXpMLS1KU2hUeDdhaDhpNUZhcjgwV3VrV1BBQ2pBdkMyWQ?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -438,7 +536,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-20T07:54:00Z",
       "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1GVFRjeExrLXVab1JGZGU2YTBteUkwVFVCZ0F0ZUhaZkNlcHNWOFV6eDF6cy1rYy1fdG5QcXJHT3N3dVFEb0ZtM3pabWlXSHczREZnRXdlcW9KSWt0Z3c?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -452,7 +550,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-20T07:48:00Z",
       "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5jb29pOUFCRk10TGpucmpsUV8zUGFxYjFEWThpRlFRQ2tkN2FnLU9udUlMT1NXdHBGbUpBc2FFWEREUi1nUmJTNks5dE5GalpROGVlbTZWRVU?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -466,7 +564,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-20T07:07:00Z",
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1CQk9aVG5HRzJYcVpPNnhCenpfaXY1SGxQMldPSV9fcWhtM3RsUjE5Vjd2RmdkdzU5S0poYThFbjMxR3N6NlZZX3dkcm4xUTc3MVV1cTlQN3JLUQ?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -480,7 +578,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-20T07:05:56Z",
       "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE5HdXZBX1otR3VyX05qd3dQRFQ4akIzVjliXzI4VGNVQ3JrdUFrWkdINWp6WFJudlREZkJYU01Fak5vUlJ2U3NTVThpXzRUQ1h0UWFnbnM0MmVNRVY3ZTNqSmxUTVREYkZKVGl0a1BmTmIzNnV0dVFxOHZIbnhSdFU?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -494,7 +592,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-20T06:59:00Z",
       "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5Od19aMnR3S3BDMWxXV3NSTlgxYXBkREREVkNTVkdDVHJ5S0dKb09lM09hc0tDQXBaNUtwNWd0SWpDSDZOTk5lYVlTbWJfX3pOM2dnMlJXbkZvOHRRMHhuTldZSQ?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -508,7 +606,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-20T06:48:00Z",
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBNa3RtMGtySGJDMTl1Q1hFT0ZwV1ZjOVRXSHR4VkNzbDJHQ0VVRnhBZGI2cjlNNWlfalJpYU15UW1lTkZpdmtlWllGaGVTbzdfWTgtVEZ2NHNTQm5zbUwzM1Z2eVB5RlJqUU9GY1FZNA?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -522,7 +620,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-20T06:41:00Z",
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFAxQTAyaUp6SHVKUjU2ZFo1MkI3bHB2S1pHQ20zcFVrQ2tZNy1uWFVxcDlmOEdya0xjWktVLTZ2ZjBHN0I1MkdiaHZ2bWhDeHpvZF85TE9WaENNcG1MdVNxLQ?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -536,7 +634,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-20T06:37:15Z",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQX2I0eE5PSDZBSS04ZEJEcmpFUy1oMi03aVlkMm9rRFcyS0FSR2llS3RVbWF6R2JSc1JPTjdhaVpsOFZYUjBOZ1VpaXZ4UndHYVU3R0s1Z3d0T05wd1ZxM2VISG9OMExPaTM3M0N2TzVaREFFYnZaX1BrSFg3UEtSX0ZUWFdXN0gzalNXTA?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -550,7 +648,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-20T06:11:24Z",
       "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNbUNpMmJJNGxwV0hKMHZtN0Y5bm5XcnNuaFJtY2h3VVJUYWNpbW1iWnVXOXdCamVFSWhPLTNCX3NKMm9uWmNGbk1tdVZMZjFGN0doWjJWVTRzWUZIb2t5Ym1ScXZxMU9lSEZUM2xWTFlyYjhNbEkzLXFteXIwY01rZElvQm0zY0xyZWU1R29UdTQzYnhPR1VFemF5V3BjRGNyWDlaRE1lakhKT2cwOHdKX0RDcGpVLUt5NHc?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -564,7 +662,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-20T06:08:44Z",
       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE44YTJDZzdlYWNWbWJTOC00eG41VzZxdHNpTUYxOWFkaU9nNGdOTjRhZzlJNkJnV0JTWGRsYmhOVExTdnRVbXlGS1JMVlR4Zkdab0Nr?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -578,7 +676,21 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-20T05:03:41Z",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPWXotdnEzbjFKMkt2cnZROV9nbEh5djdUZ1o5YUI3OHVTUTVudXhaY1BwXzlyZ29UbEtrN29lTlQwYXFjM2ROZmxYLUFqTDNxSkxPaFBvUkxseTlndkdKNXJoRzlSaHVoSm1PaFhueEhNU0Z1UEtvY0xuNG42aEtoMTNMVFJLR0st?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
+      "verification": "需核验",
+      "summary_status": "pending",
+      "summary_basis": "等待 AI 摘要"
+    },
+    {
+      "id": "news-a4e041bd6a41c42e08",
+      "category": "investment",
+      "title": "美股讯号 | 段永平豪掷12亿美元重仓特斯拉，成为第五大重仓股",
+      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
+      "source": "搜狐网",
+      "source_type": "媒体报道",
+      "published_at": "2026-05-20T05:03:41Z",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQYmhwb21YN0ZHZGFxNVdHM0JSZjlkM2k0cWhXeDh5N1kwR05KcDZpbkRmWkxsdUsxNWRiMlNaWnN3bTU2V19jaThHeVFYejJqY01LTUY0NGFmTHRRWDZKZ1lIYk5PdTVjMTNXUGpFWjNQMk1CR3ctZGp4dlBHTWc1cHZpNlVWcXJNSVFocQ?oc=5",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -606,7 +718,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-20T04:48:20Z",
       "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPWVJKUHU1a0F1dHB1YWJOb1R0ckYxYjR6cHZvcDBTbE1yU21EVU1telBCNmVPcDRFbHg2MlNCb0d1N0FOUTFJQlp3SUlnTmJWWVVhbzdub0stNENlRHNHcW5RM3pldkQxY0VKdVBMSUdBaXBrZ3VUSHBleXNvQVo3cTlWTDFubk15R2ZXSG1vNF9VOEhzeGU5SDRENDdET2x4VGh5em5R?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -620,7 +732,21 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-20T04:06:04Z",
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9FSWdlMU5OS1R0bThUbThEbGczT2FqYmVGRGRhRElvbzBaQUNmc1lnWFdNT3loa3RUQy13M1hvbE5CZVduSTN6TERKcnJnSHFqZTJpUFRHTWJsQ2lBWVowbA?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
+      "verification": "需核验",
+      "summary_status": "pending",
+      "summary_basis": "等待 AI 摘要"
+    },
+    {
+      "id": "news-7c31cf1d1d4674ab2c",
+      "category": "investment",
+      "title": "段永平首度建仓加密公司：为什么是 Circle？",
+      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
+      "source": "链捕手ChainCatcher",
+      "source_type": "媒体报道",
+      "published_at": "2026-05-20T03:57:25Z",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5XR1A5alpKTmlScHVkOEZwSUpLMko1cm1uSDJCSVBFbEpYem5wYXNmd3IzTWVxbmJwSUJvZUJPTDZrNkctSjRGVG9YOTlNSTlYaXU0Z25wMA?oc=5",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -634,7 +760,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-20T03:52:00Z",
       "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBzbHp1LUNTMkhHZEx4R2hvVzROR0pXRXhIMm50LWZWQW9TM1RpblZlbzc2YWFuckwzMTRBdmdtLXhrOGVaVDRZY1RLbmFnVE9sTmNjZV95X3k5NmRWS1lJeGRuVQ?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -648,7 +774,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-20T02:52:37Z",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNc3hhVFJLNmMtTjQ5TG5OV0xFcV9wTlFnOWRUTV9iNWM3NXhZV0ZhVzMwOS1XSHJFNFlwZVhlNW92UEpJbGVlMzlGREZ2U2J5V1p3OEp2dTZtQ3lxazJZR3Z1d3BmN3EtazF1eEp2clRfa3ZobktxWHQ4akFTTXVuT2V4bGVJZ0lJ?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -662,7 +788,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-20T02:27:00Z",
       "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFBkQWhJNklEZE9vUEtGTUNfTVRzallRaFdZTEpJTU5IVm1RRWV1bGRiM2stUnJvRDdLd0RmNlJpVXVMeWp4bkFKNUkzVzFqNHppemRaQXlQTzhmS2ZWNGZmVlkwTQ?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -676,7 +802,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-20T02:20:00Z",
       "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFB2S2lUcVhEM3hlSVVMOWpGVWFnTFlJZTh4MnBGMkxia1RjVldTZHdjQTRISlAwUmF4OF9oLTl5bVBIekhHdXJvS2JTeUpJLUZfcDFRWkxUamdpazJaQlpDdm45QQ?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -690,7 +816,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-20T02:19:00Z",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQX01HQmxtb1dqeFpkVVNiM0N1RU1QTGpFUUFDZzlja0NIRzlweXduVldCZmNBcnRMOUhzUkRncnQ4M2tjUzdVOUZkRUFTRDk3OURBRU1aNWY3ZXk5b0FISk1vUFBtR1g5cVZpWjNmZVBXNlJkMk9pNVF4MFJkZU5rSThIalp0NTJh?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -704,7 +830,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-20T02:06:02Z",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNRDVkSmotSmJlQjMxaF8tc0J6ekpYaDFPYk9vbFJtcENpdzJaM0dBcjBUVW1JQ0tJOHl5WUhEeEYtQVFaejVDck8zVDd5YWRHVWZvenFTOTljUnN3cjktSWRlM1hiM1FQMDdHaXE4VGxoa0V0bnZqZk9uek83NFR4dHpHdE5GeWpmVEJfTQ?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -718,7 +844,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-20T02:03:00Z",
       "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1OVmJCWlFsZWNJSWNXbEpPVkJEZFVWMXVmMGtHMDFjMUI0bXlPSGtDSWdRR2lxUERjNHdZS1M1RTc5QkJtdzZJM3pSN05TZmFOcFBselRfMnNmUVZDbzY0VkZsSQ?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -732,7 +858,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-20T01:41:00Z",
       "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9PbzlYYkYzY0hHaTZpR0RKenprc0pIMnUtMGJEVHpqRVpob1gweHhaZGthbU9fRVNrd0JRZlhkakc4aFdBaGczQ05CRkY0SUZYU1VwUHhmbkIzNks2T3dQRlEwcw?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -746,7 +872,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-20T01:40:03Z",
       "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxPaXlVVlhRN1lHR3Y0bXR1REFVYkNhdU5LYnVQT3ZYaXBsUFJ3M2xFR3YtYmhDWTdRNGJhTDBIQ0lkM1dZMGhja3o2UFJyc3pfeENkOGRtdFd2N2lNNTJYdTJhRWo0b1BRX2Z4Ry1DQWxTU0w1MlZoeXdxMWVUVndpcU9SMVNtYkhsQk9QTmJ6R2ZLblg2UlR6UE9yaEp3STJfMkQwWDd3MlY?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -760,7 +886,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-20T01:30:00Z",
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1oZVlaRmR1WmtqWjV6b2l3aFhQa0RZc3JDSURfSEdfY0haQl9Hc1N4SlRKZlJwR0lhWGRHLXhKcFBHQ1hwTk96QkNqb3lrNldEQjBjdFptVGkzRkNGMXlidA?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -774,7 +900,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-20T01:10:58Z",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNNjBfVlJUelBEdjVSQ01WUlNrNE1tandMZ1JUVGVQSms4ZV8zeEFQVnZfNUlCcGN1WDVEM3ZweU44OFFCYlFmbE8tYWZpRDVkMEZ6MnlvX29nWTQ0dl91a0FfQ09hWXNyeklhYTUtbUNoQXdVWDFIbVY3RWtkalZJZWhGRk9GYzNRUFozbg?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -802,7 +928,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-20T00:32:09Z",
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE92Q1lfYVh5eUdVRFZfN1BpRnpBWW5Oc3dGWXZ5YVFFYTIya05oN185SmhxT0M5c3R1eHVVWjFEY0xsa3ZDamJaLTRLS2RwOG5fM180cXVJdktraU50cHdNWXhwdmdLdjNQWU5uZGJ5WQ?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -816,7 +942,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-19T22:41:45Z",
       "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1vWGd1WW5HVEpVTi1BWEhqT2o1MWgxUFhVS0VNVEZpZkpyV0kyemxZbHVlYU5VRExCRHI3MmVxZ2xEZXlGX3lEdGFpbjVKa29F?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -844,7 +970,21 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-19T15:37:37Z",
       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBpaGNiNnd5anhHSXZMbjlkNXplNWZ0WllyX3R0TWJyOXRWMHFXV2F3Q1lpOW50Y3publhXTU1zWjRrYWZ4OW5LZ09OUVNzVzhFcGo1aDZYdkIzb3lDY09FSmxMR3V3cklySl94MFJ3?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
+      "verification": "需核验",
+      "summary_status": "pending",
+      "summary_basis": "等待 AI 摘要"
+    },
+    {
+      "id": "news-d4c4aa798c7d342cc6",
+      "category": "investment",
+      "title": "段永平Q1持仓一览：新建仓Circle，增持英伟达、拼多多，清仓阿斯麦等标的",
+      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
+      "source": "富途牛牛",
+      "source_type": "媒体报道",
+      "published_at": "2026-05-19T13:18:00Z",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNejBhdmVpN3pHMnh4T3hEZTRDTE5EMjNqX1FiWW90b3ZnWVFWZVNLUkszWnF6cnFuaFV4RllDUWhUSHdCMEZxQXp1U3BYRWlNV01iMkswNVQyWWdlOXVWR2RjOWp2YkFDR3gtNTVBSFRiOWtKM3pXMGRCWmlZSHdLRkpQcjFxc2h6c3VGbUNvdXhERjlNWm42ZWZ2SjN4NU1lcy10RG03RQ?oc=5",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -858,7 +998,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-19T12:54:00Z",
       "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1WSklxU0RGZTYwc2tqMzMzQlZvcWtwQjZnVmk5aVZZcGFVaUpPdHNHUk9Yb3l5Sjd6eVlvekdOb2t2NTI3N0JaNnRYWF9xZkRqUkZOWkNfVEtHZw?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -872,7 +1012,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-19T12:39:00Z",
       "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1DUkdzeVYwYkxsU1BCNWlxTU0weWlESnpOM09BeG5rY0lpY1hFaXp6aWl1QmtCaEdhel92YmtmcmdfTHZ2RUNFVElZMUJnZzR0a2U3cXl0UmtCZkVlTVR0S0RSaw?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -886,7 +1026,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-19T11:51:38Z",
       "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5xeG9PQWM0UjN6NFBkZ1ZHMkp0SUVrV0xmYkV1N2tNSk1hVVFZRE1GN1FBNHVfTXFvRzRxUDJYTGlmT3VvRjN5YjVYYWI4ODVzQVpqaVh2QlE1c2tQT0szdVNFOUo0UdIBa0FVX3lxTE1nQW9VUDRfejBhaWtUZ1o3NGl5bjU1T0dmVjdRYndFNlVwSVVUckh2UnJkUHVtczd4ZVNYdVVJdmpRSndFQURUWWFaZjVpbEN0OUd0ZzhrM3NvZE56T3VsOTFlMmx1TmxTd2xv?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -906,6 +1046,20 @@
       "summary_basis": "等待 AI 摘要"
     },
     {
+      "id": "news-88e022856bbe40152b",
+      "category": "investment",
+      "title": "段永平逆势重仓，茅台遭遇年度业绩双降，白酒行业格局迎来大变局",
+      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
+      "source": "搜狐网",
+      "source_type": "媒体报道",
+      "published_at": "2026-05-19T05:09:16Z",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPakhjS0hPaXhyQmpCOFkzc2RIS2N1N0xHbHNzcFhWaVVOUi1zeXozSFpyekRMdjltMmFSM3Rmamg5T1l6Z1FVbHVaaWk0ejlWcmdhbDFtdnNWc1JYUHlTdnZqVUVGcGZKdXNUZ2VjY1NjTnI3ZEU2UFpGM0pBVGZZRnE2NVQwamxWTDdydQ?oc=5",
+      "collected_at": "2026-05-24T01:50:38Z",
+      "verification": "需核验",
+      "summary_status": "pending",
+      "summary_basis": "等待 AI 摘要"
+    },
+    {
       "id": "sec-0001759760-26-000005",
       "category": "investment",
       "title": "H&H International Investment 提交 13F-HR 持仓披露",
@@ -914,7 +1068,7 @@
       "source_type": "监管披露",
       "published_at": "2026-05-19T00:00:00Z",
       "url": "https://www.sec.gov/Archives/edgar/data/1759760/000175976026000005/xslForm13F_X02/primary_doc.xml",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "原始披露",
       "summary_status": "source",
       "summary_basis": "监管披露说明"
@@ -928,7 +1082,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-19T00:00:00Z",
       "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFAzNU4tYTVuSUs4ekJGNFZycGNYcDBwUEpHY0hDZS12V3UzcFJ2VV8zQUNVeC1lT20ydmRhcW1LN0d1TEN2N2dybDlSUUNXbzlm?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -942,7 +1096,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-18T23:28:00Z",
       "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE44T29nOXZKcndsc3MwUjFUWWdFbk1uUkJoQlpORlN0ZzhCY2VnUmVuVVl6clhtN2l6VDJVd3RYLXlBVVZOSll0d2t3QThybl9H?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -956,7 +1110,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-18T22:18:23Z",
       "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBnQ2hET1pzVlZqTkQ5U3hUQm1HcGdDbktObXBmZHBndXpQdXYwejZqVmZNZHlIY2FPRFNQd3ppTTh6clpjazQzdDViRzhJc2FFVk1DdW1xV3hoZkF5RThZSXBXS2dKUdIBa0FVX3lxTE9BUVNKaldXeUFxVlhaclBUNmVrQWYtd3ZRZ1dqY3dfR2NBaXprUlUwUEhNVVNZNzFEQWFXLWRXQTNGUXoxa2kwd0VmMHQtTVlUczZjYXktaTRCX0lsazJtLURydnhSMnJjMVVn?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -970,7 +1124,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-18T22:01:10Z",
       "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1USTl6Tll2eG1ELUcyR0pnemZNelMzMmVGbk1zcjNPeFl1dThNVEhTZHk3cHQ1cDRWY2NjM1NSelVIc0V5T1BnRVhRb2VadElGNTFva0k2NFVId2ZyenNJeEtuNFNmUdIBa0FVX3lxTE5vOGdWaEY5WUZWWEw3S2hBczlrOHFUY0JlVmh2QUZBeE9TSEhXd1I1Yy1PX20yd2JERG5UNWt5NnFQZ2JTWllpbjM4ZTZWV1ZKdnlRQU9BdEhRSjVBdUl6bFJWeXByVW5FdW1z?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -984,7 +1138,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-18T21:24:00Z",
       "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1DdG12VWZRQnhpMV9rcVE2c0ZZTDdVN0Rzd0ExejNtNFpvYm1rdnpNRFJpRlRXRUZvYUhMeTdfdkZLSUI4R2VLeEJ5NW5ON1RD?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -998,7 +1152,35 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-18T07:10:36Z",
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBYelhLbFNObDR3YzNFVG54QVdWMjllVk1ISWFsX0pxYTJWLXpCSXpIS0txdERoOG5PMjVmaXdmNk9uUkRLYWIzUms0SmVfeWZMNUROcWU0NklMUUhjMW1faGFKZ2JSWDdmZFRObVJKYw?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
+      "verification": "需核验",
+      "summary_status": "pending",
+      "summary_basis": "等待 AI 摘要"
+    },
+    {
+      "id": "news-5904c12d3b6d7f48ea",
+      "category": "personal",
+      "title": "段永平不小心成了泡泡玛特的榜一大哥",
+      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
+      "source": "新浪网",
+      "source_type": "媒体报道",
+      "published_at": "2026-05-18T04:11:32Z",
+      "url": "https://news.google.com/rss/articles/CBMijARBVV95cUxNbU1EYmRObmpNeElLZm1lVl9qR1lzckVKcU5pRUUxeThBY2FxMU8zNnppNTBnQ0p3MThsdUkzZ291SVlaUEE5dnVSMnN0MlJkYTRqOUR4c2VSY0YwUUswc0VBUGloNkNxMXFaMnl2eVRwMnhwVXE5Yk9wZjNwcWRCOWJZT2dDOXQ5bXdTMUJXbkZYa25WblB6ZHRxMHRXbmpUNkZ3Z3lEYkVtM0RBNGhsNUpQMExWVWpDOENERE1iRUYyWHV3VlJGVERtdUFpU2U3R25iZV9fSVNocTRzQ2J4a2NtaFlQY3ZkSmtqRzB1THFHamxlaFpfRjRDSTRuUVI3NU1aNzhxM0I5bG5CZ0xqaXZTbk9DdFUyMlBZVjNDM3RTa1lXdHdzRnZ5UmhLVXc0TEpNcVhQREJ1TGM0MzUxcmZqanpTWW1fUzVlWUJJbnBIWmlQY1A5cmZkQ2NQVU92QmVhRTJVQlZHSnRCaFRGNFltQ1Z5djh1eHBGYUh3NE9IQjBGcldESVhLZnlvMEQwbkpJNnp1X3ItUkoydk1oV1FNVldIWTFYWFlFTGlEdC1aZHlmbnhnRkVzLVljU2oxVWt5akNhT1BsMWhZMkpQaHdCY2pMeF92X0xBa1RZYTViY2xZVndpbFpQUTlOYXRMQ3h3Mm0zLVFJWWVOWUZGVWxaNmFiQ2lJcVl0Uw?oc=5",
+      "collected_at": "2026-05-24T01:50:38Z",
+      "verification": "需核验",
+      "summary_status": "pending",
+      "summary_basis": "等待 AI 摘要"
+    },
+    {
+      "id": "news-cb71b7e178a90105d9",
+      "category": "investment",
+      "title": "段永平清仓了，风向变了？",
+      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
+      "source": "Sina finance",
+      "source_type": "媒体报道",
+      "published_at": "2026-05-16T14:34:00Z",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFA0SUF2aHhfdURuMC1UZ2pCR3lWVXdaa0E3U1dNVnQyZGRZWS00aWlEaWlPTjdTWXg0WGdOT0tiaXZrZ1E1d0FHWlJ5LXRUX1NvZzRaS2pqZmc5Rl9qWEdZbGlZUEpZSzdxd0VWNG9fX0tHbjBYaTl0ag?oc=5",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1012,7 +1194,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-15T09:55:00Z",
       "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPdnl2cXc3MHZnM253SFFvRUM2c2pkX1BxbjhFazc4NUQ2UV9udEF4WkV6YUxOOVF0bjhJeDB0RHNhelpuZ2EtTFV6ckxFTFpGa21oYVVNOXZrQ3VKWVNSNVN4dVg5WTdIYzVpOW5YekZJSFIzaGxrUUlDMHBpVDY4eF9R?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1040,7 +1222,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-13T07:00:00Z",
       "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNQUpCZUt2OTZyeE56NkgyVTN2WU9ONGJDdVo3Qlp4WEVNZVVOOWVSUXRDdlFfd0hsUzNkVTltb0dGMFJVWVhrcVlyRDJtcXdxX2RwMjVOMjNOQlY4dUJZNmRISVk3NkFyeHlobnJ3clUzaFFSYUtTTVlQMDBzaHRJTEhB?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1054,7 +1236,21 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-12T01:57:18Z",
       "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE5PM0xVQmZhUVoxX2xEa3hHX01WREE3bGxnTnVYVzhkWlRWZjlqRDk5bjhUVjhsbWNKYlRhTXBsdkRFOHEzOU13RGVWRVE5aDNpdVpzd0lTMWFyTUlL?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
+      "verification": "需核验",
+      "summary_status": "pending",
+      "summary_basis": "等待 AI 摘要"
+    },
+    {
+      "id": "news-e762c854287cb92a31",
+      "category": "personal",
+      "title": "敢赌泡泡玛特未来25年，段永平真的看懂了吗？",
+      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
+      "source": "Sina finance",
+      "source_type": "媒体报道",
+      "published_at": "2026-05-11T22:31:00Z",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQZmRfZ05CMVRuZk1kZlEtSUU2ZzJ3WnBtUUZRdXF0OEl2cnRDOUg4WUJYUWM0bXBVOC1XYWhaMllNMmhLZzlGNkdHSXdiaVpsTWVMOXczYkdRM3V3NUs5NzBYeGpsdGM2T3JzVmo0WU1jNW9XR0RPYmwxckplRHFYaWdnVl8?oc=5",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1074,15 +1270,29 @@
       "summary_basis": "等待 AI 摘要"
     },
     {
+      "id": "news-086074300a00b668b3",
+      "category": "personal",
+      "title": "敢赌泡泡玛特未来25年，段永平真的看懂了吗？",
+      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
+      "source": "36Kr",
+      "source_type": "媒体报道",
+      "published_at": "2026-05-10T22:02:00Z",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1vWXk3ZDhwOWpKRWt2alZRaW5kQ2RNLXFoSzJ2cjlyVkhmQzREVklETW9tSldON3p2bnBURkVSMTJ1NExLZm0wWTRIQmxpUQ?oc=5",
+      "collected_at": "2026-05-24T01:50:38Z",
+      "verification": "需核验",
+      "summary_status": "pending",
+      "summary_basis": "等待 AI 摘要"
+    },
+    {
       "id": "news-b679777e7ee1fe34ac",
       "category": "investment",
       "title": "段永平清仓了，风向变了？",
       "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
-      "source": "36kr.com",
+      "source": "36Kr",
       "source_type": "媒体报道",
       "published_at": "2026-05-10T10:44:00Z",
       "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5tRmhub2JBV1JZY05VSVM1c1E3Q00tX2lYdWRtXzY0Ylg4SWtiUUdnVlpYTXBSaDlNcmR6NU5YOHR1enNNeWNfbmJyRUVTc2Ni?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1096,7 +1306,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-10T07:00:00Z",
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE05UTIxbl90V2Z0U2hIakVsekVRLWlSS216WXhmbms3ZlQ5SlpPMC1Xa3NvLUFjT3dKV252VjU0UTFkeHVvbmhuLXJpYjVObmo0ZmhkaEJyVi12RXR2UUw0ag?oc=5",
-      "collected_at": "2026-05-23T13:53:27Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1138,7 +1348,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-09T07:00:00Z",
       "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxOR2JIcmpwMHlqeWRCbzdHeHFGdlRsRC1Gc1ZRMkltQ2ZPX19KSU9Jc1k4Vl9wN056V0VqUWFNMmdzeWNYT1FmNk41TXMwNzI1MEVNRlZ1Z1drMEQxal85dEtjMkRFRV9RaGxGbGlSQUdSR1Y1T0IybmdzR2VTM0MwLXhn?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1152,7 +1362,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-09T07:00:00Z",
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9WbkVqXzJBN19mNUhyWS1tcTRnZjh0SmJpaUFuSUZpelg0ZE1scEg5YmNBWFdjejVRQUM1dWRPM3ozMmVuam9HNEJQNVdCQjVPUG5nVUY0SXpjRzBQd0NBZQ?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1166,7 +1376,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-08T17:25:59Z",
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB3NVRBQmQtWDdmUFM0dlBZOWFLaW0wMVRvUDZ6b3B2cEVWa25WOC1uSkRJbGQ2WHk5dTlFallrNmZaNElwTXFVWTVXVWN0REFfNXVYUXE0ZkVnS0t1M0FVNA?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1194,7 +1404,49 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-08T07:00:00Z",
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE83SmJ4MWw1dW0xQ0d5Ukh6R21ndXdyRjF6VjY4RzF2aFN3LUdGVnlSSkFfMllUQXpVYXQ1ZzFMRHFwNldLYmozZllxZ1dUMm1XR3ZEbllKTW5OcnNNZ2hGOWVWNllTejZvMlM3d09maw?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
+      "verification": "需核验",
+      "summary_status": "pending",
+      "summary_basis": "等待 AI 摘要"
+    },
+    {
+      "id": "news-cc2c3350121dcf03cd",
+      "category": "investment",
+      "title": "段永平再出手，泡泡玛特股价大涨",
+      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
+      "source": "Sina finance",
+      "source_type": "媒体报道",
+      "published_at": "2026-05-08T07:00:00Z",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNdUJjRGxSYnBqZktVbmZyZ0hKaWZNT0dPaDBUU29najR3RlB1c2xHQUN4VzBDelVqRFNqdmRweXlQT1NyeVA5T0RlTDkwSTVma3prQU5SUmIyWTZpdnZ4NHdjTFlYTlhJNjVxd0gzU3R4Y1g2TE9qYTNTTlJQZF9OUmE5MHI0bXVyQ0VVajJncw?oc=5",
+      "collected_at": "2026-05-24T01:50:38Z",
+      "verification": "需核验",
+      "summary_status": "pending",
+      "summary_basis": "等待 AI 摘要"
+    },
+    {
+      "id": "news-64886d8d1d9e0e7167",
+      "category": "investment",
+      "title": "8点1氪丨段永平再加仓泡泡玛特；多平台已下架“全李酒店”；世界杯决赛门票1张200万美元，FIFA回应",
+      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
+      "source": "36Kr",
+      "source_type": "媒体报道",
+      "published_at": "2026-05-08T07:00:00Z",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFAtQklST3BTTTN6U3hnM1lNZVU4TkJVVi1zY1VLOUhSb1JDeFdWcE9JdnVoUmNoc0ZXY3lnQ2NiUnhMYm5RbTQtZ3VmWTRPZw?oc=5",
+      "collected_at": "2026-05-24T01:50:38Z",
+      "verification": "需核验",
+      "summary_status": "pending",
+      "summary_basis": "等待 AI 摘要"
+    },
+    {
+      "id": "news-d39ee213cebc7b894e",
+      "category": "investment",
+      "title": "段永平买入，这个AI最疯狂“卖铲人”，为什么越大越不赚钱？",
+      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
+      "source": "36Kr",
+      "source_type": "媒体报道",
+      "published_at": "2026-05-08T07:00:00Z",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9VcURjVXNWSlYycmtscEZDbEZpX00tT1dIaGwteHllWVlYR3VZd0tDcGVja25vT3RBWTdyakw4aGVFTmFsUmN0a0E1VlU2QQ?oc=5",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1208,7 +1460,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-08T02:15:39Z",
       "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1La0lSRjVaY1loZGRyTnhqLWpOdV8wLUh3cnBHNmxQRDBwN0lUU285bk1LdXNFejVTckRzUnJ5aE45bGhkRURybw?oc=5",
-      "collected_at": "2026-05-23T13:35:09Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1222,7 +1474,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-07T11:34:18Z",
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1qbmQ1dTJSYW9Lck1OUHowQjhqbWFiVDBsa2Y0UjhfRW42aHR3MHB6ZUo4a0o3RGQ3YXFGVVREeEw2SGV4c3RWVFpHZ25Vd2stYmZwWVNoWi02VS1CSWVEbg?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1236,7 +1488,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-07T07:23:34Z",
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBqa0g2RFUtRWFKVDhIODNSWnNMUVpPZGQxYjlENTA2bHNOYkJHN192SVRMcExGWmc3Y2VBSEJvemYwcXFLb0RvYkttZlRGaXdBaDl0ZmZvVlNaaDdBSVdteA?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1250,7 +1502,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-07T07:00:00Z",
       "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPTzU2bUxWTF9mamluY2JWb19DUi1qakRZWVA3TjZvRXR2ckxIWlhYUGNCRW15cHBPejRxTmdHNTJHZ0NLU09RUkZobnM2eFN2MFUyTUMyQmtLWjVoNmxKQVh1bEhVN3lXV3h2UF9aXy1hcER0aXA5NmlTcWpJYnRyOUZUeTJIMFJ3N1NsOTNCeVNhT3Jn?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1264,7 +1516,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-07T07:00:00Z",
       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPZXBJR05oOTFhNXg3X1hzblRyZzFjRWYxTWxfaF9zMEVFV25iVFduMDFjNUkzRXZvMFo0NWJhZmdpMkl3UHZrdmZtT28yaW90QjlVUkhiZWZxRlhRemJFS2VBdUw4d1d4WWhuUGNPTmRzaUt2WFgzR01UQ0duMTg4OUt0cmZIbTdlTGJNdzFkcw?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1278,7 +1530,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-07T07:00:00Z",
       "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPaGVTU1hXS2dmdkxDYTVjNld2eHQyRXBDUTlCd1RlWUtCVG1RMnZ2Qlc4cEg1eFhQUnNHbEtlTUltWE9KejRPSk83WXhQZml3dXZxR29XSnNmcFVUT1VMRDBFTW9qMFREdnpnbkVFa003N3dLVDN4b1lpVkZfblR4OEkzQQ?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1292,7 +1544,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-07T07:00:00Z",
       "url": "https://news.google.com/rss/articles/CBMiugRBVV95cUxQem9JYkttWHNpSkpVQVZGcWZQTDhzZk5fbWkxcVVVVlpBLXdXblMwYmd5RlBZb2EtbDFwaGwxbEdEbVVEbThER2czaGdNZ2hoWUIyU2VsZUxVTkdGN1NSMUFsWmhFRURyTnlDSEZKb0xJV2Z2TVZOU1BtblI1ZzM4TlFRcjZYejVES3RVWTV0cFV6YjZzY1JSa3VDb1l6ODhlT20xS2l1QW1JWmJxUER3MGhWd0pDMVZBelhPc1VXQjNJRVdPcUctRzV0RmF2SVhvaU1Sd1NTdUx1cUZTT1QyVzNuTmZYZHhOVG1oaHFzMy0ya28wMXpCdEtkWndqdlNVTXN3OWxQZDFTZjM2cWd5dWJWbTdPRU05R3BJU3NsRk1VbXB1aEpSWWVWUGRqcGpaZDN0Mk56RFJoUGtCNGNMdjB5SFJ6UjNKaE5HczBLckdqbDVveExTazRaWjZhM3hidnotc2FQOVpwRWxrWWxQRFN6bVZIVVpJUmw0V0tNUGlieHNqdEdUMF91dXo1Z0EtQXJ2Z1FtSWFlcXdic1AzYUF2RmtlVldOZmpXTnE5clpSN3RKSGhDcUdKdlNWN0VHLVBOd3B4U2JJS0ZEbWtHbVdQYVVmeGQ1el8wRkZWSmp2WTQ2c1pBczBwQVpNMnZ6RThhY0JVdE5EQ1BsM1d4SE8zeG82bFdFZUE5TFE4eUV6WmhLUDZLazI2M2kyZ0tvQmw0QzAzSDVFV3lXMTlsdWNnRDYzUGd5d2c?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1306,7 +1558,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-07T07:00:00Z",
       "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5LNkxPbWl1a2JzcktGY3J5R2I2Qnk5ZkxqTHdTUkFOb0J1MG55MUlWeDhkeThfcW1GWHZqdVNwUGh3ZndELUlnR05BcnR4Y0VVTXQ1bQ?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1320,7 +1572,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-07T07:00:00Z",
       "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQc2RvMnBEUG9QNE5aRWlpVDg0RzFzRGV6NHNYcUE0d3dURkF0QkV2OVZiS05wLV9DWEVOMlVTd3piMFFoLTZGUVZlQU90RV94bXkwd0w4QlQwd2dmVllBZzNLdlBHV3dsTWFleHhUdUEyRk92V1VEbHJENEFBaDcwTm5GcmFlb24wZHc?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1410,6 +1662,34 @@
       "summary_basis": "等待 AI 摘要"
     },
     {
+      "id": "news-5c1500ddd096e52135",
+      "category": "investment",
+      "title": "段永平：我把我的神华都换了泡泡玛特了",
+      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
+      "source": "mycaijing.com",
+      "source_type": "媒体报道",
+      "published_at": "2026-05-07T07:00:00Z",
+      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNSHFnVFp1R3NUbk51RDJPNlg2WjlhZ0s0TzhCZVpkVVZIel9VM3VLbTVwU0lUWWYzZHdTaDN4b3E4cmNtY3VIdWpXWGxCaGxDcXNic2hOeVJ0TW56Mm5NSDBuZVg1LU5LWXdxLXlYNF9lcG9SZTFHUDRxa1hKNXVWd3J3?oc=5",
+      "collected_at": "2026-05-24T01:50:38Z",
+      "verification": "需核验",
+      "summary_status": "pending",
+      "summary_basis": "等待 AI 摘要"
+    },
+    {
+      "id": "news-a8617f1e90278475ba",
+      "category": "investment",
+      "title": "段永平调仓！“把神华都换了泡泡玛特”",
+      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
+      "source": "Sina finance",
+      "source_type": "媒体报道",
+      "published_at": "2026-05-07T07:00:00Z",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPcFZ3UVJBZ2w3akwxOXFCZWxSdnBqcmNZQ0lUWHdUVHRxN3pVc1k2TndjT3Y0THBEZ3k1cUtLem9TOG5faTN4MUI4amttaGRiVjdzUkcydE5uWW9fbV91RjlfT3dTOXI5b1ZWQkM3ZTNNdVBJeDdXc0prcEZQN05lMQ?oc=5",
+      "collected_at": "2026-05-24T01:50:38Z",
+      "verification": "需核验",
+      "summary_status": "pending",
+      "summary_basis": "等待 AI 摘要"
+    },
+    {
       "id": "news-5aea70bb31e6388a28",
       "category": "investment",
       "title": "段永平回复网友：如果你能理解老巴的话，在没能力管理自己钱的前提下，现金就买老巴的股票就好",
@@ -1418,7 +1698,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-05-06T07:00:00Z",
       "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNNTMtRkpXOFdjdUQ1QVB1T21RdWQ0NTVGOWlRZEdCNG50QTM5RlBwb05CM2cydUw2aEVVMkFqelItTlJuMVFBejhNOFA1OFpWdkxRR3BUMjRDaUZBUjFESGxzdm1ZX3dfbWduRzYtRnk3VzA2WFFvYXMwanpqTkdOaUhn?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1432,7 +1712,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-04-17T07:00:00Z",
       "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNQjEzVEVIUl91WEpROXN4cUNGdldaQzhqdGFqWHVKZVJkZzVMaHlIbzJQZlI4eUZSbEJ3S19lY0hILTc4dHlGX25EWllFdTN1MnJXanRldGJPUXRjY0hSRVpEVHpLMTVCLU9LR1RYNWtQM2FITWI5WjFkN3F2Y1gzLXRJcW52dzlJcXFEeVlEcVh0VTJCRFE?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1460,7 +1740,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-04-16T07:00:00Z",
       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQdjNEUVhrSVhOQWV3TmtnMHhUYlBmRTU4bjJqbk11aFI4NnQ4aGJiQlhqblRqS0tOWTl6WjFnY0tUUE1zOGJBVlh2NW93VExkNlg2NFl2cEtXWUNBVXdCeE1oT1FCc2ctdW5uZzVGSjRReWRpZlQ0V0hVS2lTSlE3Z1ZoUXFCNEo0YWY3Rjg0VQ?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1474,7 +1754,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-04-15T07:00:00Z",
       "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBHdGE3ZDJsUzROdTdGeWNNbVpqOFlMNXdQRC1Mb1VHSU5MbVJiWmZPS3l4X2tLVW5EelhrdGVGNks4TjZUT1FFM1pzUVlSZHhsSGF1Q1RhN3VSYmR4ZHIzR1RQTWZUY01vVGFjSWd3dS0yUC1iTF94Rw?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1516,7 +1796,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-04-14T07:00:00Z",
       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQNlE4R2FEeURWWGVlcDZtcUl1NTUzbm83WjNkalhMR1hKWkJZX0V0dWExQnk4eWhqQ1lNYVFFWEJtUUVUcEZFMkhMYmJQcE1panBla3ZCZlFIOHJ4bWEwb25pVmdqR3pJY1N5WFZNN0ZjUXZjUlJZNExJNmhJMExWMTNXMmNQRnZRTHlFMGM1WQ?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1586,7 +1866,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-04-12T07:00:00Z",
       "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFA3WVdQQVZvdS1YWlZBSk5yOG9XVFFSRWRXS1VsaXZCTHhuWWV0TkpqZFJjZHM3SUMza2xGVlhPcmpoOUVCSjRCc0pqak9MMWVT?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1600,7 +1880,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-03-30T07:00:00Z",
       "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE4yX3hJLTREWWlsYldzZGpDbm9VVXNtUDc4N1gxYWRiQk80bV9sNmlqTl9LN0JLeU9wRFRIS2luaXhQbldoSHRrVHZIVXVjeUh0b0k5QnN2dw?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1642,7 +1922,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-02-18T08:00:00Z",
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBBbXk5dl81RXUxeWZnMUZRVVYwN2plNUpjdElqcTRQSlI3cGUwSjFCbnNmOU4yUWplOGJrV0U5enhISDhkSHJYa0NnaTV2QUtQVWF2WkJkOVhCMnhjek1FUQ?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1656,7 +1936,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-02-18T08:00:00Z",
       "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9mdWUtX1p4aklDbWY4UjRhalZNcnU5MEdwOTBaMjZTbUpMQmw3MFNFOFplNnFHVUlvTTZKQmtsZWcxU0IzeTJtbGhrbjQ2M3czSmRBS3pETjNianExU2p3MTRBcHJYYlU?oc=5",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1684,7 +1964,7 @@
       "source_type": "监管披露",
       "published_at": "2026-02-17T00:00:00Z",
       "url": "https://www.sec.gov/Archives/edgar/data/1759760/000175976026000001/xslForm13F_X02/primary_doc.xml",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "原始披露",
       "summary_status": "source",
       "summary_basis": "监管披露说明"
@@ -1740,7 +2020,7 @@
       "source_type": "监管披露",
       "published_at": "2025-11-14T00:00:00Z",
       "url": "https://www.sec.gov/Archives/edgar/data/1759760/000175976025000002/xslForm13F_X02/primary_doc.xml",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "原始披露",
       "summary_status": "source",
       "summary_basis": "监管披露说明"
@@ -1782,7 +2062,7 @@
       "source_type": "监管披露",
       "published_at": "2025-08-14T00:00:00Z",
       "url": "https://www.sec.gov/Archives/edgar/data/1759760/000108514625005091/xslForm13F_X02/primary_doc.xml",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "原始披露",
       "summary_status": "source",
       "summary_basis": "监管披露说明"
@@ -1796,7 +2076,7 @@
       "source_type": "监管披露",
       "published_at": "2025-05-15T00:00:00Z",
       "url": "https://www.sec.gov/Archives/edgar/data/1759760/000108514625003301/xslForm13F_X02/primary_doc.xml",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "原始披露",
       "summary_status": "source",
       "summary_basis": "监管披露说明"
@@ -1810,7 +2090,7 @@
       "source_type": "监管披露",
       "published_at": "2025-02-14T00:00:00Z",
       "url": "https://www.sec.gov/Archives/edgar/data/1759760/000108514625001626/xslForm13F_X02/primary_doc.xml",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "原始披露",
       "summary_status": "source",
       "summary_basis": "监管披露说明"
@@ -1824,7 +2104,7 @@
       "source_type": "监管披露",
       "published_at": "2025-02-14T00:00:00Z",
       "url": "https://www.sec.gov/Archives/edgar/data/1759760/000108514625001521/xslForm13F_X02/primary_doc.xml",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "原始披露",
       "summary_status": "source",
       "summary_basis": "监管披露说明"
@@ -1838,7 +2118,7 @@
       "source_type": "监管披露",
       "published_at": "2024-11-14T00:00:00Z",
       "url": "https://www.sec.gov/Archives/edgar/data/1759760/000108514624005748/xslForm13F_X02/primary_doc.xml",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "原始披露",
       "summary_status": "source",
       "summary_basis": "监管披露说明"
@@ -1852,7 +2132,7 @@
       "source_type": "监管披露",
       "published_at": "2024-08-14T00:00:00Z",
       "url": "https://www.sec.gov/Archives/edgar/data/1759760/000108514624003861/xslForm13F_X02/primary_doc.xml",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "原始披露",
       "summary_status": "source",
       "summary_basis": "监管披露说明"
@@ -1866,7 +2146,7 @@
       "source_type": "监管披露",
       "published_at": "2024-05-15T00:00:00Z",
       "url": "https://www.sec.gov/Archives/edgar/data/1759760/000108514624002494/xslForm13F_X02/primary_doc.xml",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "原始披露",
       "summary_status": "source",
       "summary_basis": "监管披露说明"
@@ -1880,7 +2160,7 @@
       "source_type": "监管披露",
       "published_at": "2024-02-14T00:00:00Z",
       "url": "https://www.sec.gov/Archives/edgar/data/1759760/000108514624001294/xslForm13F_X02/primary_doc.xml",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "原始披露",
       "summary_status": "source",
       "summary_basis": "监管披露说明"
@@ -1894,7 +2174,7 @@
       "source_type": "监管披露",
       "published_at": "2023-11-14T00:00:00Z",
       "url": "https://www.sec.gov/Archives/edgar/data/1759760/000108514623004335/xslForm13F_X02/primary_doc.xml",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "原始披露",
       "summary_status": "source",
       "summary_basis": "监管披露说明"
@@ -1908,7 +2188,7 @@
       "source_type": "监管披露",
       "published_at": "2023-08-11T00:00:00Z",
       "url": "https://www.sec.gov/Archives/edgar/data/1759760/000108514623003303/xslForm13F_X02/primary_doc.xml",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "原始披露",
       "summary_status": "source",
       "summary_basis": "监管披露说明"
@@ -1922,7 +2202,7 @@
       "source_type": "监管披露",
       "published_at": "2023-05-15T00:00:00Z",
       "url": "https://www.sec.gov/Archives/edgar/data/1759760/000108514623002351/xslForm13F_X02/primary_doc.xml",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "原始披露",
       "summary_status": "source",
       "summary_basis": "监管披露说明"
@@ -1936,7 +2216,7 @@
       "source_type": "监管披露",
       "published_at": "2023-02-14T00:00:00Z",
       "url": "https://www.sec.gov/Archives/edgar/data/1759760/000108514623001162/xslForm13F_X02/primary_doc.xml",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "原始披露",
       "summary_status": "source",
       "summary_basis": "监管披露说明"
@@ -1950,7 +2230,7 @@
       "source_type": "监管披露",
       "published_at": "2022-11-14T00:00:00Z",
       "url": "https://www.sec.gov/Archives/edgar/data/1759760/000108514622004013/xslForm13F_X01/primary_doc.xml",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "原始披露",
       "summary_status": "source",
       "summary_basis": "监管披露说明"
@@ -1964,7 +2244,7 @@
       "source_type": "监管披露",
       "published_at": "2022-08-15T00:00:00Z",
       "url": "https://www.sec.gov/Archives/edgar/data/1759760/000108514622003045/xslForm13F_X01/primary_doc.xml",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "原始披露",
       "summary_status": "source",
       "summary_basis": "监管披露说明"
@@ -1978,7 +2258,7 @@
       "source_type": "监管披露",
       "published_at": "2022-05-16T00:00:00Z",
       "url": "https://www.sec.gov/Archives/edgar/data/1759760/000108514622002106/xslForm13F_X01/primary_doc.xml",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "原始披露",
       "summary_status": "source",
       "summary_basis": "监管披露说明"
@@ -1992,7 +2272,7 @@
       "source_type": "监管披露",
       "published_at": "2022-02-11T00:00:00Z",
       "url": "https://www.sec.gov/Archives/edgar/data/1759760/000108514622000865/xslForm13F_X01/primary_doc.xml",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "原始披露",
       "summary_status": "source",
       "summary_basis": "监管披露说明"
@@ -2006,7 +2286,7 @@
       "source_type": "监管披露",
       "published_at": "2021-11-15T00:00:00Z",
       "url": "https://www.sec.gov/Archives/edgar/data/1759760/000108514621003231/xslForm13F_X01/primary_doc.xml",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "原始披露",
       "summary_status": "source",
       "summary_basis": "监管披露说明"
@@ -2020,7 +2300,7 @@
       "source_type": "监管披露",
       "published_at": "2021-08-13T00:00:00Z",
       "url": "https://www.sec.gov/Archives/edgar/data/1759760/000108514621002478/xslForm13F_X01/primary_doc.xml",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "原始披露",
       "summary_status": "source",
       "summary_basis": "监管披露说明"
@@ -2034,7 +2314,7 @@
       "source_type": "监管披露",
       "published_at": "2021-05-10T00:00:00Z",
       "url": "https://www.sec.gov/Archives/edgar/data/1759760/000108514621001558/xslForm13F_X01/primary_doc.xml",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "原始披露",
       "summary_status": "source",
       "summary_basis": "监管披露说明"
@@ -2048,7 +2328,7 @@
       "source_type": "监管披露",
       "published_at": "2021-02-12T00:00:00Z",
       "url": "https://www.sec.gov/Archives/edgar/data/1759760/000108514621000734/xslForm13F_X01/primary_doc.xml",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "原始披露",
       "summary_status": "source",
       "summary_basis": "监管披露说明"
@@ -2062,7 +2342,7 @@
       "source_type": "监管披露",
       "published_at": "2020-10-30T00:00:00Z",
       "url": "https://www.sec.gov/Archives/edgar/data/1759760/000108514620002699/xslForm13F_X01/primary_doc.xml",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "原始披露",
       "summary_status": "source",
       "summary_basis": "监管披露说明"
@@ -2076,7 +2356,7 @@
       "source_type": "监管披露",
       "published_at": "2020-08-11T00:00:00Z",
       "url": "https://www.sec.gov/Archives/edgar/data/1759760/000108514620002116/xslForm13F_X01/primary_doc.xml",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "原始披露",
       "summary_status": "source",
       "summary_basis": "监管披露说明"
@@ -2090,7 +2370,7 @@
       "source_type": "监管披露",
       "published_at": "2020-05-15T00:00:00Z",
       "url": "https://www.sec.gov/Archives/edgar/data/1759760/000108514620001528/xslForm13F_X01/primary_doc.xml",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "原始披露",
       "summary_status": "source",
       "summary_basis": "监管披露说明"
@@ -2104,7 +2384,7 @@
       "source_type": "监管披露",
       "published_at": "2020-02-18T00:00:00Z",
       "url": "https://www.sec.gov/Archives/edgar/data/1759760/000108514620000946/xslForm13F_X01/primary_doc.xml",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "原始披露",
       "summary_status": "source",
       "summary_basis": "监管披露说明"
@@ -2118,7 +2398,7 @@
       "source_type": "监管披露",
       "published_at": "2019-10-17T00:00:00Z",
       "url": "https://www.sec.gov/Archives/edgar/data/1759760/000108514619002564/xslForm13F_X01/primary_doc.xml",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "原始披露",
       "summary_status": "source",
       "summary_basis": "监管披露说明"
@@ -2132,7 +2412,7 @@
       "source_type": "监管披露",
       "published_at": "2019-07-15T00:00:00Z",
       "url": "https://www.sec.gov/Archives/edgar/data/1759760/000108514619001878/xslForm13F_X01/primary_doc.xml",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "原始披露",
       "summary_status": "source",
       "summary_basis": "监管披露说明"
@@ -2146,7 +2426,7 @@
       "source_type": "监管披露",
       "published_at": "2019-05-03T00:00:00Z",
       "url": "https://www.sec.gov/Archives/edgar/data/1759760/000108514619001330/xslForm13F_X01/primary_doc.xml",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "原始披露",
       "summary_status": "source",
       "summary_basis": "监管披露说明"
@@ -2160,7 +2440,7 @@
       "source_type": "监管披露",
       "published_at": "2019-04-02T00:00:00Z",
       "url": "https://www.sec.gov/Archives/edgar/data/1759760/000108514619001065/xslForm13F_X01/primary_doc.xml",
-      "collected_at": "2026-05-23T13:54:35Z",
+      "collected_at": "2026-05-24T01:50:38Z",
       "verification": "原始披露",
       "summary_status": "source",
       "summary_basis": "监管披露说明"
