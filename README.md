@@ -1,6 +1,6 @@
 # 慢即是快：段永平公开动态追踪
 
-一个归档段永平公开动态的静态站点 MVP。数据在本地抓取、摘要并提交后，由 GitHub Pages 发布。它把信息区分为三类：
+一个每日归档段永平公开动态的静态站点 MVP。它把信息区分为三类：
 
 - **本人账号**：雪球账号“大道无形我有型”的公开发言，需要提供个人可用的登录 Cookie 后自动抓取。
 - **监管披露**：SEC EDGAR 中 `H&H International Investment, LLC` 的 `13F-HR` 文件，属于可核验原始披露。
@@ -10,19 +10,20 @@
 
 页面默认每页展示 10 条动态，支持类别筛选、关键词搜索和分页浏览。
 
-## 查看本地站点
+## 本地运行
 
 只需 Python 3.11+，无需安装依赖：
 
 ```bash
+python3 collect.py
 python3 -m http.server 8000
 ```
 
-浏览器访问 `http://localhost:8000`。页面读取仓库中的 [data/feed.json](./data/feed.json)，浏览网页本身不会实时抓取外部数据。
+浏览器访问 `http://localhost:8000`。每次运行 `collect.py` 会读取最新来源，并与 [data/feed.json](./data/feed.json) 中的旧数据去重合并，最多保留 500 条。
 
 ## 开启雪球本人动态
 
-雪球主页可公开访问，但动态接口通常需要登录态。在本地 `.env.local` 中设置 `XUEQIU_COOKIE`：
+雪球主页可公开访问，但动态接口通常需要登录态。在本地或 GitHub Actions 的 Secret 中设置 `XUEQIU_COOKIE`：
 
 ```bash
 XUEQIU_COOKIE='your-cookie-value' python3 collect.py
@@ -51,40 +52,16 @@ OPENAI_API_KEY='your-api-key' python3 collect.py
 - `OPENAI_SUMMARY_MODEL`：摘要模型，默认 `gpt-5.4-nano`。
 - `AI_SUMMARY_LIMIT`：每次最多生成的摘要数量，默认 `10`。
 
-## 本地更新与发布
+## 每日发布
 
-复制 [.env.local.example](./.env.local.example) 为 `.env.local`，填入本地专用配置：
+[.github/workflows/daily-refresh.yml](./.github/workflows/daily-refresh.yml) 已配置为每天北京时间 `09:15` 自动执行：
 
-```bash
-cp .env.local.example .env.local
-```
+1. 抓取公开数据并更新归档 JSON。
+2. 将新增归档提交回仓库，以便持续保留历史。
+3. 部署静态页面到 GitHub Pages。
 
-至少需要：
-
-- `TRACKER_USER_AGENT`：SEC 请求需要的可联系标识。
-- `OPENAI_API_KEY`：媒体报道在发布前生成 AI 摘要所需的密钥。
-
-然后运行：
-
-```bash
-bash scripts/update_local.sh
-```
-
-该脚本严格按以下顺序执行：
-
-1. 在本机抓取最新公开数据。
-2. 对尚未处理的媒体条目生成 AI 摘要；默认一次补齐最多 500 条。
-3. 执行测试。
-4. 仅将生成后的 `data/feed.json` 提交并推送。
-5. GitHub Pages 在收到推送后部署静态内容。
-
-没有 `OPENAI_API_KEY` 时脚本会停止，不会把新增的待摘要媒体条目发布出去。
-
-## GitHub Pages
-
-[.github/workflows/daily-refresh.yml](./.github/workflows/daily-refresh.yml) 现在只负责在 `main` 分支被推送后部署静态站点，不在 GitHub Runner 上抓取或总结内容。这样公开页面展示的始终是你本地处理并确认提交的数据。
-
-如需每天自动更新，可在保持本机在线的前提下，用本地定时任务每天调用 `bash scripts/update_local.sh`。
+推送仓库后，在 GitHub 仓库的 `Settings > Pages` 将来源设为 **GitHub Actions**。如需雪球动态，再添加名为 `XUEQIU_COOKIE` 的 Actions Secret；如需媒体自动摘要，添加 `OPENAI_API_KEY` Secret。
+部署时需要添加 `TRACKER_USER_AGENT` Secret 才能每日检查 SEC；未设置时，页面会保留既有归档并将该来源显示为待配置。
 
 ## 验证
 
