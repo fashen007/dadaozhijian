@@ -44,6 +44,7 @@ SUMMARY_SUPPORTS_WEB_SEARCH = (os.environ.get("SUMMARY_SUPPORTS_WEB_SEARCH", "")
 }
 ANTHROPIC_BASE_URL = os.environ.get("ANTHROPIC_BASE_URL", "").strip().rstrip("/")
 ANTHROPIC_MODEL = os.environ.get("ANTHROPIC_MODEL", "").strip()
+ANTHROPIC_AUTH_STYLE = os.environ.get("ANTHROPIC_AUTH_STYLE", "").strip().lower() or "x-api-key"
 USER_AGENT = (
     os.environ.get("TRACKER_USER_AGENT", "").strip()
     or "DadaoTracker/1.0 https://github.com/fashen007/dadaozhijian"
@@ -366,6 +367,7 @@ def summarize_media_items(
         return None
     succeeded = 0
     failed = 0
+    failure_reason = ""
     for item in pending:
         description = ""
         try:
@@ -392,9 +394,12 @@ def summarize_media_items(
                     "max_tokens": 160,
                 }
                 auth_headers = {
-                    "x-api-key": api_key,
                     "anthropic-version": "2023-06-01",
                 }
+                if ANTHROPIC_AUTH_STYLE == "bearer":
+                    auth_headers["Authorization"] = f"Bearer {api_key}"
+                else:
+                    auth_headers["x-api-key"] = api_key
                 provider_style = "anthropic_messages"
             elif SUMMARY_API_STYLE == "chat_completions":
                 endpoint = f"{SUMMARY_API_BASE_URL}/chat/completions"
@@ -436,11 +441,16 @@ def summarize_media_items(
             item["summary_provider_style"] = provider_style
             item["summary_citations"] = citations
             succeeded += 1
-        except Exception:
+        except Exception as exc:
             failed += 1
+            if not failure_reason:
+                failure_reason = f"{type(exc).__name__}"
+                if isinstance(exc, HTTPError):
+                    failure_reason += f" HTTP {exc.code}"
     if not pending:
         return {"status": "ok", "detail": "没有待总结的新增媒体条目"}
-    return {"status": "ok" if succeeded else "error", "detail": f"AI 总结 {succeeded} 条，失败 {failed} 条"}
+    suffix = f"（首次失败：{failure_reason}）" if failure_reason else ""
+    return {"status": "ok" if succeeded else "error", "detail": f"AI 总结 {succeeded} 条，失败 {failed} 条{suffix}"}
 
 
 def normalized_existing(item: dict[str, Any]) -> dict[str, Any]:

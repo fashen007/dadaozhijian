@@ -75,6 +75,7 @@ python3 collect.py
 ANTHROPIC_AUTH_TOKEN='your-provider-key' \
 ANTHROPIC_BASE_URL='https://bobdong.cn' \
 ANTHROPIC_MODEL='your-model-id' \
+ANTHROPIC_AUTH_STYLE='bearer' \
 python3 collect.py
 ```
 
@@ -90,6 +91,7 @@ python3 collect.py
 - `ANTHROPIC_AUTH_TOKEN` / `ANTHROPIC_API_KEY`：Anthropic Messages 兼容接口的密钥。
 - `ANTHROPIC_BASE_URL`：Anthropic 兼容服务根路径，例如 `https://bobdong.cn`。
 - `ANTHROPIC_MODEL`：该兼容服务开放的模型 id；Anthropic 协议摘要不启用 OpenAI `web_search` 引用。
+- `ANTHROPIC_AUTH_STYLE`：`x-api-key`（原生 Anthropic 默认）或 `bearer`（New API 网关使用）。
 - `AI_SUMMARY_LIMIT`：每次最多生成的摘要数量，默认 `10`。
 
 ## 每日发布

@@ -218,12 +218,41 @@ class CollectorTests(unittest.TestCase):
 
         with patch.dict(os.environ, {"ANTHROPIC_AUTH_TOKEN": "glm-key"}, clear=True), patch.object(
             collect, "ANTHROPIC_BASE_URL", "https://bobdong.cn"
-        ), patch.object(collect, "ANTHROPIC_MODEL", "glm-model"):
+        ), patch.object(collect, "ANTHROPIC_MODEL", "glm-model"), patch.object(
+            collect, "ANTHROPIC_AUTH_STYLE", "x-api-key"
+        ):
             collect.summarize_media_items(items, lambda *_args: b"<html></html>", fake_post)
         self.assertEqual(captured["url"], "https://bobdong.cn/v1/messages")
         self.assertEqual(captured["headers"]["x-api-key"], "glm-key")
         self.assertEqual(captured["headers"]["anthropic-version"], "2023-06-01")
         self.assertEqual(items[0]["summary_provider_style"], "anthropic_messages")
+
+    def test_anthropic_gateway_can_use_bearer_auth(self):
+        items = [
+            {
+                "id": "news-6",
+                "title": "段永平新闻",
+                "source": "示例财经",
+                "source_type": "媒体报道",
+                "url": "https://example.test/news/6",
+                "summary_status": "pending",
+                "summary": "等待自动摘要",
+            }
+        ]
+        captured = {}
+
+        def fake_post(_url, _payload, headers=None):
+            captured["headers"] = headers
+            return {"content": [{"type": "text", "text": "标题显示，该报道涉及公开动态。"}]}
+
+        with patch.dict(os.environ, {"ANTHROPIC_AUTH_TOKEN": "glm-key"}, clear=True), patch.object(
+            collect, "ANTHROPIC_BASE_URL", "https://bobdong.cn"
+        ), patch.object(collect, "ANTHROPIC_MODEL", "GLM-5.1"), patch.object(
+            collect, "ANTHROPIC_AUTH_STYLE", "bearer"
+        ):
+            collect.summarize_media_items(items, lambda *_args: b"<html></html>", fake_post)
+        self.assertEqual(captured["headers"]["Authorization"], "Bearer glm-key")
+        self.assertNotIn("x-api-key", captured["headers"])
 
     def test_anthropic_provider_requires_a_model(self):
         with patch.dict(os.environ, {"ANTHROPIC_AUTH_TOKEN": "glm-key"}, clear=True), patch.object(
