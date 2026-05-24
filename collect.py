@@ -28,8 +28,20 @@ DEFAULT_OUTPUT = ROOT / "data" / "feed.json"
 SEC_CIK = "0001759760"
 XUEQIU_USER_ID = "1247347556"
 XUEQIU_PROFILE = f"https://xueqiu.com/u/{XUEQIU_USER_ID}"
-SUMMARY_MODEL = os.environ.get("OPENAI_SUMMARY_MODEL", "").strip() or "gpt-5.4-nano"
+SUMMARY_MODEL = (
+    os.environ.get("SUMMARY_MODEL", "").strip()
+    or os.environ.get("OPENAI_SUMMARY_MODEL", "").strip()
+    or "gpt-5.4-nano"
+)
 SUMMARY_LIMIT = int(os.environ.get("AI_SUMMARY_LIMIT", "10"))
+SUMMARY_API_BASE_URL = (
+    os.environ.get("SUMMARY_API_BASE_URL", "").strip().rstrip("/")
+    or "https://api.openai.com/v1"
+)
+SUMMARY_API_STYLE = os.environ.get("SUMMARY_API_STYLE", "").strip().lower() or "responses"
+SUMMARY_SUPPORTS_WEB_SEARCH = (os.environ.get("SUMMARY_SUPPORTS_WEB_SEARCH", "").strip() or "true").lower() in {
+    "1", "true", "yes", "on"
+}
 USER_AGENT = (
     os.environ.get("TRACKER_USER_AGENT", "").strip()
     or "DadaoTracker/1.0 https://github.com/fashen007/dadaozhijian"
@@ -302,6 +314,9 @@ def response_text(payload: dict[str, Any]) -> str:
         for content in output.get("content", []):
             if content.get("type") == "output_text" and content.get("text"):
                 return str(content["text"]).strip()
+    choices = payload.get("choices", [])
+    if choices and choices[0].get("message", {}).get("content"):
+        return str(choices[0]["message"]["content"]).strip()
     return ""
 
 
@@ -328,7 +343,10 @@ def summarize_media_items(
     fetch: Callable[..., bytes] = request_bytes,
     post: Callable[..., dict[str, Any]] = post_json,
 ) -> dict[str, str] | None:
-    api_key = os.environ.get("OPENAI_API_KEY", "").strip()
+    api_key = (
+        os.environ.get("SUMMARY_API_KEY", "").strip()
+        or os.environ.get("OPENAI_API_KEY", "").strip()
+    )
     pending = [
         item for item in items
         if item.get("source_type") == "媒体报道" and item.get("summary_status") != "ai"
@@ -355,19 +373,28 @@ def summarize_media_items(
             "使用简体中文，最多两句、90字以内。\n\n" + material
         )
         try:
-            request_payload: dict[str, Any] = {
-                "model": SUMMARY_MODEL,
-                "input": prompt,
-                "max_output_tokens": 160,
-            }
-            if not description:
-                request_payload.update({
-                    "tools": [{"type": "web_search"}],
-                    "tool_choice": "auto",
-                    "include": ["web_search_call.action.sources"],
-                })
+            if SUMMARY_API_STYLE == "chat_completions":
+                endpoint = f"{SUMMARY_API_BASE_URL}/chat/completions"
+                request_payload: dict[str, Any] = {
+                    "model": SUMMARY_MODEL,
+                    "messages": [{"role": "user", "content": prompt}],
+                    "max_tokens": 160,
+                }
+            else:
+                endpoint = f"{SUMMARY_API_BASE_URL}/responses"
+                request_payload = {
+                    "model": SUMMARY_MODEL,
+                    "input": prompt,
+                    "max_output_tokens": 160,
+                }
+                if not description and SUMMARY_SUPPORTS_WEB_SEARCH:
+                    request_payload.update({
+                        "tools": [{"type": "web_search"}],
+                        "tool_choice": "auto",
+                        "include": ["web_search_call.action.sources"],
+                    })
             result = post(
-                "https://api.openai.com/v1/responses",
+                endpoint,
                 request_payload,
                 {"Authorization": f"Bearer {api_key}"},
             )
@@ -379,6 +406,7 @@ def summarize_media_items(
             item["summary_status"] = "ai"
             item["summary_basis"] = f"AI 摘要 · {'页面描述' if description else '联网核验' if citations else '仅标题'}"
             item["summary_model"] = SUMMARY_MODEL
+            item["summary_provider_style"] = SUMMARY_API_STYLE
             item["summary_citations"] = citations
             succeeded += 1
         except Exception:
@@ -414,7 +442,7 @@ def build_feed(output: Path, fetch: Callable[..., bytes] = request_bytes) -> dic
         if previous and previous.get("summary_status") == "ai":
             current.update({
                 key: previous[key]
-                for key in ("summary", "summary_status", "summary_basis", "summary_model", "summary_citations")
+                for key in ("summary", "summary_status", "summary_basis", "summary_model", "summary_provider_style", "summary_citations")
                 if key in previous
             })
         merged[item.id] = current
@@ -426,7 +454,7 @@ def build_feed(output: Path, fetch: Callable[..., bytes] = request_bytes) -> dic
         )
     else:
         states.append(
-            source_state("summary", "AI 自动摘要", "setup", "设置 OPENAI_API_KEY 后逐批生成媒体摘要", collected_at)
+            source_state("summary", "AI 自动摘要", "setup", "设置 SUMMARY_API_KEY 或 OPENAI_API_KEY 后逐批生成媒体摘要", collected_at)
         )
     return {
         "updated_at": collected_at,

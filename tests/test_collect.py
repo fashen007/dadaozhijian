@@ -135,6 +135,69 @@ class CollectorTests(unittest.TestCase):
         self.assertIn("联网核验", items[0]["summary_basis"])
         self.assertEqual(items[0]["summary_citations"][0]["url"], "https://example.test/source")
 
+    def test_compatible_summary_api_can_disable_web_search(self):
+        items = [
+            {
+                "id": "news-3",
+                "title": "段永平公开动态",
+                "source": "示例财经",
+                "source_type": "媒体报道",
+                "url": "https://example.test/news/3",
+                "summary_status": "pending",
+                "summary": "等待自动摘要",
+            }
+        ]
+        captured = {}
+
+        def fake_post(url, payload, headers=None):
+            captured.update({"url": url, "payload": payload, "headers": headers})
+            return {"output_text": "标题显示，该报道提及段永平公开动态。"}
+
+        with patch.dict(
+            os.environ,
+            {
+                "SUMMARY_API_KEY": "provider-key",
+                "SUMMARY_API_BASE_URL": "https://proxy.example/v1",
+                "SUMMARY_API_STYLE": "responses",
+                "SUMMARY_SUPPORTS_WEB_SEARCH": "false",
+            },
+            clear=True,
+        ), patch.object(collect, "SUMMARY_API_BASE_URL", "https://proxy.example/v1"), patch.object(
+            collect, "SUMMARY_API_STYLE", "responses"
+        ), patch.object(
+            collect, "SUMMARY_SUPPORTS_WEB_SEARCH", False
+        ):
+            collect.summarize_media_items(items, lambda *_args: b"<html></html>", fake_post)
+        self.assertEqual(captured["url"], "https://proxy.example/v1/responses")
+        self.assertNotIn("tools", captured["payload"])
+        self.assertEqual(captured["headers"]["Authorization"], "Bearer provider-key")
+
+    def test_chat_completions_provider_is_supported(self):
+        items = [
+            {
+                "id": "news-4",
+                "title": "段永平新闻",
+                "source": "示例财经",
+                "source_type": "媒体报道",
+                "url": "https://example.test/news/4",
+                "summary_status": "pending",
+                "summary": "等待自动摘要",
+            }
+        ]
+        captured = {}
+
+        def fake_post(url, payload, _headers=None):
+            captured.update({"url": url, "payload": payload})
+            return {"choices": [{"message": {"content": "标题显示，该报道涉及公开动态。"}}]}
+
+        with patch.dict(os.environ, {"SUMMARY_API_KEY": "provider-key"}, clear=True), patch.object(
+            collect, "SUMMARY_API_BASE_URL", "https://proxy.example/v1"
+        ), patch.object(collect, "SUMMARY_API_STYLE", "chat_completions"):
+            collect.summarize_media_items(items, lambda *_args: b"<html></html>", fake_post)
+        self.assertEqual(captured["url"], "https://proxy.example/v1/chat/completions")
+        self.assertIn("messages", captured["payload"])
+        self.assertEqual(items[0]["summary_status"], "ai")
+
     def test_xueqiu_is_not_requested_without_cookie(self):
         with patch.dict(os.environ, {}, clear=True):
             items, status = collect.fetch_xueqiu(lambda *_args: b"", "2026-05-23T00:00:00Z")

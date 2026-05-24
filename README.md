@@ -39,17 +39,45 @@ TRACKER_USER_AGENT='DadaoTracker/1.0 your-email@example.com' python3 collect.py
 
 ## 开启自动摘要
 
-监管披露和本人发言使用来源中可以直接核验的摘录。对于媒体报道，可配置 OpenAI API Key，在每日采集时逐批生成简短摘要：
+监管披露和本人发言使用来源中可以直接核验的摘录。对于媒体报道，可配置 OpenAI 官方 API Key，或兼容 Responses API 的第三方中转接口，在每日采集时逐批生成简短摘要。
+
+使用 OpenAI 官方接口：
 
 ```bash
 OPENAI_API_KEY='your-api-key' python3 collect.py
 ```
 
-脚本默认使用 `gpt-5.4-nano`，每次最多总结 10 条尚未处理的媒体记录。若能取得页面描述，页面标注“AI 摘要 · 页面描述”；若新闻聚合链接不暴露正文，模型会尝试联网检索对应报道并显示可点击引用，标注“AI 摘要 · 联网核验”；无法找到材料时才标注“AI 摘要 · 仅标题”。所有摘要都属于报道线索，仍应打开原文核验。
+使用兼容 Responses API 的第三方中转站：
+
+```bash
+SUMMARY_API_KEY='your-provider-key' \
+SUMMARY_API_BASE_URL='https://your-provider.example/v1' \
+SUMMARY_API_STYLE='responses' \
+SUMMARY_MODEL='your-model-id' \
+SUMMARY_SUPPORTS_WEB_SEARCH='false' \
+python3 collect.py
+```
+
+若中转站仅兼容 Chat Completions：
+
+```bash
+SUMMARY_API_KEY='your-provider-key' \
+SUMMARY_API_BASE_URL='https://your-provider.example/v1' \
+SUMMARY_API_STYLE='chat_completions' \
+SUMMARY_MODEL='your-model-id' \
+SUMMARY_SUPPORTS_WEB_SEARCH='false' \
+python3 collect.py
+```
+
+脚本默认使用 `gpt-5.4-nano`，每次最多总结 10 条尚未处理的媒体记录。若能取得页面描述，页面标注“AI 摘要 · 页面描述”；若接口支持 Responses `web_search` 且新闻链接不暴露正文，模型会尝试联网检索对应报道并显示可点击引用，标注“AI 摘要 · 联网核验”；无法找到材料时才标注“AI 摘要 · 仅标题”。所有摘要都属于报道线索，仍应打开原文核验。
 
 可调整的环境变量：
 
-- `OPENAI_SUMMARY_MODEL`：摘要模型，默认 `gpt-5.4-nano`。
+- `SUMMARY_API_KEY`：第三方兼容接口 Key；未设置时回退到 `OPENAI_API_KEY`。
+- `SUMMARY_API_BASE_URL`：兼容接口根路径，默认 `https://api.openai.com/v1`。
+- `SUMMARY_API_STYLE`：`responses`（默认）或 `chat_completions`；后者不启用联网搜索引用。
+- `SUMMARY_MODEL`：摘要模型；未设置时回退到 `OPENAI_SUMMARY_MODEL`，再回退到 `gpt-5.4-nano`。
+- `SUMMARY_SUPPORTS_WEB_SEARCH`：接口是否支持 Responses 的 `web_search` 工具，默认 `true`；不确定时对中转站设为 `false`。
 - `AI_SUMMARY_LIMIT`：每次最多生成的摘要数量，默认 `10`。
 
 ## 每日发布
@@ -60,7 +88,7 @@ OPENAI_API_KEY='your-api-key' python3 collect.py
 2. 将新增归档提交回仓库，以便持续保留历史。
 3. 部署静态页面到 GitHub Pages。
 
-推送仓库后，在 GitHub 仓库的 `Settings > Pages` 将来源设为 **GitHub Actions**。如需雪球动态，再添加名为 `XUEQIU_COOKIE` 的 Actions Secret；如需媒体自动摘要，添加 `OPENAI_API_KEY` Secret。
+推送仓库后，在 GitHub 仓库的 `Settings > Pages` 将来源设为 **GitHub Actions**。如需雪球动态，再添加名为 `XUEQIU_COOKIE` 的 Actions Secret；如需媒体自动摘要，可添加 `OPENAI_API_KEY` Secret，或添加 `SUMMARY_API_KEY` Secret 并在 Actions Variables 中设置 `SUMMARY_API_BASE_URL`、`SUMMARY_API_STYLE`、`SUMMARY_MODEL`、`SUMMARY_SUPPORTS_WEB_SEARCH`。
 部署时需要添加 `TRACKER_USER_AGENT` Secret 才能每日检查 SEC；未设置时，页面会保留既有归档并将该来源显示为待配置。
 
 ## 验证
