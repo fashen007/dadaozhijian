@@ -42,6 +42,8 @@ SUMMARY_API_STYLE = os.environ.get("SUMMARY_API_STYLE", "").strip().lower() or "
 SUMMARY_SUPPORTS_WEB_SEARCH = (os.environ.get("SUMMARY_SUPPORTS_WEB_SEARCH", "").strip() or "true").lower() in {
     "1", "true", "yes", "on"
 }
+SUMMARY_THINKING = os.environ.get("SUMMARY_THINKING", "").strip().lower()
+SUMMARY_MAX_TOKENS = int(os.environ.get("SUMMARY_MAX_TOKENS", "").strip() or "160")
 ANTHROPIC_BASE_URL = os.environ.get("ANTHROPIC_BASE_URL", "").strip().rstrip("/")
 ANTHROPIC_MODEL = os.environ.get("ANTHROPIC_MODEL", "").strip()
 ANTHROPIC_AUTH_STYLE = os.environ.get("ANTHROPIC_AUTH_STYLE", "").strip().lower() or "x-api-key"
@@ -432,8 +434,10 @@ def summarize_media_items(
                 request_payload: dict[str, Any] = {
                     "model": SUMMARY_MODEL,
                     "messages": [{"role": "user", "content": prompt}],
-                    "max_tokens": 160,
+                    "max_tokens": SUMMARY_MAX_TOKENS,
                 }
+                if SUMMARY_THINKING in {"enabled", "disabled"}:
+                    request_payload["thinking"] = {"type": SUMMARY_THINKING}
                 auth_headers = {"Authorization": f"Bearer {api_key}"}
                 provider_style = SUMMARY_API_STYLE
             else:

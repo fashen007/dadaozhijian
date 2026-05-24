@@ -5,6 +5,12 @@ env:
 
 on:
   workflow_dispatch:
+    inputs:
+      summary_limit:
+        description: Maximum summaries for this manual run
+        required: false
+        default: "10"
+        type: string
   schedule:
     - cron: "15 1 * * *" # 09:15 Asia/Shanghai
 
@@ -27,19 +33,15 @@ jobs:
           XUEQIU_COOKIE: ${{ secrets.XUEQIU_COOKIE }}
           TRACKER_USER_AGENT: ${{ secrets.TRACKER_USER_AGENT }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          SUMMARY_API_KEY: ${{ secrets.SUMMARY_API_KEY }}
+          SUMMARY_API_KEY: ${{ secrets.SUMMARY_API_KEY || secrets.DONGBOBGLM }}
           SUMMARY_API_BASE_URL: ${{ vars.SUMMARY_API_BASE_URL }}
           SUMMARY_API_STYLE: ${{ vars.SUMMARY_API_STYLE }}
           SUMMARY_MODEL: ${{ vars.SUMMARY_MODEL }}
           SUMMARY_SUPPORTS_WEB_SEARCH: ${{ vars.SUMMARY_SUPPORTS_WEB_SEARCH }}
-          ANTHROPIC_AUTH_TOKEN: ${{ secrets.DONGBOBGLM }}
-          ANTHROPIC_BASE_URL: ${{ vars.ANTHROPIC_BASE_URL }}
-          ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL }}
-          ANTHROPIC_AUTH_STYLE: ${{ vars.ANTHROPIC_AUTH_STYLE }}
-          ANTHROPIC_THINKING: ${{ vars.ANTHROPIC_THINKING }}
-          ANTHROPIC_MAX_TOKENS: ${{ vars.ANTHROPIC_MAX_TOKENS }}
+          SUMMARY_THINKING: ${{ vars.SUMMARY_THINKING }}
+          SUMMARY_MAX_TOKENS: ${{ vars.SUMMARY_MAX_TOKENS }}
           OPENAI_SUMMARY_MODEL: gpt-5.4-nano
-          AI_SUMMARY_LIMIT: "10"
+          AI_SUMMARY_LIMIT: ${{ inputs.summary_limit || '10' }}
         run: python3 collect.py
       - name: Keep the daily archive in git
         run: |

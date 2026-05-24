@@ -66,6 +66,8 @@ SUMMARY_API_BASE_URL='https://your-provider.example/v1' \
 SUMMARY_API_STYLE='chat_completions' \
 SUMMARY_MODEL='your-model-id' \
 SUMMARY_SUPPORTS_WEB_SEARCH='false' \
+SUMMARY_THINKING='disabled' \
+SUMMARY_MAX_TOKENS='256' \
 python3 collect.py
 ```
 
@@ -90,6 +92,8 @@ python3 collect.py
 - `SUMMARY_API_STYLE`：`responses`（默认）或 `chat_completions`；后者不启用联网搜索引用。
 - `SUMMARY_MODEL`：摘要模型；未设置时回退到 `OPENAI_SUMMARY_MODEL`，再回退到 `gpt-5.4-nano`。
 - `SUMMARY_SUPPORTS_WEB_SEARCH`：接口是否支持 Responses 的 `web_search` 工具，默认 `true`；不确定时对中转站设为 `false`。
+- `SUMMARY_THINKING`：Chat Completions 中转站支持时可设为 `disabled`；适合 GLM 短摘要任务。
+- `SUMMARY_MAX_TOKENS`：Chat Completions 的单篇输出预算，默认 `160`。
 - `ANTHROPIC_AUTH_TOKEN` / `ANTHROPIC_API_KEY`：Anthropic Messages 兼容接口的密钥。
 - `ANTHROPIC_BASE_URL`：Anthropic 兼容服务根路径，例如 `https://bobdong.cn`。
 - `ANTHROPIC_MODEL`：该兼容服务开放的模型 id；Anthropic 协议摘要不启用 OpenAI `web_search` 引用。
@@ -106,7 +110,7 @@ python3 collect.py
 2. 将新增归档提交回仓库，以便持续保留历史。
 3. 部署静态页面到 GitHub Pages。
 
-推送仓库后，在 GitHub 仓库的 `Settings > Pages` 将来源设为 **GitHub Actions**。如需雪球动态，再添加名为 `XUEQIU_COOKIE` 的 Actions Secret；如需媒体自动摘要，可添加 `OPENAI_API_KEY` Secret，添加 OpenAI-compatible 的 `SUMMARY_API_KEY` 配置，或将 Anthropic-compatible Key 作为 Secret 并设置 `ANTHROPIC_BASE_URL`、`ANTHROPIC_MODEL` Variables。本项目可将 Secret `DONGBOBGLM` 直接作为 Anthropic token 使用。
+推送仓库后，在 GitHub 仓库的 `Settings > Pages` 将来源设为 **GitHub Actions**。如需雪球动态，再添加名为 `XUEQIU_COOKIE` 的 Actions Secret；如需媒体自动摘要，可添加 `OPENAI_API_KEY` Secret 或 OpenAI-compatible 的 `SUMMARY_API_KEY` 配置。本项目将 Secret `DONGBOBGLM` 作为中转站 Chat Completions token 使用，并通过 `SUMMARY_API_BASE_URL`、`SUMMARY_API_STYLE`、`SUMMARY_MODEL` Variables 选择接口和模型。
 部署时需要添加 `TRACKER_USER_AGENT` Secret 才能每日检查 SEC；未设置时，页面会保留既有归档并将该来源显示为待配置。
 
 ## 验证

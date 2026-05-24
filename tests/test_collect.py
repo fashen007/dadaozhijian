@@ -192,10 +192,14 @@ class CollectorTests(unittest.TestCase):
 
         with patch.dict(os.environ, {"SUMMARY_API_KEY": "provider-key"}, clear=True), patch.object(
             collect, "SUMMARY_API_BASE_URL", "https://proxy.example/v1"
-        ), patch.object(collect, "SUMMARY_API_STYLE", "chat_completions"):
+        ), patch.object(collect, "SUMMARY_API_STYLE", "chat_completions"), patch.object(
+            collect, "SUMMARY_THINKING", "disabled"
+        ), patch.object(collect, "SUMMARY_MAX_TOKENS", 256):
             collect.summarize_media_items(items, lambda *_args: b"<html></html>", fake_post)
         self.assertEqual(captured["url"], "https://proxy.example/v1/chat/completions")
         self.assertIn("messages", captured["payload"])
+        self.assertEqual(captured["payload"]["thinking"], {"type": "disabled"})
+        self.assertEqual(captured["payload"]["max_tokens"], 256)
         self.assertEqual(items[0]["summary_status"], "ai")
 
     def test_anthropic_compatible_provider_is_supported(self):
