@@ -252,11 +252,14 @@ class CollectorTests(unittest.TestCase):
             collect, "ANTHROPIC_AUTH_STYLE", "bearer"
         ), patch.object(
             collect, "ANTHROPIC_THINKING", "disabled"
+        ), patch.object(
+            collect, "ANTHROPIC_MAX_TOKENS", 1024
         ):
             collect.summarize_media_items(items, lambda *_args: b"<html></html>", fake_post)
         self.assertEqual(captured["headers"]["Authorization"], "Bearer glm-key")
         self.assertNotIn("x-api-key", captured["headers"])
         self.assertEqual(captured["payload"]["thinking"], {"type": "disabled"})
+        self.assertEqual(captured["payload"]["max_tokens"], 1024)
 
     def test_summary_error_reports_safe_gateway_message(self):
         items = [

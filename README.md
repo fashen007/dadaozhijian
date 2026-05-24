@@ -77,6 +77,7 @@ ANTHROPIC_BASE_URL='https://bobdong.cn' \
 ANTHROPIC_MODEL='your-model-id' \
 ANTHROPIC_AUTH_STYLE='bearer' \
 ANTHROPIC_THINKING='disabled' \
+ANTHROPIC_MAX_TOKENS='1024' \
 python3 collect.py
 ```
 
@@ -94,6 +95,7 @@ python3 collect.py
 - `ANTHROPIC_MODEL`：该兼容服务开放的模型 id；Anthropic 协议摘要不启用 OpenAI `web_search` 引用。
 - `ANTHROPIC_AUTH_STYLE`：`x-api-key`（原生 Anthropic 默认）或 `bearer`（New API 网关使用）。
 - `ANTHROPIC_THINKING`：兼容服务支持时可设为 `disabled`；`GLM-5.1` 的短摘要任务建议关闭 thinking 以减少空正文与 token 消耗。
+- `ANTHROPIC_MAX_TOKENS`：Anthropic 兼容接口的单篇输出预算，默认 `1024`；GLM 模型设得过低会只返回截断状态而没有摘要正文。
 - `AI_SUMMARY_LIMIT`：每次最多生成的摘要数量，默认 `10`。
 
 ## 每日发布

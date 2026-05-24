@@ -46,6 +46,7 @@ ANTHROPIC_BASE_URL = os.environ.get("ANTHROPIC_BASE_URL", "").strip().rstrip("/"
 ANTHROPIC_MODEL = os.environ.get("ANTHROPIC_MODEL", "").strip()
 ANTHROPIC_AUTH_STYLE = os.environ.get("ANTHROPIC_AUTH_STYLE", "").strip().lower() or "x-api-key"
 ANTHROPIC_THINKING = os.environ.get("ANTHROPIC_THINKING", "").strip().lower()
+ANTHROPIC_MAX_TOKENS = int(os.environ.get("ANTHROPIC_MAX_TOKENS", "").strip() or "1024")
 USER_AGENT = (
     os.environ.get("TRACKER_USER_AGENT", "").strip()
     or "DadaoTracker/1.0 https://github.com/fashen007/dadaozhijian"
@@ -414,7 +415,7 @@ def summarize_media_items(
                 request_payload = {
                     "model": ANTHROPIC_MODEL,
                     "messages": [{"role": "user", "content": prompt}],
-                    "max_tokens": 160,
+                    "max_tokens": ANTHROPIC_MAX_TOKENS,
                 }
                 if ANTHROPIC_THINKING in {"enabled", "disabled"}:
                     request_payload["thinking"] = {"type": ANTHROPIC_THINKING}
