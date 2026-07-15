@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-14T04:16:39Z",
+  "updated_at": "2026-07-15T04:16:36Z",
   "profile": {
     "name": "段永平",
     "xueqiu_name": "大道无形我有型",
@@ -12,28 +12,28 @@
       "name": "雪球本人账号",
       "status": "setup",
       "detail": "设置 XUEQIU_COOKIE 后采集动态；公开主页：https://xueqiu.com/u/1247347556",
-      "checked_at": "2026-07-14T04:16:39Z"
+      "checked_at": "2026-07-15T04:16:36Z"
     },
     {
       "key": "sec",
       "name": "SEC 13F",
       "status": "ok",
       "detail": "获取 31 份持仓披露",
-      "checked_at": "2026-07-14T04:16:39Z"
+      "checked_at": "2026-07-15T04:16:36Z"
     },
     {
       "key": "news",
       "name": "媒体报道",
-      "status": "ok",
-      "detail": "获取 100 条 Google News RSS 结果",
-      "checked_at": "2026-07-14T04:16:39Z"
+      "status": "error",
+      "detail": "读取失败：HTTP Error 503: Service Unavailable",
+      "checked_at": "2026-07-15T04:16:36Z"
     },
     {
       "key": "summary",
       "name": "AI 自动摘要",
       "status": "error",
       "detail": "AI 总结 0 条，失败 10 条（首次失败：HTTPError HTTP 403）",
-      "checked_at": "2026-07-14T04:16:39Z"
+      "checked_at": "2026-07-15T04:16:36Z"
     }
   ],
   "items": [
