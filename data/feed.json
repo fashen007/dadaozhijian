@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-12T05:47:03Z",
+  "updated_at": "2026-09-13T06:09:31Z",
   "profile": {
     "name": "段永平",
     "xueqiu_name": "大道无形我有型",
@@ -12,28 +12,28 @@
       "name": "雪球本人账号",
       "status": "setup",
       "detail": "设置 XUEQIU_COOKIE 后采集动态；公开主页：https://xueqiu.com/u/1247347556",
-      "checked_at": "2026-09-12T05:47:03Z"
+      "checked_at": "2026-09-13T06:09:31Z"
     },
     {
       "key": "sec",
       "name": "SEC 13F",
       "status": "ok",
       "detail": "获取 32 份持仓披露",
-      "checked_at": "2026-09-12T05:47:03Z"
+      "checked_at": "2026-09-13T06:09:31Z"
     },
     {
       "key": "news",
       "name": "媒体报道",
-      "status": "ok",
-      "detail": "获取 100 条 Google News RSS 结果",
-      "checked_at": "2026-09-12T05:47:03Z"
+      "status": "error",
+      "detail": "读取失败：HTTP Error 503: Service Unavailable",
+      "checked_at": "2026-09-13T06:09:31Z"
     },
     {
       "key": "summary",
       "name": "AI 自动摘要",
       "status": "error",
       "detail": "AI 总结 0 条，失败 10 条（首次失败：HTTPError HTTP 403）",
-      "checked_at": "2026-09-12T05:47:03Z"
+      "checked_at": "2026-09-13T06:09:31Z"
     }
   ],
   "items": [
@@ -5271,7 +5271,7 @@
       "source_type": "监管披露",
       "published_at": "2026-08-14T00:00:00Z",
       "url": "https://www.sec.gov/Archives/edgar/data/1759760/000175976026000007/xslForm13F_X02/primary_doc.xml",
-      "collected_at": "2026-09-12T05:47:03Z",
+      "collected_at": "2026-09-13T06:09:31Z",
       "verification": "原始披露",
       "summary_status": "source",
       "summary_basis": "监管披露说明"
