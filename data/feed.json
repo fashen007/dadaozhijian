@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-01T07:10:54Z",
+  "updated_at": "2026-10-02T07:00:08Z",
   "profile": {
     "name": "段永平",
     "xueqiu_name": "大道无形我有型",
@@ -12,45 +12,31 @@
       "name": "雪球本人账号",
       "status": "setup",
       "detail": "设置 XUEQIU_COOKIE 后采集动态；公开主页：https://xueqiu.com/u/1247347556",
-      "checked_at": "2026-10-01T07:10:54Z"
+      "checked_at": "2026-10-02T07:00:08Z"
     },
     {
       "key": "sec",
       "name": "SEC 13F",
       "status": "ok",
       "detail": "获取 32 份持仓披露",
-      "checked_at": "2026-10-01T07:10:54Z"
+      "checked_at": "2026-10-02T07:00:08Z"
     },
     {
       "key": "news",
       "name": "媒体报道",
       "status": "ok",
       "detail": "获取 100 条 Google News RSS 结果",
-      "checked_at": "2026-10-01T07:10:54Z"
+      "checked_at": "2026-10-02T07:00:08Z"
     },
     {
       "key": "summary",
       "name": "AI 自动摘要",
       "status": "error",
       "detail": "AI 总结 0 条，失败 10 条（首次失败：URLError: ）",
-      "checked_at": "2026-10-01T07:10:54Z"
+      "checked_at": "2026-10-02T07:00:08Z"
     }
   ],
   "items": [
-    {
-      "id": "news-8a0a97aa7c30204973",
-      "category": "investment",
-      "title": "段永平举牌泡泡玛特3日后再增持 持股总市值近145亿港元",
-      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
-      "source": "财联社",
-      "source_type": "媒体报道",
-      "published_at": "2026-09-30T20:28:34Z",
-      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBPdjN1bzZqRzdCMFpibklCcTRidXh4Y3Y2SDhLS0FvYjZaOVJ5Z0RvY1hHT0lvblN6YXdkdmdzcGJheVFkdlZFQg?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
-      "verification": "需核验",
-      "summary_status": "pending",
-      "summary_basis": "等待 AI 摘要"
-    },
     {
       "id": "news-14cc6ed4b7fe119a18",
       "category": "investment",
@@ -66,6 +52,34 @@
       "summary_basis": "等待 AI 摘要"
     },
     {
+      "id": "news-e3ab2ca92cf4ee0af8",
+      "category": "investment",
+      "title": "“港股三朵金花”还在回调，段永平出手加仓茅台",
+      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
+      "source": "21财经",
+      "source_type": "媒体报道",
+      "published_at": "2026-09-30T07:53:03Z",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQWm93OGhGbzNGb2JGcUZ0YUJOTldjbnl3UGxleTZoRWNyRkNfOW41RVRNRlpDS1pRajNZb0VMenNVSFNSbGpZRERfakFIQzFWRHdyS3pxdnB3eEZ1SmdvUnpMdFlkNDFfRkZ0MW1waGxUNGkzT0szbkdkMmtpQW5IMWdrZ3ZDRno5RXBIY0ZzMA?oc=5",
+      "collected_at": "2026-10-02T07:00:08Z",
+      "verification": "需核验",
+      "summary_status": "pending",
+      "summary_basis": "等待 AI 摘要"
+    },
+    {
+      "id": "news-8a0a97aa7c30204973",
+      "category": "investment",
+      "title": "段永平举牌泡泡玛特3日后再增持 持股总市值近145亿港元",
+      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
+      "source": "财联社",
+      "source_type": "媒体报道",
+      "published_at": "2026-09-30T07:00:00Z",
+      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBPdjN1bzZqRzdCMFpibklCcTRidXh4Y3Y2SDhLS0FvYjZaOVJ5Z0RvY1hHT0lvblN6YXdkdmdzcGJheVFkdlZFQg?oc=5",
+      "collected_at": "2026-10-02T07:00:08Z",
+      "verification": "需核验",
+      "summary_status": "pending",
+      "summary_basis": "等待 AI 摘要"
+    },
+    {
       "id": "news-4f990838e82ac74ff3",
       "category": "investment",
       "title": "段永平，年内第三次出手！坐拥权重之首贵州茅台，红利质量ETF招商(159209)份额年内增3倍！",
@@ -74,7 +88,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-30T06:22:00Z",
       "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOWEY1UlFhNG9uTkhka3JxU1hLaGxDVEpPam1IWURTN2l4dzVsV3N1WEhJRlJZcC1vVUt4akFnZzYxdXRZN09KcGthX2FxVmFPR2JwZmlWRzV3OHJGUUZQX0dwY0Y5LTgzLXZKSGdIZ1VBX0JoVEswYXNMd0RiQUN4dXRyQQ?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -102,21 +116,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-30T00:22:39Z",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1KU2tqbmVHdHoyd3c4TzBzWW5ScUQtdGhYTnNBQnJ3T2cyZVpnbm55eVV1THJsa1lUaVdEWU1pY2N6bURrSEFDVGRHWlMxLUFpNkVTNEp6RWhCbTdqZ0JuazhQTHdDRHhKRnY3OEJFYnM?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
-      "verification": "需核验",
-      "summary_status": "pending",
-      "summary_basis": "等待 AI 摘要"
-    },
-    {
-      "id": "news-231e61977eafab8d64",
-      "category": "investment",
-      "title": "段永平出手3万股，年内第三次加仓茅台！如何用指数践行这一理念？",
-      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
-      "source": "东方财富",
-      "source_type": "媒体报道",
-      "published_at": "2026-09-29T17:03:57Z",
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFAtajdodVVlN0RwY2xDdUNwVzJFcEpUOWIwZ2QzX0dueHg0Q2pmUXJXUlNjdG9HVDdQbkhObEhiczFyckJMQ2ZJZWpLSmYxMEZXaGdnc050Z2dDUGRWMlFmX292RQ?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -144,7 +144,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-29T12:23:00Z",
       "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1nczBYdzQwNXZaQ3pudW5aVG5XUVNTVFFpZ2ROMlJjRlVvVzZsd3djMFdtNHFDM1VwcjZtQkxOc0IwN0hwQUNKS0R5NVB6ZTNzUl9iYWt2TzU1YzdhMlZ6REpB?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -186,7 +186,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-29T10:18:32Z",
       "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5veEstQmpGWmVmVE9meTItMkpxVDZZSGNKSF9GN25YbE52Y094LVJBYU1wTkZVd2tSUmxyYXpJT3hKZFJkY1diZklsblBPZw?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -200,7 +200,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-29T09:55:11Z",
       "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE15Z25LbDlBazdVV1p4NGMxTUtRQjA3R0YyNGlVZ1RDRjdkUjYyRWxKZnpaYXhVVDg0ajZqNjJKS041QjJtcHBRTFpOc0I4bTh4Q2dLd1RjTWpYQk51YVRoOWdn?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -214,7 +214,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-29T09:31:41Z",
       "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1UckZMX1ljWFF3NGl0NF8xTWhVOWtvT2NhYkJNMjhTUExjX3huR1pMcjdKQXBWTVBvTXdOclA1c3JFazFSUzg0enpUZndvZ1hVZldXcVNQNGJXalZsaXpHdnNDQQ?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -228,7 +228,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-29T08:22:00Z",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQdG5IQTA1X0MwRHlFaW0zcFdZajIwNjFJOFc0N2xCdF9tMTEycFFLWlNsWF9JaUVfM0hOX0hkVzBBSzJtVnNRcDN5VTFNZ3BBclRGX3J1djI2Q1VZWm1yRlVtcXZHMWJsZTBuS09SYlVpRk1sWHJ2TmN4UDZ6U19aQnNBZ0U1V0FFNGJ4bw?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -242,7 +242,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-29T07:39:00Z",
       "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE8wSktLUXR3UlVJd1lPLUtaREM5T3h2T19VYkFvcUUzdjdDV21yNVdZa1dJLUxua0cwMUFWdjNDXzdGSl9EMEdBb0x4YWVITWd4TlI5OGl6cnpiY3BVUnc?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -262,6 +262,20 @@
       "summary_basis": "等待 AI 摘要"
     },
     {
+      "id": "news-231e61977eafab8d64",
+      "category": "investment",
+      "title": "段永平出手3万股，年内第三次加仓茅台！如何用指数践行这一理念？",
+      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
+      "source": "东方财富",
+      "source_type": "媒体报道",
+      "published_at": "2026-09-29T07:03:35Z",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFAtajdodVVlN0RwY2xDdUNwVzJFcEpUOWIwZ2QzX0dueHg0Q2pmUXJXUlNjdG9HVDdQbkhObEhiczFyckJMQ2ZJZWpLSmYxMEZXaGdnc050Z2dDUGRWMlFmX292RQ?oc=5",
+      "collected_at": "2026-10-02T07:00:08Z",
+      "verification": "需核验",
+      "summary_status": "pending",
+      "summary_basis": "等待 AI 摘要"
+    },
+    {
       "id": "news-dcbaa3035a479e8883",
       "category": "personal",
       "title": "茅台越跌，段永平越买，他到底图什么？",
@@ -270,7 +284,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-29T06:54:37Z",
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5Ydk1KeVdKSmt3c05CS1FmN1hCWGtZWVROMHFTWHlXa1ppQW92Q3k3dk8wc0EyMnBLNjRhZjRXaTRoNnNZQm5DOFJ1UzFPbTRHZWxpSGJNZ0Q3d255bVZGcFJpU21ILW1fQ1BfLUdFNA?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -298,7 +312,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-29T06:52:48Z",
       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE92cTZnNHpPeXhPOUk2SGhMbE1fSnhJa1dEMDNoamJINlBfWmY1ZXBZSHpZSVI3WEx4Z3hWeFZWbnV1OTZBZ2xVRjdqcm5iWFNmWVRwRUZQeE5XUGdPWktDTVZFX3lxUkxpYnJQVnNn?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -313,20 +327,6 @@
       "published_at": "2026-09-29T06:33:54Z",
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBNRndqdFVESG9CdjdlXzBOcklGQnFJOF9FbGR1QjFpTVktRnVVR3BtQmhPQUYxSENqX2ZXal96SmRHTWZrSnVqSDdpZWplemRicVBaUE9sVk5KUHF2UXR6Mw?oc=5",
       "collected_at": "2026-09-30T06:42:42Z",
-      "verification": "需核验",
-      "summary_status": "pending",
-      "summary_basis": "等待 AI 摘要"
-    },
-    {
-      "id": "news-9e9f3e11987c0211fa",
-      "category": "investment",
-      "title": "年内股价跌超7%，段永平为何仍逆向投资茅台？",
-      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
-      "source": "东方财富",
-      "source_type": "媒体报道",
-      "published_at": "2026-09-29T06:33:54Z",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9pa0syeFZub2kxQjhkaUpFcHl1ZFNoSXJ2aXhLanlkM0dRS3VwQ2g2dU9CNW40dE9sM0FMY3pwRUZ3UGFoUWsxMlBMTUVuckhKOS1Fcmx5V20xNHVtLVk1cE9XVFlpQQ?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -354,7 +354,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-29T06:03:06Z",
       "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxPd3B2LU1JOWFQeWpwZ3pScEVpdnh1cVE2YXlvMzFVbVZRekMtalctVkhFMVRkRU01NVRDYWFPVFNWdFJJdUY0MnVvY3lpWDlEczljaFlveTRtd2U5UzZfOTdGYXRlbzRRS190WHhuZ2J6aXZGYVltcDJ4VnZRYmNMbGVQSQ?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -368,7 +368,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-29T06:01:58Z",
       "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5TVUc2anVIc2VfMFdLaWN2bXBkYUpYdWhvamZOdy1fc3V1b1B3bFZRQWlWOG5aRHV3UjVFV2dmM1NvMGpmejNMZmtZM3BNa01JeldJaUxteUM?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -396,7 +396,21 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-29T02:48:00Z",
       "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBGdE5SM2xZVDZmd1czRDlmaC14LUM4YU5ScHJ1RXpVaWM1OUQ1MXRLM3ByM2ozRXJlcVJXejRWcnRDbGdrd0dXY0tUVGxRN3NJRnVYMkJiZmtvd3B1VFE?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
+      "verification": "需核验",
+      "summary_status": "pending",
+      "summary_basis": "等待 AI 摘要"
+    },
+    {
+      "id": "news-8a3ce6ba8478edb1ca",
+      "category": "investment",
+      "title": "段永平年内第三次加仓茅台：是“越跌越买”还是“看懂了周期”？",
+      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
+      "source": "wenxuan.news",
+      "source_type": "媒体报道",
+      "published_at": "2026-09-29T01:56:32Z",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBTdjVVWVJ6V2JyWDd1d3JHaVlEZ2wyUXBjeFFMSXhYZFdJN2Z3ZlFDNDlqbDF0aGhnMzVaLXZyVlpTUzN5c3duZTlDbzBqS1pEamc?oc=5",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -410,7 +424,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-29T01:38:00Z",
       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE16cWZ5dW8wV2VEcFg4cDVSdTZBWUpzUG8wRDdoTVV3dGl5akNkWTEtbzVhSUxUaGtfTnZQU09KdExhZGJVNGQxZjVXYU83X3d5VmVJ?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -425,6 +439,20 @@
       "published_at": "2026-09-29T01:16:00Z",
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9lVnh5N2JpZUJhRk45M05fUnlsVXVJWW4wZk9ORVFjU0NnaDlFSll4ZjQ4QUVpV0ZQWDRpQ2tSXzZsZ3RoaV9sRUlSVlRfMzdSSjNDSmNUd3JmcnB5Wl9PeQ?oc=5",
       "collected_at": "2026-10-01T07:10:54Z",
+      "verification": "需核验",
+      "summary_status": "pending",
+      "summary_basis": "等待 AI 摘要"
+    },
+    {
+      "id": "news-9e9f3e11987c0211fa",
+      "category": "investment",
+      "title": "年内股价跌超7%，段永平为何仍逆向投资茅台？",
+      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
+      "source": "东方财富",
+      "source_type": "媒体报道",
+      "published_at": "2026-09-29T01:06:34Z",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE9pa0syeFZub2kxQjhkaUpFcHl1ZFNoSXJ2aXhLanlkM0dRS3VwQ2g2dU9CNW40dE9sM0FMY3pwRUZ3UGFoUWsxMlBMTUVuckhKOS1Fcmx5V20xNHVtLVk1cE9XVFlpQQ?oc=5",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -453,6 +481,20 @@
       "published_at": "2026-09-29T00:54:34Z",
       "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBPY0lkVFhPbHZwSXh4ZUhUY25fMk4zLWhFYmcydWlLdFl0ekVQTVhOUXE4LWl5NFVVaDRteURVWXF1NFZmQVMxXw?oc=5",
       "collected_at": "2026-10-01T07:10:54Z",
+      "verification": "需核验",
+      "summary_status": "pending",
+      "summary_basis": "等待 AI 摘要"
+    },
+    {
+      "id": "news-3aa90b5146adc0482d",
+      "category": "investment",
+      "title": "知名投资人段永平出手，买入贵州茅台，释放什么信号？",
+      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
+      "source": "新浪财经",
+      "source_type": "媒体报道",
+      "published_at": "2026-09-29T00:01:17Z",
+      "url": "https://news.google.com/rss/articles/CBMijARBVV95cUxObExzMUhib2RhWlVDVGFHV1YyM0hING1MYWlFd1EwLTUtc0JER2NoS0FLa0tEMWI5UV9DcnNhM0wzT3pkMkJJLUU0RHlncDRyYWJaeDBUS0xwX2ZadUl5NFVTV2UwcUZzM1VRcldUdEl3cHlnTk5xcEhrLWFqRnh0Z3RSd0RXOENwQW56Ry1TSmhFMUVhbnN6ZnNnLVI4Wnp5MXdxMXFNZVNNX3pJQ1VoOWZNbVlFYk1KeEkyNW9wZzhFeEpTR1VhZFUxcXp3SlE2Z2tVTXVJVHpxekRnSjVYakJWNEg2UlR5N3NWeklFa3hJdG1UQlBRMm1NaUJCcnpGNkRuYUtrSjBDZmxqbk9JVnpnZnE0WTBVc2dqekhEd2Rkazl6MkNJYzQ2R3lDRjlnZXhKVUQ3bERLSGplaEJkaUppS1Q4VzBCb1RGdnBEaUxGNjZyRWMzUUVZaEU0eWRKVzd4by1rWlV2bWZMeHc0dTJQU2w0QUh5Vlc1eHkzMUlNV1R5Q0xVaVZQb1Y4VzdpaS1Sb3BFX0N3cF96Yi1rWXltQXd1VXJaa0dWTG14SnY4ZV8tQkJPY0xubkZvanZSWG0tdHpRWjgxMWpJWkxGLW5rYUtHWFVzdkNicmpBSkpZRHR4dzNUUngtTnJXZkJ2LW9iZExoQk1SOHk0bDdmR0xyOEJ3OUxHUEJuZQ?oc=5",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -564,7 +606,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-28T14:50:39Z",
       "url": "https://news.google.com/rss/articles/CBMizgJBVV95cUxNUXBLdXFOdEVvT1Z0T1g5anVnUTk0a21oTGhpN2tEUzRsTDVpNDk5aEhqeXNMdDY3cm5mUE5LQVBPNmItUkhjTXlWekdsaHpVVTNpSFhBbVUtY0pRNTFMeVV3YS1wYkR5VWdLNEZZQkJ3MjFWVE8xTTRNNW5RRXBwUUJ1MXpBb3ZfWUVrOGNnU1l1NS0zalVyR2JkdXM5ekhqRGdqa2VFQXZVOGU2aEx0V2ZYZXg1MDhoUk9xcG01VEMxamZqWGNMNXQ2c3V3eWdGalYxVWhfWFhXVGFleGVVa3FkVnAybDgtSmlYX3NPTHFEeDAwQnpERDlHM2VCOEkxbG5NaGEza09MLVQxRXdNdmttcURmb3E0OUYyU2NhWFhHTmJuVkdQQm15aExDdnU4RHh5OUFSeW5vWjlzazktcEhhQWp1b183QjJCVHJR?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -578,7 +620,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-28T13:58:38Z",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQd2ZqTFhLOWR5T2gxTFZNdHp0X3NvZ19UMEpwSl9RQVplb2MtYWxOYXFqSjFsN1REQ25vZ242Y3o3NGJyRjhWQXM4cHd0Y2p2eG04bW5ObTFla3VZMkF1UkQya2lZamlueXR3bkJZUC05SHZhX2c3YTRSX2Rubm9sb3pnaFRCU1N0?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -592,7 +634,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-28T12:39:33Z",
       "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1ZNXI5NnZKelBQLVE5VVhYVHJxVnBrNnd4TUc4bjQ1aFZuRDZaaGlQZEY3eUtteFB0ZnZtcGdfb0Mxa3FUM1BXTGx6aUxPYVEyN3ZYNE9hTFpPSnhpaHoyUGZn?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -607,6 +649,20 @@
       "published_at": "2026-09-28T12:31:41Z",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNMTJTaXBfNWFwbnluS09pNmllLWM0N19QOHpiUU91OTBpM0N4N3puYjI2dHVNZHJucGVsNmJDMUFUd2lkSGFsZ0JZN0hGN09lb0h5OTVBbFo4YmlUYlBhT1FkMkVIdldDbmxXOUpTX21CZjliandjU29ROGVURlBrUjgwUVlKam95?oc=5",
       "collected_at": "2026-09-29T06:53:43Z",
+      "verification": "需核验",
+      "summary_status": "pending",
+      "summary_basis": "等待 AI 摘要"
+    },
+    {
+      "id": "news-a9460f53bc32df96cb",
+      "category": "investment",
+      "title": "段永平又出手了！买入3万股贵州茅台，曾反问有什么理由不看好茅台？",
+      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
+      "source": "手机网易网",
+      "source_type": "媒体报道",
+      "published_at": "2026-09-28T12:20:57Z",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBwM1ppWHZIeXppQXM5ajZFYTBTaXlaMXlta1dyZTZic3BKUmtPQnB5dzcyWWN2NWJ6YlZrQTJjYVdMdWlSODRkeXdOZWdyZHpJZGZEUEllNGJCNkhHMlUyOUR3?oc=5",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -634,7 +690,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-28T11:54:30Z",
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE44VzVoVjJPUF8wNVE5enZBcldRU3NUTkdMVmlZbUp2a0dpaGVmR2tzdzY5MTFGNkI5ajJXMzh6RjJRMThiUjVWdmFoOGl0cl9Gb0dYVHByYmxTZG1pMmdWSw?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -690,7 +746,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-28T10:22:29Z",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5RUlJlWVMtVWg1WW5NLS1ET2V2UWFHV3dZamhwWUVJcktqb2pqTTFWZ1pLMUtXUEtaQ3pzaVV5WDVpNGFtWDRHV09OT3RKZVZ3enBGNGhhMHVaMFdFQUV4YUc3OEVuTmNldk44engtX2w?oc=5",
-      "collected_at": "2026-09-29T06:53:43Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -718,7 +774,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-28T10:17:45Z",
       "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9tNjUwb3pZZVRaa2dyVW4xVDNuZlE1Rk5HOXV3RVdWLWpReDJTT1JPeC1vMUhZMUVXZXpUb2liemFQTXZvelRxOENsNWpKZW1IY2xWR0FRS1J5Q3BqaVlF?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -728,11 +784,11 @@
       "category": "investment",
       "title": "段永平斥资近3700万购入茅台股票，曾多次发帖“唱多”茅台",
       "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
-      "source": "finance.sina.com.cn",
+      "source": "新浪财经",
       "source_type": "媒体报道",
       "published_at": "2026-09-28T10:14:36Z",
       "url": "https://news.google.com/rss/articles/CBMitgJBVV95cUxOYVRFLUZHblNWRTRySFZYcVN5TnZ4di1Yc3dGRzY1THVRcHJDamlwZnNTWjlFZVZhWHFZRV9ISmV3XzA1Nmt5Ynl4MjZWdEFKOHZ2Qjh5bEM1QTA3QVBfRlNQSkg2anhReHNaLWoxc3hYN0hWanp1OVBReUtiNWE2ZnROSXFuM1JsWmNkcGpoWVRIbjYtWGFBMzZFakdlOHR1V0l4Z1NHZkxUaGtScUlBSmIybWhZZWRidmUzREFKcXR3TE4yR1l4NzFpRWdyNXMxRmc1NFZ5SmRVdTJhakMzU0NfSUo5dXJmOFJfNFlucVVLQ2ZSUUs3dVJ0MzJpVnI2eUs1aTB5b3VYeVprNGlDSVpfS2g1QnhCOExDTGJiekZRanU5VHgtRlJqdWI3TlAwa0djYUJB?oc=5",
-      "collected_at": "2026-09-30T06:42:42Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -760,7 +816,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-28T09:21:04Z",
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9nSXl2aFFfUkZyN3ZIaVJZMjhKb0RpY1ZaN0xUTHdVN1cxZlAyYjhIQ1JBcXBOSGoyQThxeV9Cb0xUV2dGNjU5eFVtWnZWRU1qOFJKNjdYaG5ubDVrLVo0OG5BcVhoUGZmV0xuWXlobw?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -788,7 +844,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-28T09:14:00Z",
       "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE1tYmVVYlF6amJ5eUxJNnQ3UjliMXBnUjRoUE5jYUtESWhUNUk0Z2x5QWt4U2Jua3dEMVFoWjdDRlBRWEo4QmRXc1lqTzJfOFJr?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -816,7 +872,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-28T09:13:23Z",
       "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE1TR2dEeldUeko5T1hoaTlRNFVNY2NWR29BXzhDZXdNSzFuN1J0Mk1WM3hyTHRRVU9VLUNJV01ZRmZrTzlxQzEtTWp3?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -830,7 +886,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-28T08:58:00Z",
       "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBuelRhbHNpQnhTVm81S2I2YUhqVldyamE0RzFITFV6N0tXWm41b29fZXlPck95bHlpSk1QYnFnU2dNeE13NGpUZFJfYzAwQQ?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -886,7 +942,21 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-28T08:42:00Z",
       "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE50N1V6MXQ3UHA5TkxxcnBxUldjZHZnNS1reU9aOFlrenBwS3J2X1JVNmFjbFhzYld0eEdSY2VMbDJYYnU4SjBQMkRqWjJPOUNRbVdqVEprR0VqUVdXSXc?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
+      "verification": "需核验",
+      "summary_status": "pending",
+      "summary_basis": "等待 AI 摘要"
+    },
+    {
+      "id": "news-110a98ec21159fc9eb",
+      "category": "investment",
+      "title": "月内股价累计跌超4%，段永平斥资近3700万元买入3万股贵州茅台",
+      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
+      "source": "搜狐网",
+      "source_type": "媒体报道",
+      "published_at": "2026-09-28T08:42:00Z",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQaU5jTjVrbndlVlktaXcyeVhmallZZENYREpOXzBMNUhKOHZUcEIzQ19HSVRsdm1qLVVGWkVRcjhxVTZwTTBXMGtnSGRBTFhTb3BMZzlMZEwwRHRCLUtnRFRyQS1nSTYyMVMxcC1xZ05nanFXNnV0X0J4bURWUUp6dG1rNUx2Y1Z0a1phMnNsbXpnb3pOSEZzWWx5TDNjX2xZem11R05VbkdkZw?oc=5",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -914,7 +984,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-28T08:36:05Z",
       "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1XUlZ2a3VjTlpRZWtDSzlCbU5kWlE3VU1vREZkalZpOTlSX1NqVFQxT2Fib1hCcll2UThnSXo2cVpsaFZ3M3RPMU9pLXhCYUhuREdDd2ZkemtfX1ZZUi1BRmFEWnluczhxb3pQTThCSXZmQ20xclFCVQ?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -942,7 +1012,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-28T08:12:57Z",
       "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBZUnlhUU9SaUNFWldiUWVQMEY4X0FOemRrSzZvaTdVY3RaM09WQjViME9Ma29tbVhOb1ZfNmRYUzloMnVwMGhmOU1WcW1Ua05RWnU0TTAtZEpzUkVKQUtZU3NLQkxKSmkxdFgyN3VSUWJCUQ?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -956,7 +1026,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-28T08:06:00Z",
       "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBaSFk5NDZDcmhaTzZVcklBRXItTm5aQ2IxX2ZqZFhLd3dMOGpYRDNobTNPb2lISVpjdDRZQXlUdlk3Y1lUY3VZcE5TdGk4eFhuYzl6NFRNTW5GRDR3YjVmYUlyM1UyREtnRnEwWUM0SWlmTTZ0d1F5Qg?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -990,6 +1060,20 @@
       "summary_basis": "等待 AI 摘要"
     },
     {
+      "id": "news-abbfbe664164dafc4a",
+      "category": "personal",
+      "title": "段永平最近又说了好多..._精品推荐_要闻",
+      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
+      "source": "证券之星",
+      "source_type": "媒体报道",
+      "published_at": "2026-09-28T07:50:26Z",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE43N1NPSEJkZWp2VGNySWlmNm5CeE4yU1JrNjNXLXFubFFWakIwTHN5YllSX3lQOWt5eHdTaTFkdnhIUFloMFVGQzU4RlBROFB4bkN4NTFISTBjcEpTTVkwbThB?oc=5",
+      "collected_at": "2026-10-02T07:00:08Z",
+      "verification": "需核验",
+      "summary_status": "pending",
+      "summary_basis": "等待 AI 摘要"
+    },
+    {
       "id": "news-d5388114e11b5074b6",
       "category": "investment",
       "title": "段永平发帖称买了3万股，贵州茅台股价拉升翻红",
@@ -998,7 +1082,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-28T07:48:56Z",
       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOSUJRQ25qemZ2aVhFbHkyRFVtc0s3T1VxX3ZwRlZaRzN5akZZRTA3YjRoQlZZeF9YWU5JSzRGbEt0UlpGV2o1dWtUZDBaNUdKa0JBT3hsWFl0R3o0YlZwOWhqV0IzMVJCS2ZLLXhFSjlRTkt5TzREaUpwMjN6UzBEbVpNSW5ETjBlNjg0Tms4MA?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1012,7 +1096,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-28T07:42:55Z",
       "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBicUpzZkZRWG9Fc2xLZEF1anctN3hLeVU5SnlpWTR5MXRTdzVHcGtCR3VNWU1fRGV3MHdpMnNjWWc2RGFlMEtZb21NM1dnR3RO?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1026,7 +1110,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-28T07:39:44Z",
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5rVkZGVGJsYkFDcXNkVU5KaDRMLXJYZnpVM3NBdEkwRm4yTUJJQW5GRS1MdWlYRktWa253YmxLZDQ0NWZveFg4cDN2ZUIwMUxXcFI3VEU2ak9wOUlIMkp3RA?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1046,6 +1130,20 @@
       "summary_basis": "等待 AI 摘要"
     },
     {
+      "id": "news-aca80fc051af76d357",
+      "category": "investment",
+      "title": "3692万元！段永平出手，茅台翻红",
+      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
+      "source": "东方财富",
+      "source_type": "媒体报道",
+      "published_at": "2026-09-28T07:25:55Z",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1zeVQyX1Uwc0dhQnYyTzBwdE00bzJxYURONk0xWXB1Ny14THhiX2szV0FIVHoyb3hHMklxMmJjQ2R4X3dyWlBWOU5BOUtUdmRuSVEzMUMtcFJMWEQ3dUVoQw?oc=5",
+      "collected_at": "2026-10-02T07:00:08Z",
+      "verification": "需核验",
+      "summary_status": "pending",
+      "summary_basis": "等待 AI 摘要"
+    },
+    {
       "id": "news-16969704853411df36",
       "category": "investment",
       "title": "段永平加仓贵州茅台",
@@ -1054,7 +1152,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-28T07:22:05Z",
       "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBLSG1wYmNZWTBESXpxc2J1T0puUXpLQjhyQ1duZEhCOHEtX1BaOF90d0RXZUQ5U1FuQksxVG50dUFxbHlYZnIwT0lhTzVtTEJmNERiekZqVDZfRTZTUkYxV2V3?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1074,6 +1172,20 @@
       "summary_basis": "等待 AI 摘要"
     },
     {
+      "id": "news-5762e1c4c031a464b3",
+      "category": "investment",
+      "title": "越跌越买！“十年之约”后，段永平又花近3700万买入茅台",
+      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
+      "source": "新浪财经",
+      "source_type": "媒体报道",
+      "published_at": "2026-09-28T07:15:31Z",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9vcVF1V1RjcjF5alE0WGotRkt5QlgzQWpyS0EwM3NDZGdIc0sta0VsQ0psSVRQbXMxNFczWVA1RTBXYXlCVjFEQ1dQR19oc0VhVWxOYjZHalZDSmk1ZHVSRHF4TjVrRS1ROHpkRTNFRDJRd2hyYVJuS3ZQbjQydw?oc=5",
+      "collected_at": "2026-10-02T07:00:08Z",
+      "verification": "需核验",
+      "summary_status": "pending",
+      "summary_basis": "等待 AI 摘要"
+    },
+    {
       "id": "news-a3dd8f88394f04126b",
       "category": "personal",
       "title": "段永平又买茅台了！3万股耗资超3690万元，曾放言拿十年赌一个亿",
@@ -1082,7 +1194,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-28T07:14:28Z",
       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFAwdTRFS3JhMWpuWGd5MGdBUUhTQzh6Mk9kbk5YMzliODQ5MFJBRnZrY3V1NFNrdnNZVUpBXzFLbmpWR3lHcjNGRGJIUFVQN1NiZExn?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1110,7 +1222,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-28T07:12:00Z",
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1PdEdqaEx0TFU3UHdEVzFROU5Zak1WOHRZY3ZVdmNjOEFuT1AyclhnTWk2dXRxcjJPM0F3Y0dGYjlFbVlBTnBFblBxNjZEYWNldjVmU0dKdFFoeVIwMGpwelFOSk1EbGxMVjFTU1pIUQ?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1152,7 +1264,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-28T07:11:01Z",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNZXVrbkRPTWV6RVJDZDVQTGZxY0dRWVpCRzd6c2w1Y2xoZXRhWlFCVTdJS2plWDEwTWdWVTlVQUFOSW9Ta0JNalpDbVJYR3B0VUJpYjNLLTU4SzJXRnhtTFlJY25ma1E2Vlo1Z1d1UFdLMHZZTTVXcVB0ZFhHREdpVUEyTTM3X3At?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1214,6 +1326,20 @@
       "summary_basis": "等待 AI 摘要"
     },
     {
+      "id": "news-5e7c3eb4bf24c06bfb",
+      "category": "investment",
+      "title": "越跌越买！“十年之约”后，段永平又花近3700万买入茅台",
+      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
+      "source": "新浪财经",
+      "source_type": "媒体报道",
+      "published_at": "2026-09-28T07:01:43Z",
+      "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE5xOTVuZkdMSkVwdXNKSHBfczJVLVh6UVJFNXQ1N0dUWDBKdndRUXh0enZxZXNfR0hZdGVhTmhnMUl0LU9seU1hY0RBeUZXbGp3WWNRaFhMWFFleERhdlAxamppNjhaZkhMRjFZNWFmUQ?oc=5",
+      "collected_at": "2026-10-02T07:00:08Z",
+      "verification": "需核验",
+      "summary_status": "pending",
+      "summary_basis": "等待 AI 摘要"
+    },
+    {
       "id": "news-eba10ef94afd0b79a5",
       "category": "investment",
       "title": "段永平发帖：买入3万股贵州茅台",
@@ -1222,7 +1348,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-28T06:50:46Z",
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9DMmJYcWE0bHJNTExOS2VheEZjQW9vTkFNWVd2ZmpZeUdhZXhBRDlEQnlBTUJrWld3SmI3RWxfQUVCU1FaeG1IRGFLNTNEQ3VBblhlX3o5cFVNLXdFMTdUdw?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1264,7 +1390,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-28T06:47:00Z",
       "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxQRlZFYWprRTdnbDFTQzc3WXhycVRNZ25QRWZFdHVyQUlHQXN5SnVmc0czYkFhRUhxTnBuemZpTGVMcTVBSm5pZ0JhMFQ3eUxwSTBnZEtyT0ZkeEQ5VUtqUnQwX21rSjd6ZHV6WnIyaWVyZWJacjN4MG9SYVhWdklQenJvRGpCUkw4MHlWVUF2bHdqRmhqWUQzMTNDN1B0Uk5LM011NEkxMkFpLWFXbVhuSGtFN3pnYmhYUVk1OHdjSFdjV2pwWjE2bzgwR3lEeVZsZXpSUUVwX0MxUzN4YzY5ZDk3bkdrbk9zNWFpWWcwalFfNGhTSkczVldJT2p3OVVkRGc?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1292,7 +1418,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-28T06:38:05Z",
       "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFB2d2x1bWVCWWNFVG4zVTNzV2NBeW9Ha3pQdC1vNWdDYUU5Sk1mZ09kTXVxRFlyNDlXQUZDR1NzVC1HX1hJeURjM3RjQ3R6bEUx?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1306,7 +1432,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-28T06:32:32Z",
       "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1vcFloUVpuNEs2SjZGRjZzdjlvaEY2Y1ZZclYzU0t4N0wyYk9VM2xHdFZZbTR1MG04amlNc2hZUEhzS3g3dTR5T191UGVrdw?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1320,7 +1446,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-28T06:32:31Z",
       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBNMUVVODloWG9BMVRwSDJ6bHA1NzFSMFd3T3J6YzN6QlpvaG0wSWc4OC1UR2ZUSzJtMjlqTS1Ebkd0NXR4dURQVGRkcFh6RFd2MDdKTWpab0NlRFZ6WDlCVzRNNUtQOVJSVk1QcEtR?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1344,11 +1470,11 @@
       "category": "investment",
       "title": "段永平发帖再度买入贵州茅台3万股年内股价跌超7%_公司新闻_财经",
       "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
-      "source": "4g.stockstar.com",
+      "source": "证券之星",
       "source_type": "媒体报道",
       "published_at": "2026-09-28T06:32:00Z",
       "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1Wd3c0blBjaHBsaWg1QmFFamVhYnhJT0h2N3VWb1A4MFJ4azlUWHAwR2JDdVFQQ3MzZDlYcHRUMFZscFVYcUF6Ty16ano4Qzd1Yk5RaGJlay04cEY0SVg0?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1390,7 +1516,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-28T06:27:51Z",
       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBoakh2M1Zocm9KRXhSM2FiTUhrV1dWWTl5LUd1OVZkbzVtSFpBRV82Z3d5ZHd6aEtrU2JNdUVLQU04bjhrdVhQaWtDOWg0UnVUcWlUN2xIUFFEWFdaUFRZRHNtWXpuelQwbDRmcGpB?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1404,7 +1530,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-28T06:26:14Z",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQVWdwLTNTS2VhR1dLaW0zOWZOOEhpT2hteXpzcS1UMUJNMlVaaFA3cHZYQ3NQMVBEd0RHQWpaTlZsRlZtdFRCeGVyTnRERzEybGpkZnYycXdMYmtFOFUtWWZsTEROVEtxcWY2OEE1VFNMRXRCMDJxa2xIOVRud1duTkVBVUd1SmpM?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1460,7 +1586,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-28T06:04:00Z",
       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPRVhqdU1pcmI2TF9WYTRfZ3lxMi1HYzdMZGtfVFlaLVotZVRTS2xxa3h4M0N5NGkzLVJuM04xOFRwTEdLYTVIT3VvTElmMVpScnRtcDYwSHBJUndEQmh3MlFpRGhWbTB2dlFWZU9TMnliTzhWcFZMOEgxY3k4eGQ3M3dBcG0?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1474,7 +1600,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-28T05:58:00Z",
       "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFA5aVUyV2V6cHV5dFFIeHF2ekRTRUVRdGIzVGxlMjBYRjRHd09EeVpFS0lYZGg1QUtqTGdmSTkzcS1FOURkWXJHaGZmTzhpR2cxZ29BUW1mWi1HZGdCMXp3aGE4VGVVdkMxQmE4?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1516,7 +1642,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-28T05:44:58Z",
       "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5WVENvTjF1N3AzM0NGTmE4d3FTbjAxQUg0RFNpRFYxcEpyekhvVjNFZFF5dzJHbDFVTUJMLUdpdFNIbzlEdEZHRUE0dVk?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1530,7 +1656,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-28T05:41:00Z",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOT2hqbkJEX0YwenhNRmFBTmpTYUpMZ2NCTkNpTmx6Q05RNjlDRGRIdlYwNVIydXVGVE53SlViZW1FSUprNWVVSGxEUU1mMUxpTFphOE0zVUF4OHV2TXpmTXoyM3pHdm4tVTZxZXduOXJPVlhMTVd5bVF4R1prdkp5RU01WTNKZFYxaWFDaw?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1558,7 +1684,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-28T05:28:53Z",
       "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBFRGNnZTdPUWhsV2U0cUsxT2FqQzA4RlFwNFdURWZxVEp1OWVBNHNpUzFRbURlZHdacDl6U0NFMW1vSEY3WGx2OFVSbElyRVJYX3F3ZjhhOU5ySVZxamk3OV9ocmFRUHpldkE?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1573,6 +1699,20 @@
       "published_at": "2026-09-28T05:28:00Z",
       "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE0zOFJVamZJTzJfTER2Y1Q5V25LcXdoVktHNjFKMzFLczdDaTRkWTlMa1liYTNfcnROWFpYZFVKSVNWY2w3UEZxSFg5UQ?oc=5",
       "collected_at": "2026-09-28T06:53:52Z",
+      "verification": "需核验",
+      "summary_status": "pending",
+      "summary_basis": "等待 AI 摘要"
+    },
+    {
+      "id": "news-a16f5762aedb84ad58",
+      "category": "investment",
+      "title": "段永平发帖：买入3万股贵州茅台",
+      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
+      "source": "TradingView",
+      "source_type": "媒体报道",
+      "published_at": "2026-09-28T05:28:00Z",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTFBBNWROUTN0SnRxZnloM2Z1WEpvaFZfQ09COTVsRUU1b1owT3gyQm9WODNiSmdrbUhSRF9iak9BaEVYcmZRdTV6NlZFOG1OUnZQNnZMemZyc3RfbjdaR1RTeDlWMHBjdXFiaG8w?oc=5",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1601,6 +1741,20 @@
       "published_at": "2026-09-28T04:23:48Z",
       "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1tMDllU0tDcEtEZS0yU2xxU016a1dHaWJjd0lKVnBYWHpXSWxsQjR1NWxLelZJSHRrdWIxWTNoMlZBQjBYVDRsOXR5amoyZy1kWUZWakk0S3pCZ2tLcUN5TWoydEhWaWZW?oc=5",
       "collected_at": "2026-09-30T06:42:42Z",
+      "verification": "需核验",
+      "summary_status": "pending",
+      "summary_basis": "等待 AI 摘要"
+    },
+    {
+      "id": "news-cf2129b6bf385a300e",
+      "category": "investment",
+      "title": "出手！段永平加仓茅台",
+      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
+      "source": "东方财富",
+      "source_type": "媒体报道",
+      "published_at": "2026-09-28T03:41:01Z",
+      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5hQWFXQS15MThPeEhCLUczN3lhRWFsWUN5dWxWUnFrVGk3bnRrSmNnTUIyVkdyM1dxOHlHLUpsNTc2S2MwVU1obmp4OGp1cEVlcVppYUdjVE1YVGtiOGhDbmVKZ2FCdw?oc=5",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1656,7 +1810,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-27T20:33:00Z",
       "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE1xV1BhdFVFWmRHMTVWTkUtSnBHUzZmYzhfdHpmeEZ0cHh1Z3V3UWN1SGFIVndRSDBNNW5RbW1TYWV1M0liN3BLMTNwODJFdw?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1670,7 +1824,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-27T19:05:00Z",
       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE81M1NLXzJYVndQbFlmcGhOZXB5TkE3anZTdWRVQVBnUnFvRVhVN0dQTHI3NXhjUXBXWlNYQkp4S2g0U1RzdDBaRDc2SmhpSHNzODFveFRB?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1684,7 +1838,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-27T18:04:00Z",
       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFA5QVpIV19oU2xSTnJPT3lWRzJvVURybDZwZkI1RlJnbkFXdTNhREdZLVhhSFZPQko1UUZqT2s5VGRaTlRYdTVaNm56LWszRmU2WVB5WHB3?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1698,7 +1852,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-27T16:28:00Z",
       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5GQ29vaDF3TDA3Z29iTGxSSVhoSzlKcGV1elE4elV3ZlpmNzB1VnR0NjZ2TEVuODd0RE9rTjlDU0hOcUpvUGZOYU9YZ1BCa1ZYd21ETVlR?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1726,7 +1880,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-27T14:32:00Z",
       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1kYU00dndWb05LT2ZSV2E2anpwajE4S2tPYXY0TnlSVDJxc2hFYTFqRUtCc0Y4cjZWWE9EOUlsa2VJVkF6QjQwbDVvQ1RHMXFqRTd3WWxR?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1925,7 +2079,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-21T07:00:00Z",
       "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE5JVC1Iay15bzJSWmdmWENNN0xENEg5WmRVRFNVUW1DcFRmdzFqVnp3S3VuMGpfbU83dUJYSmVQNDE3TU4yaFJuSmJtQS1KQQ?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -5327,7 +5481,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-08-17T07:00:00Z",
       "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFBNaU5lS1ZYc2M3TjFJNTRONFVyR0pQTm9Tdk9VT2s2cm01dW9vZENhR0pwZGVsQWhKMXBpbXZKMDdwQ2licF9NcHREOE9WUmtwRHpDd2J5QWFXN3FD?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
+      "collected_at": "2026-10-02T07:00:08Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -6397,6 +6551,20 @@
       "summary_basis": "等待 AI 摘要"
     },
     {
+      "id": "news-002c267a5d4ddba05c",
+      "category": "investment",
+      "title": "段永平1300亿元持仓曝光：加仓拼多多、减仓苹果、清仓台积电",
+      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
+      "source": "东方财富",
+      "source_type": "媒体报道",
+      "published_at": "2026-08-16T07:00:00Z",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1NRERBZUhhYzQ0eGNqV0hXWVhnZXh0eFFQM2tWdXp4Y043Q09ReGcwVktqV0xFSXVMVXlja0xRa3BaS2g2ZS1za0dodGRZc2duQ2FwTXFkTzJxYlU5NllibQ?oc=5",
+      "collected_at": "2026-10-02T07:00:08Z",
+      "verification": "需核验",
+      "summary_status": "pending",
+      "summary_basis": "等待 AI 摘要"
+    },
+    {
       "id": "news-09f4700af9a56a90e8",
       "category": "investment",
       "title": "段永平最新调仓曝光！增持拼多多，重新买入阿里巴巴",
@@ -6868,174 +7036,6 @@
       "published_at": "2026-08-15T09:00:00Z",
       "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE5Ea1YzVlhab3BXaG40ODNmclNrTXgwNE5OOGhiNU9ILTNUNXU4NEt0QnFjOTIwYnZDaGVlcFI0aEh4RVBxQ2hpVU03UUxyOWlh?oc=5",
       "collected_at": "2026-08-18T02:28:51Z",
-      "verification": "需核验",
-      "summary_status": "pending",
-      "summary_basis": "等待 AI 摘要"
-    },
-    {
-      "id": "news-8a04b6f0df0452edea",
-      "category": "personal",
-      "title": "段永平的财富主要来源于哪些企业？",
-      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
-      "source": "cj.sina.cn",
-      "source_type": "媒体报道",
-      "published_at": "2026-08-15T08:49:18Z",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9FTGljNE5yLUd3Mlcwek84UUJhNlFFR21HelN1bG5xVHotY25DSEgyZzM2bUtMNG1obUVVR1prR1F6QWpIaVMza1NmZTZzOWZrZkZ2Q0g1enRBcTl3REl3cFdYbUJUbTVHRVFHMnVWZzYyT284Q1Y2d1BtUEh4dw?oc=5",
-      "collected_at": "2026-08-19T02:31:47Z",
-      "verification": "需核验",
-      "summary_status": "pending",
-      "summary_basis": "等待 AI 摘要"
-    },
-    {
-      "id": "news-076a75436639c24499",
-      "category": "investment",
-      "title": "段永平继续加仓拼多多，大幅减持英伟达、谷歌 ​",
-      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
-      "source": "新浪网",
-      "source_type": "媒体报道",
-      "published_at": "2026-08-15T08:06:00Z",
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1BVE1NTUJsck5FY3hOUFV6enk3a1RJcWZ3SHozMEVkaUgzSk5aUnp4b1cwUU84ajNJbG52bUViTW95YnFEeWZLcXJfdGtfUkh5SkxIeFF6blBibjV6WEdjemt5VQ?oc=5",
-      "collected_at": "2026-08-16T02:34:35Z",
-      "verification": "需核验",
-      "summary_status": "pending",
-      "summary_basis": "等待 AI 摘要"
-    },
-    {
-      "id": "news-451043002007f5867e",
-      "category": "investment",
-      "title": "段永平千亿持仓曝光，减持英伟达、谷歌，加码互联网龙头！",
-      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
-      "source": "k.sina.com.cn",
-      "source_type": "媒体报道",
-      "published_at": "2026-08-15T07:46:37Z",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPendYb2ZMUjNpZkMzT0Zta05GcHhZckoyY3VvLTVVWUpPcmJhSEg0VzJnbHZtZHVjT0F3emdndUthajNXeVlwWjdqQ1ZtbnYzbzIzaktJOE16YXZ2T3c2Z19MNkFIUExkY25rbXg3b21Idk13MFpjV2ZRUTl2NGRiQS03Rl9ldDhrb0xRLVhkN0lpRkUyU1E?oc=5",
-      "collected_at": "2026-08-18T02:28:51Z",
-      "verification": "需核验",
-      "summary_status": "pending",
-      "summary_basis": "等待 AI 摘要"
-    },
-    {
-      "id": "news-7bc6a74267c400646d",
-      "category": "investment",
-      "title": "段永平千亿持仓曝光，减持英伟达、谷歌，加码互联网龙头！",
-      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
-      "source": "新浪财经",
-      "source_type": "媒体报道",
-      "published_at": "2026-08-15T07:42:00Z",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNRUpwckFPWGlKdm9QNU1yWGJRbzdsaW1zN3NTajdrbTVadDRGQk4yLXVwQkxpTzdtZUlMMXpkaGlOUGJSeWhJeTM5VFFUMFY2aEptMF9heG44UzlfMXViRmlqXzlVeGxlX29jZ3JGd2FCenFFR0ViSWdCSzdRT1JqMHZkSXdvZWJSU3c?oc=5",
-      "collected_at": "2026-08-20T02:30:15Z",
-      "verification": "需核验",
-      "summary_status": "pending",
-      "summary_basis": "等待 AI 摘要"
-    },
-    {
-      "id": "news-63d7311482de08c4ac",
-      "category": "personal",
-      "title": "段永平、桥水，和伯克希尔反着来",
-      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
-      "source": "搜狐网",
-      "source_type": "媒体报道",
-      "published_at": "2026-08-15T07:05:47Z",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPV3RySHJuVTJYMzVsclJIQXVZREQ5aVZrbjA4bGtYMnVTYjNxbk54SXg2Mk9QVk5WeEVveUtHU25QNzluZGw4OGJOVV9uenFwM1pMSVRnWjNFQzlaQkd6V2xRbG4zOERwS3ZpTS1BbnJ0MGY3am9hX0JQLS1JZVgzOTlfWUVIazduOVFpTQ?oc=5",
-      "collected_at": "2026-08-17T02:33:55Z",
-      "verification": "需核验",
-      "summary_status": "pending",
-      "summary_basis": "等待 AI 摘要"
-    },
-    {
-      "id": "news-4be85fb8623892c4fd",
-      "category": "investment",
-      "title": "段永平狂买拼多多，景林彻底清空英伟达，高瓴、高毅两大私募巨头最新调仓揭晓",
-      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
-      "source": "东方财富",
-      "source_type": "媒体报道",
-      "published_at": "2026-08-15T07:00:00Z",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE95cUV2RVpKX094R0FhTXZFQkVrcUo2SWtxSGtZcFdGVnpVVGViUDBlbVZwOWxpRTN5dnFkN0NrVFhXMGtaUllTcFR3cHF4bUZ6ZjZNOE9Hb1FjM0phOE5ZbkhZT3RUdw?oc=5",
-      "collected_at": "2026-09-12T05:47:03Z",
-      "verification": "需核验",
-      "summary_status": "pending",
-      "summary_basis": "等待 AI 摘要"
-    },
-    {
-      "id": "news-e666c92dff049548c7",
-      "category": "investment",
-      "title": "段永平、李录，最新美股持仓曝光！",
-      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
-      "source": "finance.sina.cn",
-      "source_type": "媒体报道",
-      "published_at": "2026-08-15T07:00:00Z",
-      "url": "https://news.google.com/rss/articles/CBMirAJBVV95cUxONlowZHdZLXVOcW9nbEVoVHcxcEdzeVFzT2FJVG5FQ2tFZlFKYlltN0RSX0R6ZmIxMXVaVGt5bFVnY1V5MHNxLXNub29tSW55dzJkTWJyZ052NzR2bFk4ZUtUeWk1Wk5WYnZ6UHRNRDI3MjdaNENJX3lZRVZPbHJkal9lS3RneHdYTUdSQWNPcFZjcm9NbjdjOUw1VkRUSUdHVFpGZm9LM0xHV1pYTjlsS3FWZ1BsczZHdXlGR1NxNVFwdE9RT3FhLVJtaVpMa0xZa0piMW40ekhVbF85Y3JiVWVSWFUtVzFHMG55UzAxTVFaTTZlNTE4Q3BSRUVob2tSZmRDOFh4eHlKamxQczBZc2RYRFNmb0RfS1VqcTM0OEJuU2V0VlhvV2U1SDg?oc=5",
-      "collected_at": "2026-08-19T02:31:47Z",
-      "verification": "需核验",
-      "summary_status": "pending",
-      "summary_basis": "等待 AI 摘要"
-    },
-    {
-      "id": "news-74a763afda7d9dcf6f",
-      "category": "personal",
-      "title": "段永平、桥水和伯克希尔反着来",
-      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
-      "source": "东方财富",
-      "source_type": "媒体报道",
-      "published_at": "2026-08-15T07:00:00Z",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5EdER6eHlUUC03XzZMOTB4d1psblM5MUhPRUtvcmlfcFlvY2x3Y1VFUWRlekVFYjBic29XM3RpM3ZyM0RLbThrc0prWVMtTTVEU3haNG5TN19uanI1NVdmSGk5bEV2UQ?oc=5",
-      "collected_at": "2026-09-02T05:49:53Z",
-      "verification": "需核验",
-      "summary_status": "pending",
-      "summary_basis": "等待 AI 摘要"
-    },
-    {
-      "id": "news-6b2b3c6124c18ad363",
-      "category": "investment",
-      "title": "段永平、李录最新美股持仓曝光！",
-      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
-      "source": "东方财富",
-      "source_type": "媒体报道",
-      "published_at": "2026-08-15T07:00:00Z",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFBqYTZFQ1ZsRl9KMDNFbDdsRzM3UXdMQTdRdFZERUsyc2FiV3Nqb1I1TWNkaUVXWDFtRnhJeTVsMTJ1NHdvRjVqV0tXRGJEczlrb1d1eDZjSGlibmoxbTlGNkNxalJqUQ?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
-      "verification": "需核验",
-      "summary_status": "pending",
-      "summary_basis": "等待 AI 摘要"
-    },
-    {
-      "id": "news-393ef3202ebec3f051",
-      "category": "investment",
-      "title": "段永平、李录，最新美股持仓曝光！",
-      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
-      "source": "finance.sina.com.cn",
-      "source_type": "媒体报道",
-      "published_at": "2026-08-15T07:00:00Z",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQWFliYjllZVJmejdpTDlIUDE2d2dQc2g3czQ3Y1hkOHlPRG8yazg1cTR1dUF1ZDFyQm1OUGdNQnBMaFJ5NVhsZllRZ09RRnRyVHRnRThBZmxvZ05VbzZvTDNhX01oSzlzM1lMSkI3ME9TTFFZQkdkWWNZcXBsRU9xQw?oc=5",
-      "collected_at": "2026-08-29T07:53:19Z",
-      "verification": "需核验",
-      "summary_status": "pending",
-      "summary_basis": "等待 AI 摘要"
-    },
-    {
-      "id": "news-5a16e1ec2a82854d4b",
-      "category": "investment",
-      "title": "段永平最新调仓曝光！增持拼多多，重新买入阿里巴巴",
-      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
-      "source": "Moomoo",
-      "source_type": "媒体报道",
-      "published_at": "2026-08-15T07:00:00Z",
-      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTFB3MFBadFJuZnAtSlNWSFVVeFNJMVpOa2hydzRGXzVGNnBMRXhKemhTVFRQcTZWYTU2NVVpUXp1YldYdUNLTzlZeVYzWGRWb0NkODJseS1MVHZmQQ?oc=5",
-      "collected_at": "2026-09-28T06:53:52Z",
-      "verification": "需核验",
-      "summary_status": "pending",
-      "summary_basis": "等待 AI 摘要"
-    },
-    {
-      "id": "news-e909d11a001f1f67ad",
-      "category": "investment",
-      "title": "段永平狂买拼多多，景林彻底清空英伟达，高瓴、高毅两大私募巨头最新调仓揭晓",
-      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
-      "source": "凤凰网财经",
-      "source_type": "媒体报道",
-      "published_at": "2026-08-15T07:00:00Z",
-      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE0ySmFvX24zX0Q5dFN6XzVKb1UzYUZ1WnplNTRsUDV2aUxBbUVTcW5uNUVZcldDSTg5ZVd3c0xUa0NWckpTOUk5R09XcUNDN1VU?oc=5",
-      "collected_at": "2026-09-07T06:06:31Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
