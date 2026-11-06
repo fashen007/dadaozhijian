@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-05T07:54:22Z",
+  "updated_at": "2026-11-06T07:55:04Z",
   "profile": {
     "name": "段永平",
     "xueqiu_name": "大道无形我有型",
@@ -12,31 +12,45 @@
       "name": "雪球本人账号",
       "status": "setup",
       "detail": "设置 XUEQIU_COOKIE 后采集动态；公开主页：https://xueqiu.com/u/1247347556",
-      "checked_at": "2026-11-05T07:54:22Z"
+      "checked_at": "2026-11-06T07:55:04Z"
     },
     {
       "key": "sec",
       "name": "SEC 13F",
       "status": "ok",
       "detail": "获取 32 份持仓披露",
-      "checked_at": "2026-11-05T07:54:22Z"
+      "checked_at": "2026-11-06T07:55:04Z"
     },
     {
       "key": "news",
       "name": "媒体报道",
       "status": "ok",
       "detail": "获取 53 条 Google News RSS 结果",
-      "checked_at": "2026-11-05T07:54:22Z"
+      "checked_at": "2026-11-06T07:55:04Z"
     },
     {
       "key": "summary",
       "name": "AI 自动摘要",
       "status": "error",
       "detail": "AI 总结 0 条，失败 10 条（首次失败：URLError: ）",
-      "checked_at": "2026-11-05T07:54:22Z"
+      "checked_at": "2026-11-06T07:55:04Z"
     }
   ],
   "items": [
+    {
+      "id": "news-dfb79b69b72871d9f1",
+      "category": "interview",
+      "title": "段永平回应巴菲特48年不喝白开水：我见过他很多次 真没见他喝水",
+      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
+      "source": "搜狐网",
+      "source_type": "媒体报道",
+      "published_at": "2026-11-05T02:43:36Z",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNcEpvYmt6dE4yZjhKUzA3bGlWYWhNTVZzTWZmNG5sa0xteGxOa3JXTUxBd0dMbEJvM0NITlFxQjhmeGE3NTQycDRVUHlIMWFFZ3RnRWljd3g4UWp1aHFtTl9QNHdSdlFteFBJam5lazUyay1VNEk2bVhkYURvUkVsOFBiTmhBT2FP?oc=5",
+      "collected_at": "2026-11-06T07:55:04Z",
+      "verification": "需核验",
+      "summary_status": "pending",
+      "summary_basis": "等待 AI 摘要"
+    },
     {
       "id": "news-1c69aec8e058e0165e",
       "category": "interview",
@@ -60,7 +74,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-04T11:22:19Z",
       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9GVVZsVDVUTGJYelQxNk0zU1lYVEhYN3B3WWt2OEpsTTdrbmRFcnV6WGRUc0t4QXhtNHlxUkxsZHVJbFlDaFNGSHZPbENPdlN2QXc?oc=5",
-      "collected_at": "2026-11-05T07:54:22Z",
+      "collected_at": "2026-11-06T07:55:04Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -74,7 +88,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-04T10:06:53Z",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQeklESFZjTGYwcFpZcnZGSG1PUHBMTGFxRktYNjNzM21NV1hib0UzdE9XS2FKb0RFaWRFZ3phOFVvaTlPcHloZTVfUE9kbmM2QzV5b1k5Y2xoVzU3ZGpuX3pQdGV3VU9LSk9XQ2dyS3BvWkVqVEswNzgzTDMtTnB3Mmd3TDgtSUpt?oc=5",
-      "collected_at": "2026-11-05T07:54:22Z",
+      "collected_at": "2026-11-06T07:55:04Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -88,7 +102,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-04T09:50:05Z",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFA5djV0dk56UWZVcXJucEp4ZUUtNzU4SDl4NjhveVFBbDVzLWZ6NUpZVXJ2OHFwZDhVTUNMb3dvTVhuMFBKMFBVZjljVXJJOVIzNmVHNDgzOUNtMTJwVW1rYmVSSGNoTEtlZF9kcjNiRzE?oc=5",
-      "collected_at": "2026-11-05T07:54:22Z",
+      "collected_at": "2026-11-06T07:55:04Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -102,7 +116,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-04T09:28:38Z",
       "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1tTlRXQzdTLTJGU0hrNEEzVk9FM0xjWVQtd1Qyd2loSGsyUXQtQWdGZFk3ck9mMjBwTVlUQVdBcUEyOUFwWGRuNkZBVDk?oc=5",
-      "collected_at": "2026-11-05T07:54:22Z",
+      "collected_at": "2026-11-06T07:55:04Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -130,7 +144,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-04T07:16:21Z",
       "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFB6T1VNMHFObl9lZnhoNlVSR1hzZHV5eWdIMFlONXAxeUNkNllDNXlZZFdDOWdZVThHUGxxazRYa2E4bTRMNTVPVmdOLVcyQ1RPS2NPdHFRaTBSTVZTM0tCdkVpSXlYRGlPVktmUE9GLTA4QQ?oc=5",
-      "collected_at": "2026-11-05T07:54:22Z",
+      "collected_at": "2026-11-06T07:55:04Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -158,7 +172,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-03T09:42:56Z",
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBnMUZHSnR1Z1N5ZE9nU29WUlBXTFBSTE8tV1FQbW1yM2RWNHRPRmZfZDBvb0VPR2hPdnV1c2Rhc1R5MUxQbnlyYXNmWlZVU1RpbkRTWUFPc19XZW13VnFaag?oc=5",
-      "collected_at": "2026-11-04T07:29:19Z",
+      "collected_at": "2026-11-06T07:55:04Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -228,7 +242,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-10-31T01:19:16Z",
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1QaTZSemNOS0ZBa04wdkVnS0JqLTBHa1pCWktZNzQtalA1QnNnYWRMalBsUFpOTDR0cDNsazhJSjhJX3FjdVVNYUxIR0k0dmdGZGREQk9SWkF1WGFPa0xDQg?oc=5",
-      "collected_at": "2026-11-01T07:31:13Z",
+      "collected_at": "2026-11-06T07:55:04Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -298,7 +312,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-10-29T23:09:06Z",
       "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxPS09VTkNVOWFiSnAzNTdYYnhyeVV1ZHhSbFBSRVFZbm1OYjVaRXphSE5aSGVCTFh3V19jcndJcTJGNmNIT1VWT2kwVG5oTHF1amxCQXZ0b2dZcy00Ym5tYmQtekpLR2RrdU1LYk1VYjBic0F0NFV1ZEVBTTExczZzVUZB?oc=5",
-      "collected_at": "2026-11-05T07:54:22Z",
+      "collected_at": "2026-11-06T07:55:04Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -313,6 +327,20 @@
       "published_at": "2026-10-29T22:34:49Z",
       "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE4wVUpxeW81czFhQWZDLWh3SWtrSU15TXl6TmZ0S0g5R0NvN05iZS1ob2wyd3hKakFUTTE4WUZwOXdJcU9zVVBvWi1hUEtERUotbEFqaGhXci1RcnpYWGItMDgtV1U3LWNIbUN0YTl2dTlJQ2ZNWmZn?oc=5",
       "collected_at": "2026-11-03T07:54:32Z",
+      "verification": "需核验",
+      "summary_status": "pending",
+      "summary_basis": "等待 AI 摘要"
+    },
+    {
+      "id": "news-e764e38b3e554d0bd5",
+      "category": "personal",
+      "title": "泡泡玛特不是段永平的可口可乐",
+      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
+      "source": "凤凰网科技",
+      "source_type": "媒体报道",
+      "published_at": "2026-10-29T13:43:59Z",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE0teUdDYzdTUmdPWlkyM0psSEF2SFNMOEIxR0puMW5qYUhUX0QzUXhYdElMVjdRN1EzZElLOU5TeDhuNGEzVTFQMjRBcEY?oc=5",
+      "collected_at": "2026-11-06T07:55:04Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -410,7 +438,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-10-28T14:37:59Z",
       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1oX0RDWUpSQVFVNGdZN0x3Y1JKY0RDZlRBVWtoNHc4S05ueUdRY2x3YmZIbExHajFfRGxxRHBxSXhtSTgyVTFDbXp4SHAxZFhkY3pNdWFHQmxzYXZrU0d5dUNTTnc5QU1iTTNvam5R?oc=5",
-      "collected_at": "2026-11-05T07:54:22Z",
+      "collected_at": "2026-11-06T07:55:04Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -438,7 +466,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-10-28T11:07:32Z",
       "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPVXNMeHN0QXh6VHhMLWxlTFlQdzZWM0FQTzFDekRYbVpKOFRGNmVwYWlHS3h3a2gtVDRlODNxRGFFeU1oQmpJTmRzLVM1bGFwSGpCM2hrRVduSG5kemY3RW94WUJTbVpEc1BEaUNrTDE5MjE5dVFDOTA1VlBBam82SlFLMjJpWTdpdUZXU2Nn?oc=5",
-      "collected_at": "2026-11-05T07:54:22Z",
+      "collected_at": "2026-11-06T07:55:04Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -476,11 +504,11 @@
       "category": "personal",
       "title": "泡泡玛特三季度收入同比降45%至50%，Labubu二手价从4522元跌至约400元",
       "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
-      "source": "虎嗅",
+      "source": "虎嗅网",
       "source_type": "媒体报道",
       "published_at": "2026-10-28T09:41:57Z",
       "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9TOC14SV95ckdBQ1FXZE1hdERjN05WbU5vcV9iMWZjWVFwbk9BN1Z4alBLc2l0RG5nQWJ1MnAwbzZUV1BDZlUyUXdlT052Qm5Bc0pmTw?oc=5",
-      "collected_at": "2026-11-05T07:54:22Z",
+      "collected_at": "2026-11-06T07:55:04Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1138,7 +1166,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-10-25T22:03:04Z",
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE13UDlNQXljNTNDSEFzQTRsQjVtczZCYWhnWVphbHNnTk95Z2hZUXpiX25IMnFkSHp3LVgyU1BBeGpxRmtPd2htU0ZINXV4QWt0T2NZem15My1zT2xhMzlleA?oc=5",
-      "collected_at": "2026-11-05T07:54:22Z",
+      "collected_at": "2026-11-06T07:55:04Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -2720,7 +2748,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-10-21T07:00:00Z",
       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFAwdE95V09UeU1OWS14SlRxR0NYMTNzeEU3UTdhTjZSc3lpT1B2VGplQzBtbXZfeDBWTGJuQ2gtUmFBeGJtZHY5VXVySWFvdzN6eW5F?oc=5",
-      "collected_at": "2026-11-05T07:54:22Z",
+      "collected_at": "2026-11-06T07:55:04Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -2790,7 +2818,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-10-21T07:00:00Z",
       "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1NU3dZMDZFZFcxZC1NNU9pT0ZxWEhXRHhMSmNWcmFGQ1dHMnRPT1hqRlM0a0dTaEJoYm1pNlh3cW1uaGo3WEViQndCaXJDMG10eGFlSnRKZkNxWGdGMk1zaFFKZG9UQQ?oc=5",
-      "collected_at": "2026-11-05T07:54:22Z",
+      "collected_at": "2026-11-06T07:55:04Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -3770,7 +3798,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-10-07T07:00:00Z",
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1fb2xYaFk0U0hxSU5WaXg1QjNURDdNZDBaTmxHSHdlbDFTbU5IbWZ4VDVBWDJrRHdPT3FMbzRXVm00a3NIaUg4ckVSR0VyM3pKRnFNN2ZZX2l2TFJ3OTBwQg?oc=5",
-      "collected_at": "2026-11-05T07:54:22Z",
+      "collected_at": "2026-11-06T07:55:04Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -4750,7 +4778,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-29T07:00:00Z",
       "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE96UkhLWlU4T3RfcFdUVjBONnByajV2SjQwb3BqSy05MW1NTUo2U25JZlhSQ2NWTzR3NzNjcThyZVd4ekdmbG9XVzA0Slo0UGp1Z09SMGN6M2ZOak9odzdRaGlxdGdTUQ?oc=5",
-      "collected_at": "2026-11-05T07:54:22Z",
+      "collected_at": "2026-11-06T07:55:04Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -6318,7 +6346,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-28T07:00:00Z",
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBwb1RoUEprbmd5cGFWMEdxUnJVM1RNNTYtdHAyalM4aHRTLXc0WnVwczBNU1NVdWlueWE1YmZNYVJOckF0WFVoaXUxaUVHb2ZyeFVZY0Exc2tPOG9zWTFBNA?oc=5",
-      "collected_at": "2026-11-05T07:54:22Z",
+      "collected_at": "2026-11-06T07:55:04Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -7008,34 +7036,6 @@
       "published_at": "2026-09-23T13:44:00Z",
       "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE9tRHFHYmFQOUdXX3Z4V2dCcVRTR2VsWmRlWk9FZVQxeTRndERDeWcyOHRRd1RndXhxcTA3ZE5UaUt4aS1rck9tTi1OMVRWOTZGVUFmeHI5dnhsdnB6MWhCUkFqaXltNk5GUFNJ?oc=5",
       "collected_at": "2026-09-29T06:53:43Z",
-      "verification": "需核验",
-      "summary_status": "pending",
-      "summary_basis": "等待 AI 摘要"
-    },
-    {
-      "id": "news-c88d75357225203f4e",
-      "category": "investment",
-      "title": "段永平、李录，最新美股持仓曝光！",
-      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
-      "source": "新浪财经",
-      "source_type": "媒体报道",
-      "published_at": "2026-09-23T06:18:59Z",
-      "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOSVRTRThnZlJKelQyaFBLQ2dydVAtbXRKalJTWDh4LUF6UjFvOHVRWTlPc2QyT3ZsWkhwaTYwSmpwUlExdlZmZkxidzhrOVJSaWdGYUQyVjlQQWFHT1U0c19MRVBkWkJBNFBkQ1B5WHRsNHc4Z1AxRkhUYjJPQ3B0X1dteUxIYnhtVTZOMWRTNTU3aGxBR2MxUHA0YVJMOGRYZFd3NlA4WGpZS2VaQ2hNSVJud0dPSktDUnJfcUwtd19mTlRBVEt4ZzVhR3BiaGlxbm4weEdodFM3UElzdzI4b19ZN3NMenBsVGZhSnJ0TlpZX1dfaVZXS1pEel9CQVc3cXc?oc=5",
-      "collected_at": "2026-09-24T06:10:22Z",
-      "verification": "需核验",
-      "summary_status": "pending",
-      "summary_basis": "等待 AI 摘要"
-    },
-    {
-      "id": "news-2445ae1080da86f992",
-      "category": "personal",
-      "title": "段永平买泡泡玛特终将彻底失败",
-      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
-      "source": "雪球",
-      "source_type": "媒体报道",
-      "published_at": "2026-09-22T22:05:00Z",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9DOGxHYnJfdFpRX0tQODU2bGswVHNyWEFVTDJOVDMwQzAzVEt0VXF4VElmYXppa0NoWnBfVjlJRXBDdEJXd2Z0bEkwek5EQzVLdHVPT0FB?oc=5",
-      "collected_at": "2026-09-27T06:36:33Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
