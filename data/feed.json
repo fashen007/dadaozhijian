@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-08T07:18:38Z",
+  "updated_at": "2026-11-09T07:58:02Z",
   "profile": {
     "name": "段永平",
     "xueqiu_name": "大道无形我有型",
@@ -12,31 +12,73 @@
       "name": "雪球本人账号",
       "status": "setup",
       "detail": "设置 XUEQIU_COOKIE 后采集动态；公开主页：https://xueqiu.com/u/1247347556",
-      "checked_at": "2026-11-08T07:18:38Z"
+      "checked_at": "2026-11-09T07:58:02Z"
     },
     {
       "key": "sec",
       "name": "SEC 13F",
       "status": "ok",
       "detail": "获取 32 份持仓披露",
-      "checked_at": "2026-11-08T07:18:38Z"
+      "checked_at": "2026-11-09T07:58:02Z"
     },
     {
       "key": "news",
       "name": "媒体报道",
       "status": "ok",
-      "detail": "获取 56 条 Google News RSS 结果",
-      "checked_at": "2026-11-08T07:18:38Z"
+      "detail": "获取 59 条 Google News RSS 结果",
+      "checked_at": "2026-11-09T07:58:02Z"
     },
     {
       "key": "summary",
       "name": "AI 自动摘要",
       "status": "error",
       "detail": "AI 总结 0 条，失败 10 条（首次失败：URLError: ）",
-      "checked_at": "2026-11-08T07:18:38Z"
+      "checked_at": "2026-11-09T07:58:02Z"
     }
   ],
   "items": [
+    {
+      "id": "news-623a7318869352a731",
+      "category": "investment",
+      "title": "段永平：仍持有腾讯，但腾讯不确定性较茅台更大",
+      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
+      "source": "金融界",
+      "source_type": "媒体报道",
+      "published_at": "2026-11-09T07:09:09Z",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTFA5M1hCTGpsSzJaYnpuZXdkbjJLZ2huR2VUU2hqakRtV243VWVzT0pXa1V5U2VMXzRLR2RvbmVoTzdONzdvUmRyLXlDMDJPRTk2WnNfT2U2VTRMLS1IbHM3cjdjRQ?oc=5",
+      "collected_at": "2026-11-09T07:58:02Z",
+      "verification": "需核验",
+      "summary_status": "pending",
+      "summary_basis": "等待 AI 摘要"
+    },
+    {
+      "id": "news-bc64e1d6809b0c285b",
+      "category": "investment",
+      "title": "段永平回应是否仍持有腾讯(00700)：拿着呢",
+      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
+      "source": "Moomoo",
+      "source_type": "媒体报道",
+      "published_at": "2026-11-09T02:23:17Z",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPdmZRUF9icC1mTVJuMzlkdVVlT0pmZUlJZ3JmbHZJakEtYjdrYnBlY3MtUWxvREFmR1c0MkZZU01NQlAwSExSbnRuVHdFTU5uaG55U1RqbGthR2lwczc2cnZoYURmS3JFM3l0QlhQQWZ6eHQwUHZaMEZvamhneEVjMUhZeklQbW1hWUtjMGZPMEZndm53bGxmQ25mNWZXeW1yU2dxOXNkMGl4RFpqalE?oc=5",
+      "collected_at": "2026-11-09T07:58:02Z",
+      "verification": "需核验",
+      "summary_status": "pending",
+      "summary_basis": "等待 AI 摘要"
+    },
+    {
+      "id": "news-8a9393a085982ab4ad",
+      "category": "personal",
+      "title": "腾讯反弹，段永平：还拿着",
+      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
+      "source": "华尔街见闻",
+      "source_type": "媒体报道",
+      "published_at": "2026-11-08T11:43:44Z",
+      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE8ybkt4XzRMLTdYX3RHVUxBV3JfVlZLREtTMEUzQWtxdFhSVlJwV3ktay1Tc0JaQmoyT2tXSFVmNmdjcTNDSmIyV1RHdTBoR2czNTdJ?oc=5",
+      "collected_at": "2026-11-09T07:58:02Z",
+      "verification": "需核验",
+      "summary_status": "pending",
+      "summary_basis": "等待 AI 摘要"
+    },
     {
       "id": "news-10bd5bf23ae8883b0c",
       "category": "investment",
@@ -46,7 +88,21 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-07T01:40:00Z",
       "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5aWkM0UWhVSXRKUmJxWi1WRHBSQko5S2M5OUk4WVctVzdCNTA2R1FQLThnd1pOR0hoOW1IdjM0OUs4NWsxRjJFZUhyZ1M0NVhDeXhqaEJiVzJkeDZYOHRZU0dn?oc=5",
-      "collected_at": "2026-11-08T07:18:38Z",
+      "collected_at": "2026-11-09T07:58:02Z",
+      "verification": "需核验",
+      "summary_status": "pending",
+      "summary_basis": "等待 AI 摘要"
+    },
+    {
+      "id": "news-e6108dadfc20b1793e",
+      "category": "investment",
+      "title": "段永平最新千亿持仓来了！新进8家公司",
+      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
+      "source": "Moomoo",
+      "source_type": "媒体报道",
+      "published_at": "2026-11-06T08:00:00Z",
+      "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE9iU3MySWFkeWNEd0RteEpacGlLZnEyYUdNWlRTNm5XZXhBSGh0NmswRTFtTWMxUGE0Q0dGZlktNE1kSWw3TEdBVmpMak05NVhqdjd1LVRUTGFKUQ?oc=5",
+      "collected_at": "2026-11-09T07:58:02Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -60,7 +116,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-05T11:29:00Z",
       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE4waDBoSkNoR1RxdThfYnMtS3R1WDdLM1NIMFJ2Z3lpVWtzUDM4ejZxNE5WTlo0empoQVpWTlZsZEQyaEhvNEowX3dBMnNXbjZ6a1F3?oc=5",
-      "collected_at": "2026-11-08T07:18:38Z",
+      "collected_at": "2026-11-09T07:58:02Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -88,7 +144,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-05T02:43:00Z",
       "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE1xV2R1ZktvRk8yZlJMaERzalJ4UG5IQzJ0VUNCZVAzc1lrUWlTaFBEUHpnSUpBTDI4RUpsdGdSN09renJ5eWxKVjhnRzRvYnNpRDJtTUJjV0E?oc=5",
-      "collected_at": "2026-11-07T07:09:41Z",
+      "collected_at": "2026-11-09T07:58:02Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -102,7 +158,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-04T11:22:19Z",
       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9GVVZsVDVUTGJYelQxNk0zU1lYVEhYN3B3WWt2OEpsTTdrbmRFcnV6WGRUc0t4QXhtNHlxUkxsZHVJbFlDaFNGSHZPbENPdlN2QXc?oc=5",
-      "collected_at": "2026-11-08T07:18:38Z",
+      "collected_at": "2026-11-09T07:58:02Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -116,7 +172,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-04T10:06:53Z",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQeklESFZjTGYwcFpZcnZGSG1PUHBMTGFxRktYNjNzM21NV1hib0UzdE9XS2FKb0RFaWRFZ3phOFVvaTlPcHloZTVfUE9kbmM2QzV5b1k5Y2xoVzU3ZGpuX3pQdGV3VU9LSk9XQ2dyS3BvWkVqVEswNzgzTDMtTnB3Mmd3TDgtSUpt?oc=5",
-      "collected_at": "2026-11-08T07:18:38Z",
+      "collected_at": "2026-11-09T07:58:02Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -130,7 +186,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-04T09:50:05Z",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFA5djV0dk56UWZVcXJucEp4ZUUtNzU4SDl4NjhveVFBbDVzLWZ6NUpZVXJ2OHFwZDhVTUNMb3dvTVhuMFBKMFBVZjljVXJJOVIzNmVHNDgzOUNtMTJwVW1rYmVSSGNoTEtlZF9kcjNiRzE?oc=5",
-      "collected_at": "2026-11-08T07:18:38Z",
+      "collected_at": "2026-11-09T07:58:02Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -144,7 +200,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-04T09:28:38Z",
       "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1tTlRXQzdTLTJGU0hrNEEzVk9FM0xjWVQtd1Qyd2loSGsyUXQtQWdGZFk3ck9mMjBwTVlUQVdBcUEyOUFwWGRuNkZBVDk?oc=5",
-      "collected_at": "2026-11-08T07:18:38Z",
+      "collected_at": "2026-11-09T07:58:02Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -172,7 +228,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-04T07:16:21Z",
       "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFB6T1VNMHFObl9lZnhoNlVSR1hzZHV5eWdIMFlONXAxeUNkNllDNXlZZFdDOWdZVThHUGxxazRYa2E4bTRMNTVPVmdOLVcyQ1RPS2NPdHFRaTBSTVZTM0tCdkVpSXlYRGlPVktmUE9GLTA4QQ?oc=5",
-      "collected_at": "2026-11-08T07:18:38Z",
+      "collected_at": "2026-11-09T07:58:02Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -200,7 +256,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-03T09:42:56Z",
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBnMUZHSnR1Z1N5ZE9nU29WUlBXTFBSTE8tV1FQbW1yM2RWNHRPRmZfZDBvb0VPR2hPdnV1c2Rhc1R5MUxQbnlyYXNmWlZVU1RpbkRTWUFPc19XZW13VnFaag?oc=5",
-      "collected_at": "2026-11-07T07:09:41Z",
+      "collected_at": "2026-11-09T07:58:02Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -299,6 +355,20 @@
       "published_at": "2026-10-30T07:05:56Z",
       "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNblRoT1RIRW5fd21IdHRjTzYtLTZFN3c0VXNZazZ4Zm1va2dhajc1OW95V1Bta3BOc1RrdjRSaER2THMybjdlT0NsZTBJbGF4ek8wbzllUWphNDc2VTZ2SjNmQ1psUnZCekd0QXdVUDE5d2gtS090Ry04UHczLWJLUlZmbw?oc=5",
       "collected_at": "2026-11-01T07:31:13Z",
+      "verification": "需核验",
+      "summary_status": "pending",
+      "summary_basis": "等待 AI 摘要"
+    },
+    {
+      "id": "news-0ae8aa74e45f1f8338",
+      "category": "personal",
+      "title": "泡泡玛特不是段永平的可口可乐",
+      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
+      "source": "ThePaper.cn",
+      "source_type": "媒体报道",
+      "published_at": "2026-10-30T07:00:00Z",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9mX01mbkVUNlY0T0NPeVNSMVNzNzVEZkNEX19wMkMyUDdXdG9RNkgyck9hNWFCdlBYaTZBdVpVc1Q3RWNZTFUxekZjS3lHc01Hc2FQa0E0MXk0Z0lpZ053dA?oc=5",
+      "collected_at": "2026-11-09T07:58:02Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -528,20 +598,6 @@
       "summary_basis": "等待 AI 摘要"
     },
     {
-      "id": "news-5a58158147b03bfe73",
-      "category": "personal",
-      "title": "泡泡玛特三季度收入同比降45%至50%，Labubu二手价从4522元跌至约400元",
-      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
-      "source": "虎嗅网",
-      "source_type": "媒体报道",
-      "published_at": "2026-10-28T09:41:57Z",
-      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9TOC14SV95ckdBQ1FXZE1hdERjN05WbU5vcV9iMWZjWVFwbk9BN1Z4alBLc2l0RG5nQWJ1MnAwbzZUV1BDZlUyUXdlT052Qm5Bc0pmTw?oc=5",
-      "collected_at": "2026-11-08T07:18:38Z",
-      "verification": "需核验",
-      "summary_status": "pending",
-      "summary_basis": "等待 AI 摘要"
-    },
-    {
       "id": "news-02d31ffdea330dc4c3",
       "category": "personal",
       "title": "泡泡玛特，段永平已经浮亏超18亿港元",
@@ -565,6 +621,20 @@
       "published_at": "2026-10-28T07:22:19Z",
       "url": "https://news.google.com/rss/articles/CBMi9gJBVV95cUxQNGRHZGI5OUJMbTZCUHZIVVppemdqSzZxcGJFTm5wY01TX2lkN1lmLUlGRlh0QTFMWjYtZGJfanNVdVdrUnJPamE4X3k5MWxKN3pLZnRFYS1zenRYMUhIemQ0WVVMc2MxZjRZV0I3eDNBeTVRbzcxdWIwV3ZiRHZqbmt1WUdKbUtXNXlqTUJqVTFWdmE5RmU3MDJ0MmJZNUJDWXh0cGlJUmRqdXdrLWlMS19XM2ZreWFBdXNyOFlFLVhTbnh5WXM3MmI0VHNacjNBdEl1eVlRSEhJbE9jTlFLZ3ZZZVM0SkN2UG5UX25yeFNWdUhpT1pjWUZXeVNXUHN6a2NCMWZuUkFSUWtaRVRFUkdlUHFCc212X0IwM2ZfQ3cxbzZ5MXVKUXVURXpfOUFDRWNkUmlyUk1DZzBKSGFSRS0yWndMejN3a0pnNERCc1BQYTVxeGlLVUVUbG9yVUdaWjYxRkNxNWF3N0tkdjY3dnJLYUEwUQ?oc=5",
       "collected_at": "2026-11-01T07:31:13Z",
+      "verification": "需核验",
+      "summary_status": "pending",
+      "summary_basis": "等待 AI 摘要"
+    },
+    {
+      "id": "news-5a58158147b03bfe73",
+      "category": "personal",
+      "title": "泡泡玛特三季度收入同比降45%至50%，Labubu二手价从4522元跌至约400元",
+      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
+      "source": "虎嗅网",
+      "source_type": "媒体报道",
+      "published_at": "2026-10-28T07:00:00Z",
+      "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9TOC14SV95ckdBQ1FXZE1hdERjN05WbU5vcV9iMWZjWVFwbk9BN1Z4alBLc2l0RG5nQWJ1MnAwbzZUV1BDZlUyUXdlT052Qm5Bc0pmTw?oc=5",
+      "collected_at": "2026-11-09T07:58:02Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1124,7 +1194,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-10-26T07:00:00Z",
       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE1wUHpLYzhpTVU2c0pyXzdpdTFnTERrNnQta2M2ZEE4U1RPTzRXbUVMS3l4TW10cXQzb1NDNzdRMTJFUi1za2h1U1RqbWp4SVRwWGU0?oc=5",
-      "collected_at": "2026-11-08T07:18:38Z",
+      "collected_at": "2026-11-09T07:58:02Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -2776,7 +2846,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-10-21T07:00:00Z",
       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFAwdE95V09UeU1OWS14SlRxR0NYMTNzeEU3UTdhTjZSc3lpT1B2VGplQzBtbXZfeDBWTGJuQ2gtUmFBeGJtZHY5VXVySWFvdzN6eW5F?oc=5",
-      "collected_at": "2026-11-08T07:18:38Z",
+      "collected_at": "2026-11-09T07:58:02Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -2846,7 +2916,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-10-21T07:00:00Z",
       "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1NU3dZMDZFZFcxZC1NNU9pT0ZxWEhXRHhMSmNWcmFGQ1dHMnRPT1hqRlM0a0dTaEJoYm1pNlh3cW1uaGo3WEViQndCaXJDMG10eGFlSnRKZkNxWGdGMk1zaFFKZG9UQQ?oc=5",
-      "collected_at": "2026-11-08T07:18:38Z",
+      "collected_at": "2026-11-09T07:58:02Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -3826,7 +3896,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-10-07T07:00:00Z",
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1fb2xYaFk0U0hxSU5WaXg1QjNURDdNZDBaTmxHSHdlbDFTbU5IbWZ4VDVBWDJrRHdPT3FMbzRXVm00a3NIaUg4ckVSR0VyM3pKRnFNN2ZZX2l2TFJ3OTBwQg?oc=5",
-      "collected_at": "2026-11-08T07:18:38Z",
+      "collected_at": "2026-11-09T07:58:02Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -4806,7 +4876,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-29T07:00:00Z",
       "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE96UkhLWlU4T3RfcFdUVjBONnByajV2SjQwb3BqSy05MW1NTUo2U25JZlhSQ2NWTzR3NzNjcThyZVd4ekdmbG9XVzA0Slo0UGp1Z09SMGN6M2ZOak9odzdRaGlxdGdTUQ?oc=5",
-      "collected_at": "2026-11-08T07:18:38Z",
+      "collected_at": "2026-11-09T07:58:02Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -6374,7 +6444,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-09-28T07:00:00Z",
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFBwb1RoUEprbmd5cGFWMEdxUnJVM1RNNTYtdHAyalM4aHRTLXc0WnVwczBNU1NVdWlueWE1YmZNYVJOckF0WFVoaXUxaUVHb2ZyeFVZY0Exc2tPOG9zWTFBNA?oc=5",
-      "collected_at": "2026-11-08T07:18:38Z",
+      "collected_at": "2026-11-09T07:58:02Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -6969,76 +7039,6 @@
       "summary_model": "GLM-5.1",
       "summary_provider_style": "chat_completions",
       "summary_citations": []
-    },
-    {
-      "id": "news-d01f73e9efeefc3bb6",
-      "category": "investment",
-      "title": "17:10:12【段永平对泡泡玛特持股比例从5.55%升至7.70%】",
-      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
-      "source": "财联社",
-      "source_type": "媒体报道",
-      "published_at": "2026-09-25T10:02:24Z",
-      "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE9XMkZVOThiRG9mUjhxdHpCVFZGVEs4SURLV3BOcVZNUGVCZUFQNEh1ek9nOEJfRkJUM3J6dlNnMk5WQU9wTS00WA?oc=5",
-      "collected_at": "2026-10-12T07:20:45Z",
-      "verification": "需核验",
-      "summary_status": "pending",
-      "summary_basis": "等待 AI 摘要"
-    },
-    {
-      "id": "news-e3659c0348a1c64de3",
-      "category": "investment",
-      "title": "段永平：价值投资核心是什么？在A股搞价值投资能赚钱吗？",
-      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
-      "source": "video.sina.com.cn",
-      "source_type": "媒体报道",
-      "published_at": "2026-09-24T22:09:52Z",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNVHFTSXpuMEplZEdlbjFmMW16YnZMT0ZhVzNSdDNtdEhVOXdxX2pVc2VtUks5TGc0eEVZSmVBbE85M28yRDBtX3VZQ1JkNi1aOUhZOXk5UjZ6RVFaMTBUbmxvNVBPN1VKSnBzMHd4N0UtUEg2ZWFjVFlHY3ZJVkRYNEJB?oc=5",
-      "collected_at": "2026-09-26T06:09:46Z",
-      "verification": "需核验",
-      "summary_status": "pending",
-      "summary_basis": "等待 AI 摘要"
-    },
-    {
-      "id": "news-b2050b6260d6519e4d",
-      "category": "investment",
-      "title": "段永平：价值投资的核心是什么？在A股搞价值投资能赚钱吗？",
-      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
-      "source": "video.sina.com.cn",
-      "source_type": "媒体报道",
-      "published_at": "2026-09-24T15:31:23Z",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQOGVCc0JYdE1SUHNSMjlodGo5cHg1MkVRQmJkTDNfb2Z6SHdEMWJLVl84Rm9meTExSk41U3FTUUpaVVBJUHNfQmN3S01ZVzVpQzJIVGR1Y1ZxM2UzdUEtYWZkTFFEbU9wUUVEbmNDQlBPS01SQ0pLOTliQXhhMENlbGtR?oc=5",
-      "collected_at": "2026-09-27T06:36:33Z",
-      "verification": "需核验",
-      "summary_status": "pending",
-      "summary_basis": "等待 AI 摘要"
-    },
-    {
-      "id": "news-c2c7dfbcbff42dd533",
-      "category": "investment",
-      "title": "段永平再出手，泡泡玛特股价大涨",
-      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
-      "source": "新浪财经",
-      "source_type": "媒体报道",
-      "published_at": "2026-09-24T04:56:01Z",
-      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPY3hEWVZ0RGVxT3RIZmhUN2lOdmRITThSMWRrOE9aLVRBWmNid21yMFlFcWNETS1oTVozYmlqUFZJQU1qdVZnV2FUa0J0akpRd2thclZMdjBmU1lUcWstcl9DVGJUVk5FcTd6UU1nVFhEaWYyaTlKOUhjZDhmOWpGSkZ1YTEzWVlFd2ktTTVCamZlU2tPSi1aNmZLb055SDItTWVuT0k3bXdxMHlGNGxoMkxQTk9XelhJU2xfY0hlRmpHLUtvaHVqbzhRSkFkcDV2VWIxQm5zaVFCemwwTWtvLUdHZ1Q?oc=5",
-      "collected_at": "2026-09-28T06:53:52Z",
-      "verification": "需核验",
-      "summary_status": "pending",
-      "summary_basis": "等待 AI 摘要"
-    },
-    {
-      "id": "news-0e853b27ef0fb4933a",
-      "category": "investment",
-      "title": "段永平、李录，最新美股持仓曝光！",
-      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
-      "source": "新浪财经",
-      "source_type": "媒体报道",
-      "published_at": "2026-09-24T00:06:48Z",
-      "url": "https://news.google.com/rss/articles/CBMi_ARBVV95cUxQaFVLWUFhR2F0TndzdDk3X1h6UFVxT0FzZm9rSnlmLTZQN3JfeGtHNmR5VzBNb0hRRVAzSFhWVXdtSTg0RFE3Z3hSMnlpRFc1aFI1VHRoZ3RQdnBZNDlzVWR1d1MyS3hfNG9hWmFmcDh4YzFpeFEtcUZ5LWRtZk1OSlBYX3RYQmpESG9wVDNickc2OV9BTHZtNG9DS0lVNXFZY2hZdVBqSm1VQ0RvcjZTY3pTajZha2RRcjlsbGZncXNaVTZmU0xxU25EZVJvdnkwOTY3NUtLaGN4WUd6QjlSTUg2TlFqTVFSakE2OGZieHhBRVNxSl9nWUxvYzdDczNlYWMzSUZES3o0ck9Bc0lReUowQndyYWFJOWNsTnJ3Y2lBVklUU2Jad05KbUlEVGJQVWdvVzVENWg1c1hwRUw3em9rV21oS1FVLVRmc1lzUllzQnh3SGVrVk9SbEdKZzhkd1h3V0RNa2ZfbllGWjYxa1JoemxFUkZsZmdHRm45YVllZUZOeE5xN1dKS3NfOWNQTC1MSlpnVlJXbzNoSWNNSUpLZDhveDNJWWZwY0FLUzhGTWVwbllfSTczV1Q0WHJaR0k5cFJiSkVrdl9tNVViYl9GdGJLWDFyM29Ub2xoV0xtdVAtVVBKMnZDcnROekl6RVcxU2NKbU13TnBqUmRIalVqeTJobnJTS014b0w2MHNLcjUwVjB6RWotNHVxcnQ2c2tNRVlCazZfRGJETmpCQktBVEdlV1NhWTBmdFlPWmlNcWlHTjhPdkIxUDBmTjYzcm44Zk1fR2xxSDhhbm52SFpuX3l1OXB0Z0NQdGZ6bk9QRjkwSGxnTlpsRmo?oc=5",
-      "collected_at": "2026-09-26T06:09:46Z",
-      "verification": "需核验",
-      "summary_status": "pending",
-      "summary_basis": "等待 AI 摘要"
     }
   ]
 }
