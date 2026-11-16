@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-15T07:51:32Z",
+  "updated_at": "2026-11-16T07:58:16Z",
   "profile": {
     "name": "段永平",
     "xueqiu_name": "大道无形我有型",
@@ -12,31 +12,73 @@
       "name": "雪球本人账号",
       "status": "setup",
       "detail": "设置 XUEQIU_COOKIE 后采集动态；公开主页：https://xueqiu.com/u/1247347556",
-      "checked_at": "2026-11-15T07:51:32Z"
+      "checked_at": "2026-11-16T07:58:16Z"
     },
     {
       "key": "sec",
       "name": "SEC 13F",
       "status": "ok",
       "detail": "获取 32 份持仓披露",
-      "checked_at": "2026-11-15T07:51:32Z"
+      "checked_at": "2026-11-16T07:58:16Z"
     },
     {
       "key": "news",
       "name": "媒体报道",
       "status": "ok",
-      "detail": "获取 97 条 Google News RSS 结果",
-      "checked_at": "2026-11-15T07:51:32Z"
+      "detail": "获取 99 条 Google News RSS 结果",
+      "checked_at": "2026-11-16T07:58:16Z"
     },
     {
       "key": "summary",
       "name": "AI 自动摘要",
       "status": "error",
       "detail": "AI 总结 0 条，失败 10 条（首次失败：URLError: ）",
-      "checked_at": "2026-11-15T07:51:32Z"
+      "checked_at": "2026-11-16T07:58:16Z"
     }
   ],
   "items": [
+    {
+      "id": "news-28df916228c8a49e0b",
+      "category": "personal",
+      "title": "段永平：不管发生什么黄仁勋应该不会再回来了",
+      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
+      "source": "母婴行业观察",
+      "source_type": "媒体报道",
+      "published_at": "2026-11-16T04:54:00Z",
+      "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE5QQlVpU28xWVNvZFJSc1hNNDhQQ1R3QXdGRU9mRWd0ZGlBU09sRVZUSUozQ3h0RHo1dlliVWNYczFIdXZyMElIelF0MU8ycDRfYnc?oc=5",
+      "collected_at": "2026-11-16T07:58:16Z",
+      "verification": "需核验",
+      "summary_status": "pending",
+      "summary_basis": "等待 AI 摘要"
+    },
+    {
+      "id": "news-f5ecda04b9c83ef6cd",
+      "category": "interview",
+      "title": "段永平给安徽桐城中学捐款四千五百万建体艺馆纪念母亲却遭质疑，他回应只捐认可项目背后说透了企业家做慈善的底层逻辑与真实选择",
+      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
+      "source": "Sohu",
+      "source_type": "媒体报道",
+      "published_at": "2026-11-15T17:02:06Z",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQQlZyenFfa3RRTVczRjByd2RZcHdud2wzRE00azZ4X1E5cE1WbElQYWtfbmNkM0ptQ3drSm4tZEFqSlduTjRZM0tiTHNxRmRTN0V5cEtvaHJ3Q2s5cW1keHRuYlZWV1VfeDEzMkpyTi1MbG41Sm9CeHJ2Z05ZeEhLQVU3Y3pXVmM2ZDg4Vg?oc=5",
+      "collected_at": "2026-11-16T07:58:16Z",
+      "verification": "需核验",
+      "summary_status": "pending",
+      "summary_basis": "等待 AI 摘要"
+    },
+    {
+      "id": "news-dec3a2174f37e822ed",
+      "category": "investment",
+      "title": "段永平“不卖英伟达”的真实含义：卖出看跌期权背后的治理定价框架",
+      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
+      "source": "同花顺",
+      "source_type": "媒体报道",
+      "published_at": "2026-11-15T10:26:22Z",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE9iMDRLbHNnNE1sRzYta2JRa2FFY3lXVk9fWEVUVWl2TUxCc09lMDF2NVRIU01TTzhIdFhHMnhHeXJMaWRzOGhFbXJSNmExbWFsVU4yUVcyakxTdmI4RE1hbQ?oc=5",
+      "collected_at": "2026-11-16T07:58:16Z",
+      "verification": "需核验",
+      "summary_status": "pending",
+      "summary_basis": "等待 AI 摘要"
+    },
     {
       "id": "news-cc8eb52c4b0d1727d3",
       "category": "interview",
@@ -46,7 +88,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-14T04:01:50Z",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBDTzFGazQ1M2RXTTdRZ192X0tNbUVxZmktU1pUVzMtZWdCRkpPOGhhYWo0eWk4NzNDWmxOYXJTRzJ3ZmlaVHdQYU11cGJQd3VRWUVQcUYyWEh4ajg1cmhUUWc3X19QTVczcDlLNGl6MkQ?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -60,7 +102,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-13T16:08:51Z",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE0waW85SzNyMHdfWHFjMnR5VkVqUXpIdDQ4QmlieHR5LVd5WUp3WUVIaXdsNW9TUXNneU5BRHgtYkxOd3R6ZE10b0NxcXBkMDV2Z2wwd0FiakxGWUFDWVl5N3VHaHI0R2JIek9oZXduc3o?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -74,7 +116,21 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-13T15:32:27Z",
       "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5uTlFEZ3lfc0hEcWVoU0g5MWJDUklvYXNvYmcyNXl4aXR4aUtQWXhUUDN2dzJzczduN0RjUXRmY3Y5VnRreTVwRFpfb2hqQWJFcXJ2cHRMMWxsTGpZRko1UEpjRQ?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
+      "verification": "需核验",
+      "summary_status": "pending",
+      "summary_basis": "等待 AI 摘要"
+    },
+    {
+      "id": "news-d9ef7e90d090670f2c",
+      "category": "investment",
+      "title": "段永平回应英伟达持仓：目前不会卖出 已卖出不少看跌期权",
+      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
+      "source": "Sohu",
+      "source_type": "媒体报道",
+      "published_at": "2026-11-13T13:33:00Z",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQN3NQVzlVU3FMQjh0MlhUYl93bVQ4VEl2QlJrMmF2N0JTNVpLWjZDeHZUTTI5YmZnVHNTaUhoQ3FVTnQ3QVlLZUd4eXM4Q2haNE9JRk1QdzJWM3pwb2pUR3l0ZHNpNEFiMXVzMTFfaWN5SUVVMlZiVTRKcGg5TVgzUkN5M3ZRMFp6?oc=5",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -88,7 +144,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-13T13:07:52Z",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPaTFLZUVqQndEZjVxUS1SblFFbG13bVYtZTRmOWdVaGpJZnBmWUpFVVVoVDRwWGYzS1Zreko1WlNJak82Sl9vbDVTZWdGSDFsQkp6bUo0Tks5ZzFjeElsWF9FZUlxYngyQXpESE1xUnNQMEEzbnZFc0VmZ1VVNU5ZUlZzT2tONFM5R3VrQw?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -102,7 +158,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-13T12:28:45Z",
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5SM0ZpM1dZNndvaVBBTXNFZVpfYjVHMUZVN2dHVnlzOGx2SnRXWkVkZWlEYWZfNnB0SW1DdmgwbEJoeHlNSWpyWG96TkRTVm9acmxhZlR5ME1lcEhzNk0wNg?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -116,7 +172,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-13T11:05:37Z",
       "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPdFNXZHdJQVQyNnJEWWNGbWRwYmlETzk0T2dNMG52RVlXQ2ZWa3lVRXhvbks0UzkyZ09RenFnNEdibUppUmtsbEY5OGRLMmFGWHR6VHRLZk5sM3JBZUJFbmRTUHJmWFY4ZEhuTXd3NzNCakU4R2kxbTkxSU9uWEdLNWFUQXViYWxRaURQTGUyNktlajU2enN3Vw?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -130,7 +186,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-13T11:01:04Z",
       "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE44cWxYSl93cUE0NnhwYmtwQTJvX3lQN3hCdWJvWDY1TmluWVM5cEdqMzhhNThyb1lreWZlXzVVZnBHX0JndGVtbFFIMTVZOF9JbzdiYjRBdzNWdUVLcENkYWVR?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -144,7 +200,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-13T10:16:48Z",
       "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE95U25OblZ0bmNjbEswLTgwYU5QWHdOalNncXA2WkpJTUJfcmc3UGViTnV0SWlENVZCVkE5UmdwOEt4M29lVkJEZXFIV295bW5hMHpNRndQWUR2bjVmc2tOYnEyNjN4a0EwaWNrWnN2dldpQQ?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -172,7 +228,21 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-13T09:05:54Z",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPVXdBbTZ0aWZ2N0pJN05OMXo2M1JoQU1IN3dTU0RjOVpBb1A3V3dGYnlzd05PMmFPSlhvMFR5ZnpDS3RRdnpHY21iRndKTFhsMEZ1VFhGd1N6eENkLXFPSnVGVW0taEljTklMVkQ1UHZxMHM2MmVjS21VSDI3eDltVmlGVDRfU2FR?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
+      "verification": "需核验",
+      "summary_status": "pending",
+      "summary_basis": "等待 AI 摘要"
+    },
+    {
+      "id": "news-bc04415688fd9766dc",
+      "category": "investment",
+      "title": "黄仁勋辞职前段永平已清仓英伟达正股！坦言无法再安心持有10年",
+      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
+      "source": "Sohu",
+      "source_type": "媒体报道",
+      "published_at": "2026-11-13T08:42:27Z",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQRFZ3ZHlIOE9FRC03SFVobXVmaEdNeWZvSGtzZmhxQWlkdnFRUG5FYTM5S3VmRklvS0JEcTRIMTlFNUstcHFJRmREUlVJcHlNcS1ZYS1FNnRVX09FMGdvMko4Q2NxQUVoeG5haXdHTmM1QklURy1JanRYd0F2bjA2NWhCV3hPa25J?oc=5",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -200,7 +270,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-13T08:25:05Z",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQVnhzWjZ1cTItMnl5XzU1WkRMWnFjRmVKNWM0eWpRQ0FfbVJERzZVQmJ3M3JuNUpnVGhhU0tTUVJ4SU5KdUJfTFRiZlp3YXQwdHgwSFpMTkhWbk1GX0xsV0JIX1M3QzFfR0ZLQ21RcEk3LU10TXBDRU1DUVdTbXRsbkduZ3lPWWFF?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -214,7 +284,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-13T08:07:17Z",
       "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE4wLXV1TEZGbUtKTlRYTHU1b3BZa1QtdnR0c2ZpcUJfNlE2VlpWeXcxV05NdnhSdnloVERpSkg1NklqR3F4eDQ4WGxrTWlETXVoT3FYLWVuaDA?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -242,7 +312,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-13T07:34:05Z",
       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE5vRzl4X3VIV292MDlxWWZDVFcxSmlGenZwSS1EX2pYNXZ1bHRYY19WV2hFdVdXdTUtWFNTQzlsLU9lX0lVSmpIX3JsdG5XdlRuNnZJ?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -256,7 +326,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-13T07:32:01Z",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNeEMtOWgwUHlwVEVMZmJKX3ktb0F6MEptOFM1eXFDb195dEZ5cjhJc0xITWdxTnB0YXNqZHd2d1hjMEZoZkhZVHctMmkyaF9FOEU5cFEwX0xSR2tZVGl2Rmk2U3BXeWtsdnlSN1hzV25FNnVubHJabUtIZUk0RHJkV3ZjeDZnWmQteF9wbw?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -284,7 +354,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-13T07:13:55Z",
       "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE9fcmkzRVQyZDdXSGs1dFZUd2FsdkNwZy1reDR5MjlpSGJUYkpKRVJyRnVRdC0tTGVTbW4zY1Z3SnFyX0VkcHBEUWV1Y1VUbUlPMGNsbVF4RW95SkJtR29mX252NlMtQzVqNk5oS3JBdDNvQQ?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -298,7 +368,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-13T07:12:59Z",
       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQWENKQ3o5eXBLeU5qSHA4S19TdFRlZVVpSTF5S3pNc09FbVZqdl84NlNGR2ZqX19yVFJYSWNUSmJ3SGxwdlBIVldSMS1FMEhDTi1sNEZKQmdPSWZxRzBfQU80NnNyMENWaElubWNGLTM2dFdTc19OeWxOZjZtYmE1Q0JlX0FVemxyeTcyVE9rUmVWRWtJdGlzbGdCUWYzNnBaOFFpbw?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -312,7 +382,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-13T07:12:59Z",
       "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOVTFraTduN2FObE02TGZ3aDR6bGxoSXEzUXhZYWZDV3FSTkVUbmhOMHZlOWhZWDhaX2pTbkc4S1BVZVNuMEJrUkUta2pTZkZjbjI2eWF6eXdoN095X3lRQk1UbjFJV1p6T1FRVndueC1McU9URUtMN1BtbkVlMVdSenQxRWtISXhGVGxCMnF4ckxGUElzUmJoMw?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -326,7 +396,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-13T07:12:00Z",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9TZlBJb3JfUGhldHVhQVNfUnhZOWZ6VWsteVRZc2JxbjROU1VxLWhDSkUzY2xhUjlMWUJ1UHBmLUJrSjVCb1p6b05aN0pJdGV4cEUyQ1RWaGw5Ym1iTTMyczRYclFOUjdEMUQ2bHk1RVg?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -340,7 +410,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-13T06:52:57Z",
       "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxORS1jZHlQdnNzZXJ4eGdZbmhabTZKc0d4aHNkSm1RbUEyM3lhQ2pFMEUyMjc4TVMzamhZSzR5YUR1Y2J1NHhKOUU3clhUdzNDZVdXS3E4bDR4M1JlSnU4OS0yOXYxZnkzNkl2YmEzMk5udllSTEdVSnBWVGN6MkJhUy1lSDY1bzJNaVc4bEZodmVoQjhycWFJNA?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -354,7 +424,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-13T06:49:45Z",
       "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1YcUxGT0FOeHgxU0gxQ1dXd0lKYm9IU0lYbFc5Vkw2cWstWW9NUHFBODVlYzAtdThuNUpBUXFLMjFoZVFXeHZHSg?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -368,7 +438,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-13T06:19:53Z",
       "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBfYXh2akczSFgwSWJFRjRkX05tdFhNN21KLWJYS3NfbjdVa1RrbnpGUGlwN0FoYTNqT1Zqam4tWmtKLVZaNkx3dE5xSk8wVGVORnV4bDBDUVBYcENCZ1FqWlktV1I?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -382,7 +452,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-13T05:58:23Z",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBYSE81TEQ0Vk5TN1lxck5EN0JOTkU2dnlvSndXV0dGbll2Z25Qam51UG4wWmM2U1pWdDZjeGRrR0Fzbl91b0JFcG1KNVBSTThINkNZOXdaMEwwUXJReEFSU21YclVGaEpMT3NYX1haU3I?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -396,7 +466,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-13T05:36:00Z",
       "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTFBIbU53dkdvcno2SVJyZkR6WTRPeWkxQjFZU0xQZVlYc3FkR19obS1xVkZJUzRxVjVoWnZ2SzlnNlpKbGhfQy0xSV9tSFgwSHQyUU1xNHFB?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -424,7 +494,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-13T05:23:35Z",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPZExXTXJDSWdGdmlWcnYyanQyRkNhOTdSSXBNT1N3YWstMXoyYnBtZkZvcHRWcWJMNXdEazRpaFRXN044WHpBR2x2amFUcEZicG5QREdqZnF0Y2RSTlVGcmxFYXAtMWZ3SDVtNVlRd01QMU5NQkE4YlRTWHhJSmtzUF9FZmdQcGZh?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -438,7 +508,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-13T05:02:04Z",
       "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBKZkFtNkZqamhuR1MwZW1GWDFQclFOQkVLRlA4WkFfSlhYYlM3WmxfQTcyYmdjdmFlQmdjSkI5NHRBS1dOVWY4Z0xfeUQ2UQ?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -452,7 +522,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-13T04:49:00Z",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQM0dpdWtCNXM4cjVCWVZoWDJkUFNjaGFlUGoxaGpLclpMQXRVNkozS29fVWdKYWxHRTFtaGduTDhQdGVUS3p4WEg0X3p6d2JhbjdiZXJoWFBMRDVHYnlFQTRaekxmaFp4WlQ5OGN4UmQ2SzRLRk9VUDhzR2Nyc21uWEJ6b2FqS3lWa0EyTg?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -466,7 +536,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-13T03:46:31Z",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1EUjNYRE9EODZWYXZPSHROOE9ncVloYVNJQUR5aG9ldjA2TVBTYklDbHd2dElkSl9URXRhdEpmQUZTa0JWc2lCWXoybk1qMG5GX1g2dlEtVHRkRXJpMVF5VDhMZTNicGphaVQyT1pXQ3g?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -480,7 +550,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-13T03:20:00Z",
       "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9sYmhNbGVfQWFDYjViU1ZqdTRwRmk5bjMyNU5QRlpRVUt5N1ZQcFZBWmN5TkhHTmtCU0w2T0dJVHJXcUM3T1FiOXBpWnR5OURlSHZJZ0Q5YURVRU03MjhUVXpR?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -494,7 +564,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-13T03:12:49Z",
       "url": "https://news.google.com/rss/articles/CBMiogRBVV95cUxQQjNLcVJoeFQ0aXhncWdqRngxNGFGaG8xVUVlQVR1RzVGRXJ1Zm5VcFVXVDQ3NUZza3VCSVRSS3JkTU9Lank0QlczTjFWdl93Wi02Y3NUdTRoV1lXVEYxX1l4dUtOLTBsT0RfTTl4Q0pfSEFncWd5ZUZWMDRQUUNITlkzYnhzX2F2eXhzVmFqZVBkVFk0ZFJqUUtCcXdHazBhRUpBcmJ0LWhvWU1jaDY4MGhjeGg5Rk5qajdjSnpGQWZFS09Pb2ppWUwwUmJRSjl3c0NUMktuQ1ZyNVZyUmFERDNVV000SU1HRDFuZW5oOHRaRjVfUFRIcjU4REFJVkpKWEpYVWEyYmZvWGZvQVBoaktuVEJKQ29EcEFzUUZKeS1JSWtlQXdONHc0Mll2UVFXRjdsdTZWWFp0N3hMLU4zUzFUSnFZNHhQWWdnSE16eDRPbU9tZ1BlMVRzNlZQeFRsVFIwNGRCWm1WMzJpOUZHWmxGSHBORzBGWXRfTHExYWtQMWZOdE5PZ3hpM2VlX1dzMUF4SUs3ZWFwcGZYeWZWdXdQckkxU2dUUGRyeVZOWlp4azFtNE5EVXR2VEdqMGFfT0pJb3hiNzRBb005YzdlVlM5Tm42UG1LVHZUNXNLOXpaeEF5NlpMeWt4YXZhejNGYmlQT3RkcGRpazU1MFIyUGgyaWpvcWgyYW5WOWZXSGhSbVlwZUR3SFlFcVZOVUdud2c?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -508,7 +578,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-13T02:51:12Z",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNNUxsQXN0ZVJTeHlzTy1wUzlneG5rd19ueTFmcExNOVlOYUl0c2xGS0ZtZXduUnNuNGNlR05nTmtjdk9CdkZFdVJKa2ZLU3lmZjkxb3g4TTdqaGh0VkgyOWR6NmIyZ2xVSDF0d0J4UWtfTENlaEd3YmswXzA3cElZZEZxa25iLU5t?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -536,7 +606,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-13T02:12:22Z",
       "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBtc3VLRDAzMnc0ZHZOZEtzMHE3RU5Pd0NQdnF3NUs1NVNDNzNWQ3RxMndyNTJBQkRhZzdOMUdyemJKWHMxeTRjMEVNcnNhRnY2c1hwVUd1UlY?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -564,7 +634,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-13T01:57:45Z",
       "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFBkbmZkOS1VZjdJZlZTMHZNRjlvVHdLQ0xSUldZSG93QjBmazMyZVNUYl9jd2xiOTN3R2U4WUVqY2xkZ1dmTWhTZDhaTDBRSFJzODF0T3NzdmlBcnNoaExnc3p4WHNSQ1c5OXFIbG1yd3JGQU1J?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -578,7 +648,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-13T01:36:00Z",
       "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5UeFAzd296S1k3R1lHUHZQZWFRWV9JVjdxX3M1NFA2RDZXZkdwLURwUjRKSFIwVFpRbUlCNmNYU1FnN2kxaVVuRE5zb2NxMGYxRDcxSkViaDJJWUg3ZUlpdWQ2Y0l3ZEZvN2E0?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -592,7 +662,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-12T17:31:00Z",
       "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE4yMVhHLWZrbVNERHVoR2VyWElUdkQ1blpsV0VqUjAwNENKUTlrVlFta3RGVnRxYlprempLSjlGVDBqTldUR25QcEdsaTdrS3hvSmZBZXp0Q3ZSdVhxUHZTZ1FPLXF1NElE?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -606,7 +676,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-12T08:55:48Z",
       "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5icGRCWEIzaGZPanJSaF9qcTVkUHkyZmlVSmI5VXBwenlFQmNaU18zVnpYZ21fRjVFZjcwbldsa3BaeWFnVjU4M2NtZkVSNkUzQjctOXhvV1laUUkwcWNDTDFuV0U?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -620,7 +690,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-12T08:26:00Z",
       "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE9pTTJFcFFzSm5VM2RPZ0J1UEduQUhnaWQwYUcwaFU1WnkwQ1hReHBSMjBEcnVGdEFmOVNMajkwYndBZVV1c2FpUThFU2FYUE5iVjc1TnJPNTA?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -634,7 +704,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-12T06:54:37Z",
       "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTE9URWlSYmp3Qm9GRFZMUjVzb2FHMC02akxYTjFQYVFCNDdVVnV1YXZtWW5aMERPYnNoUUNhaGQ5bXdwMlJNRGZIY2hIX0ZEUkRyM2c?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -648,7 +718,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-12T06:34:54Z",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOdGhIaVN3elNHdEpyYnppbjVLWEl1M01IMENtMG13RzVDSDB0RmpNREN1V1lJcWM4ODV5WXRSSVBrNmhyQWp4eVRlem5RaFc4b2g2RHctR1hSTURySVRmbnNjaklVM2FuWUZTSF92WUtjZGkxWlNfR3dqa2J1Z1ZQNERoTWR5SUMt?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -662,7 +732,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-12T06:16:00Z",
       "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTFB1YmJTMFM1MVBVd3doTGNwTFRxa0llSktIZG1fZ0RDRHZPSTdQbDNXdXJudXlfSlp5X0VoV0toNzRvcXVGRnlJR0RPU2haRndac2t2WndKWTMzOHp4?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -676,7 +746,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-12T05:30:40Z",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOMmd1dER6aG85SUJiNVlqVEluNjBwdkRiaE1Pb250NkpIM1ZWR3ZpZkZvZDlKMGQtNGpoQ0VFSzkwd2xsWGRlVVE5VGVLU2Q0T1Z4VEE4RnpSVmk1anlHRVVLQ1BHMS1xb0I3dmppbndRVHU3b1F5M24xU09waGZtRWdKNVN0bVg5TEtWeA?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -690,7 +760,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-12T04:24:36Z",
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5qS0lQY0xlb3o2OEpDS3JZc3FlV3M1TjM2MDlad2dBV2FUalF6YUN4WTMteEE0dXF2Y0lrZkd1MVhUcHR1Qmc3bDVPcDFWZHJBdWtaQ21QcGhGdEQ1RzVqaQ?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -718,7 +788,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-12T04:01:40Z",
       "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBqZlJFdEpUaDctSVdkWTlsWXNpU2syRWFNS21pQXlUbThiZ3NlOWRQdUVPaWhXZ1lqY3BONUZGRTIxSFpYRlNIakE5SnFBcHcw?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -732,7 +802,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-12T03:42:46Z",
       "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE91WFR0cWtqVG9WMDY0Sk5yVU5HeEF3MnVFRU15a0Z5UzlwbkR5M3dETzlMam1la1FKTnRBRTJtWjB1T214Wl8zVjZ3?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -760,7 +830,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-12T03:23:25Z",
       "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1NTnlkMUo4RGI1ZllyWFdiRTBWVDVQT1JWNlBxdzdIT3pucVBfLUJXZlZheEVYdDVLSnJsZnA1MVczdGszVFg0Y1QzWUg?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -774,7 +844,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-12T02:55:00Z",
       "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5fTjliclpvbmU4UFZCcjVoRk5kNTF2bkpheGItSG1vY2xwWEFNMHVsOEdFeUxsSldjZURIQ09rdFdnVF9DUFJGYkR6cE5jVkJDbG5hVVVTdWhkNXVpTXIxOHhkMHc?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -802,7 +872,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-12T02:49:10Z",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOUXlaRVBMT1dqVl9ndXVqcGtDT0ZaYWpxSGZublZCNmF1UVMxMjlhSHRzVUx5Q1Q0SHpQYmxhemlwUjI1RzdkUkRNWDNHVURHUWhpZzZGS2xRN25qNjNZNmZkcHpZUlZ2dDBlVGpoZVVqME0zOF9RNlF6S193SlFIdzNmaGszZ3V6WnY0Sw?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -816,7 +886,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-12T02:43:33Z",
       "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTFBzT01IX05XbDdXR0g1ZUc4NENPQUczVFY3d2hVWXpkNXNqUVAyODFiSGhxcjFSQzdYbmRwemVZM0Z0VzI1TG9GeXM3eXY?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -830,7 +900,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-12T02:23:44Z",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5aSjhWcUd5bEdkTW80amNOZDBMZWsxNVZTWTRuMDRDT3FjLWNBNmJIdmpTUUh3RngxdHJUcjY2d2VsN2FIYncxbllaTXZWRW1zRm54NVVtRE1vNUJDSzl5TVBhQnJSRGMtUDZ6ZzkxMUc?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -844,7 +914,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-12T02:19:53Z",
       "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9Bc1Z0M1dBSGVBVGMzYUVuUXJld0FsbjZZRHVDSnloYU1CdEtMUnhXUWhZQVZmSUo4MDBDVDlYU2RsZ0hoQUVQcnVuamo1WkNyYlEzRjRlWEJscjBOeTc0TGZHd3BfNks2U2otOTN4bGk?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -858,7 +928,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-12T01:34:50Z",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxObm5CZEI2SzBwdm9aY3pfQTFhbTlLaUZwUjItT0ZQZkpMejBudVNwdnJST3ZDWkpnQU9rdmV1VzRGcVZVYXJMMVZwZDlTZ3Q3VXFlV2ZKSFJMSFJnbTFlMWdhVUFTajZPZlJFcWhKRUs2eElFenJGbWF3X0ZGa2JnaVZUcFhiZ1pQUzJpZA?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -872,7 +942,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-12T01:20:59Z",
       "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPMmVaUmI5N05jRGNLTThkQkVnWmlkTHlUbG5BSlpVM1VmLTBxRGV2NHhHNDdpelQ1M2tqaUE5T1l4MW1PTE9aNk9QbXA4SDR4dHI2UEt4U2U2SDhzNFoyMTdaMHBvUTRCbGRnSkJCbXVlRks2aDRySnVVV2N0ZHNWa05sQ3BwS0NMOWZr?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -886,7 +956,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-11T13:32:01Z",
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE56dkJHSDFMbkxHZm1FakdCS3UtT25lZ0c5dndLY1NtNkpOQTJ2M0U2SW1yeWxZVXVEUlJxR3lyODNaU0ROYl9sUWN5WkhxOGI3X1BXMzhsb29DMnNzRkQ3Mw?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -914,7 +984,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-11-11T09:54:57Z",
       "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1meVc2bFFUczFKYy1oZENTaG53dDVKZ1hITUVFS1lKSTFtQVFKb1dsNjNDWXkycm10c29YemwzTzE3M1BuSUZVX3pXS1c?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -1600,7 +1670,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-10-28T07:00:00Z",
       "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE9TOC14SV95ckdBQ1FXZE1hdERjN05WbU5vcV9iMWZjWVFwbk9BN1Z4alBLc2l0RG5nQWJ1MnAwbzZUV1BDZlUyUXdlT052Qm5Bc0pmTw?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -3812,7 +3882,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-10-21T07:00:00Z",
       "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFAwdE95V09UeU1OWS14SlRxR0NYMTNzeEU3UTdhTjZSc3lpT1B2VGplQzBtbXZfeDBWTGJuQ2gtUmFBeGJtZHY5VXVySWFvdzN6eW5F?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -3882,7 +3952,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-10-21T07:00:00Z",
       "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE1NU3dZMDZFZFcxZC1NNU9pT0ZxWEhXRHhMSmNWcmFGQ1dHMnRPT1hqRlM0a0dTaEJoYm1pNlh3cW1uaGo3WEViQndCaXJDMG10eGFlSnRKZkNxWGdGMk1zaFFKZG9UQQ?oc=5",
-      "collected_at": "2026-11-14T07:36:13Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -4862,7 +4932,7 @@
       "source_type": "媒体报道",
       "published_at": "2026-10-07T07:00:00Z",
       "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1fb2xYaFk0U0hxSU5WaXg1QjNURDdNZDBaTmxHSHdlbDFTbU5IbWZ4VDVBWDJrRHdPT3FMbzRXVm00a3NIaUg4ckVSR0VyM3pKRnFNN2ZZX2l2TFJ3OTBwQg?oc=5",
-      "collected_at": "2026-11-15T07:51:32Z",
+      "collected_at": "2026-11-16T07:58:16Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
@@ -6963,76 +7033,6 @@
       "published_at": "2026-09-28T07:12:00Z",
       "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1PdEdqaEx0TFU3UHdEVzFROU5Zak1WOHRZY3ZVdmNjOEFuT1AyclhnTWk2dXRxcjJPM0F3Y0dGYjlFbVlBTnBFblBxNjZEYWNldjVmU0dKdFFoeVIwMGpwelFOSk1EbGxMVjFTU1pIUQ?oc=5",
       "collected_at": "2026-10-03T06:33:09Z",
-      "verification": "需核验",
-      "summary_status": "pending",
-      "summary_basis": "等待 AI 摘要"
-    },
-    {
-      "id": "news-3ea76fb5e9b7da1e6b",
-      "category": "investment",
-      "title": "A股大跌之际，段永平出手加仓贵州茅台：买入3万股，耗资逾3690万元",
-      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
-      "source": "金融界",
-      "source_type": "媒体报道",
-      "published_at": "2026-09-28T07:11:32Z",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBCbGJEOC1scFNPRVpFWnh3T0otNWZMVnk4cFFXQ0VCbUFWQXRpaFZYLWtoMXJkakZTRVFFQkdYWWNmd0c4dzZtRzFLc09OT1RwOUl3dlZ2Wmw3Vk5WWmdrMDJxd2xLanoyWjRwN2pESWM5QQ?oc=5",
-      "collected_at": "2026-10-05T07:02:46Z",
-      "verification": "需核验",
-      "summary_status": "pending",
-      "summary_basis": "等待 AI 摘要"
-    },
-    {
-      "id": "news-38a22134a17bf2fc60",
-      "category": "investment",
-      "title": "A股大跌之际，段永平出手加仓贵州茅台：买入3万股，耗资逾3690万元",
-      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
-      "source": "搜狐网",
-      "source_type": "媒体报道",
-      "published_at": "2026-09-28T07:11:32Z",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNYmNPOVR0azBWVjBhbDU2RWxzQ0NEaHlMd1k2UER3azVhZ1cxd1FxQzRETlZWNmc0bzE2eDYtOVNnRGNGMFBXeXJDeC1UZkxtMWs4VlpFSGlCWVYxTDRnNWY1SlZQSlVWZHIwSGsxSldzb21rbHFwYU9IcWxKT3gtaDdYbjVsRThM?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
-      "verification": "需核验",
-      "summary_status": "pending",
-      "summary_basis": "等待 AI 摘要"
-    },
-    {
-      "id": "news-d64ba15738c5428287",
-      "category": "investment",
-      "title": "段永平加仓三万股，茅台日内回升1.3%，直销改革强化龙头韧性",
-      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
-      "source": "搜狐网",
-      "source_type": "媒体报道",
-      "published_at": "2026-09-28T07:11:01Z",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNZXVrbkRPTWV6RVJDZDVQTGZxY0dRWVpCRzd6c2w1Y2xoZXRhWlFCVTdJS2plWDEwTWdWVTlVQUFOSW9Ta0JNalpDbVJYR3B0VUJpYjNLLTU4SzJXRnhtTFlJY25ma1E2Vlo1Z1d1UFdLMHZZTTVXcVB0ZFhHREdpVUEyTTM3X3At?oc=5",
-      "collected_at": "2026-10-03T06:33:09Z",
-      "verification": "需核验",
-      "summary_status": "pending",
-      "summary_basis": "等待 AI 摘要"
-    },
-    {
-      "id": "news-6d5e3e20f0b20b8291",
-      "category": "investment",
-      "title": "段永平：买入3万股茅台！黄酒概念股持续活跃，会稽山涨停！港股通消费ETF汇添富(159268)标的指数涨超1%",
-      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
-      "source": "财富号",
-      "source_type": "媒体报道",
-      "published_at": "2026-09-28T07:08:00Z",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1lNUptSXljX0w3ZHhpMGZERFM2d2hya25sZmdPVHU1UmlfbHU5Y2k4NXRMQkt5ODItNWxBTzFpcWhLcWM1NGNoQ3JKUE9zSDhvNnNBVk53V0JkdEdVZGM2Z1A0Yy1OLTZNTmsw?oc=5",
-      "collected_at": "2026-10-01T07:10:54Z",
-      "verification": "需核验",
-      "summary_status": "pending",
-      "summary_basis": "等待 AI 摘要"
-    },
-    {
-      "id": "news-caec750a574036930f",
-      "category": "investment",
-      "title": "3692万元！段永平出手，茅台翻红",
-      "summary": "媒体检索结果，请打开原报道核验上下文与原始引述。",
-      "source": "搜狐网",
-      "source_type": "媒体报道",
-      "published_at": "2026-09-28T07:07:02Z",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQNTdMR2M4UnJBcTVhbGJNT0FvSmdpdFZuVXFsZG9KU25zSkFSVUROSWNEcUNFTFl6dkFRSE9Jc0JEUjF3dG1sTnlxWm9jdVlLWFVwZXVBc0pBb0xuRGFmMHl1QmdXanB0WkFDM1BxQ1B0ZVdFNWF0UGZEX3BUSWwzeGJWQ2s2RTNQ?oc=5",
-      "collected_at": "2026-10-04T06:49:33Z",
       "verification": "需核验",
       "summary_status": "pending",
       "summary_basis": "等待 AI 摘要"
